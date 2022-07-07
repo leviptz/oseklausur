@@ -1,0 +1,854 @@
+[
+    {
+     "id": 1,
+     "thema": "Was ist ein Objekt?",
+     "solution": "- Ein Objekt ist eine Instanz einer Klasse\n- Repräsentiert Dinge in der realen Welt oder aus einem Problembereich\n- Besitzt konkreten Zustand\/Eigenschaft",
+     "answer": null
+    },
+    {
+     "id": 2,
+     "thema": "Was ist eine Klasse?",
+     "solution": "- Beschreibt alle Objekte einer Art\n- von einer Klassen können mehrere gleichartige Instanzen erzeugt werden\n- die Klasse definiert über welche Datenfelder ein Objekt verfügt",
+     "answer": null
+    },
+    {
+     "id": 3,
+     "thema": "Was ist eine Instanz?",
+     "solution": "- Objekte werden aus Klassen instanziiert\n- Bei Erstellung wird ein default Zustand angelegt\n- Objektname erferenziert erzeugte Instanz",
+     "answer": null
+    },
+    {
+     "id": 4,
+     "thema": "Was ist eine Methode?",
+     "solution": "- Objekte verfügen über Operationen die aufgerufen werden können\n- auch Instanzmethoden genant, da sie auf einer Instanz operieren\n- Wir können mit Objekten kommunizieren indem wir Methoden aufrufen\n- Objekt tut etwas wenn Methoden aufgerufen werden",
+     "answer": null
+    },
+    {
+     "id": 5,
+     "thema": "Was sind Paramenter?",
+     "solution": "- Methoden können Parameter besitzten\n- Zusätzlich füpr die Ausführung notwendige Infos\n- werden beim Methodenaufruf als Argumente übergeben",
+     "answer": null
+    },
+    {
+     "id": 6,
+     "thema": "Was sind Rückgabewerte?",
+     "solution": "- Rückgabewerte sind Informationen die von einer Methode zurückgegeben werden\n- mit return\n- diese Informationen können sofort für weitere Operationen genutzt werden",
+     "answer": null
+    },
+    {
+     "id": 7,
+     "thema": "Was ist eine Signatur?",
+     "solution": "- ist der Kopf einer Methode\n- bennent notwendige Info\/Name für den Aufruf",
+     "answer": null
+    },
+    {
+     "id": 8,
+     "thema": "Was ist der (Objekt-)Zustand?",
+     "solution": "- Objekte haben Zustände - diese werden durch Werte repräsentiert\n- Werden in Datenfelder gespeichert\n- Klasse definiert über welche Datenfelder ein Objekt verfügt\n- Datenfelder auch Instanzvariablen genannt",
+     "answer": null
+    },
+    {
+     "id": 9,
+     "thema": "Unterschied native (primive) und ObjektDatentypen?",
+     "solution": " primitive Datentypen besitzen im gegensatz zu Objekten keine Attribute oder Methoden",
+     "answer": null
+    },
+    {
+     "id": 10,
+     "thema": "Was sind Datenfelder?",
+     "solution": "- Datenfelder werden auch Instanzvariablen genannt\n- der Zustand eines Objektes wird durch diese definiert",
+     "answer": null
+    },
+    {
+     "id": 11,
+     "thema": "Was sind Konstruktoren",
+     "solution": "- Konstruktoren bringen Objekte in einem definierten Anfangszustand\n- sie werden benötigt um Objekte zu erstellen\n- so werden benötigte Ressourcen reserviert, sofern diese zum Zeitpunkt der erstellung bereits bekannt sind",
+     "answer": null
+    },
+    {
+     "id": 12,
+     "thema": "Können Konstruktoren Parameter haben?",
+     "solution": "Ja",
+     "answer": null
+    },
+    {
+     "id": 13,
+     "thema": "Können Konstruktoren Rückgabewerte haben?",
+     "solution": "Ja, der Rückgabewert ist immer vom Typ der Klasse\n- es kann kein anderer Rückgabewert spezifiziert werden",
+     "answer": null
+    },
+    {
+     "id": 14,
+     "thema": "Was ist Variablenzuweisung? \nWie weißt man Variablen zu? \nWas hat das für ein Effekt?",
+     "solution": "- Variablen können Informationen zugeweisen werden\n- als erstes muss festgelegt werden welche Art von Information in dieser Variable gespeichert wernden soll (int, double, String)\n",
+     "answer": null
+    },
+    {
+     "id": 15,
+     "thema": "Was sind lokale Variablen?",
+     "solution": "- lokale Variablen existioeren nur innerhalb des Codeblockes in welchem sie deklariert wurden\n- müssen einen Wert zugewiesen bekommen",
+     "answer": null
+    },
+    {
+     "id": 16,
+     "thema": "Wann sind lokale Variable gültig und wie lange?",
+     "solution": "Blockgültigkeit",
+     "answer": null
+    },
+    {
+     "id": 17,
+     "thema": "static",
+     "solution": "- bedeutet diese Variable ist keine Instanzvariable - sie gehört nicht zum Objekt\n- gehört zur Klasse und der Name kann nur 1 mal verwendet werden\n- kann verwendet werden ohne die Klasse zu instantiieren\n- wenn Wert geändert wird, wird überall wo diese Varaibel verwendet wird geändert\n\n- auch für Methoden\n- diese sind dann auch Klassenbezoge - kann also verwendet werden ohne die Klasse zu instatiieren\n- es kann in dieser Methode dann aber nicht auf Instanzvariablen der Klasse zugegriffen werden, da es ja keine Instanz gibt\n\nstatic Methoden \/ Variablen sind kein individueller Bestandteil der Objekte der Klasse",
+     "answer": null
+    },
+    {
+     "id": 18,
+     "thema": "Können static Variable \/ Methoden auch über eine Instanz der jeweiligen Klasse aufgerufen werden?",
+     "solution": "Ja, static Methoden \/ Variablen können über eine Instanz aufgerufen werden - sollten sie aber nicht!!!",
+     "answer": null
+    },
+    {
+     "id": 19,
+     "thema": "final",
+     "solution": "- zum erzeugen von Konstanten\n- Variable darf sich nicht mehr ändern\n- für Objekte bedeutet das - die Referenz darf sich nicht verändern - der Inhalt darf sich ändern!\n– ArrayList, HashMap usw. können also trotzdem Elemente hinzugefügt werden",
+     "answer": null
+    },
+    {
+     "id": 20,
+     "thema": "Was repräsentiert das Schlüsselwort \"null\"?",
+     "solution": "- bedeutet kein Objekt\n- Eine Referenzvaribale wird auf Null gesetzt falls sie auf kein Objekt verweist",
+     "answer": null
+    },
+    {
+     "id": 21,
+     "thema": "Was repräsentiert das Schlüsselwort \"this\"?",
+     "solution": "Die Referenz auf das eigene aktuelle Objekt\n- this Wert wird von Java festgelegt, es ist immer das aktuelle Objekt\n- this kann kein Wert zugewiesen werden",
+     "answer": null
+    },
+    {
+     "id": 22,
+     "thema": "Was ist das Prinzip der Abstraktion?",
+     "solution": "- Fähigkeit Details zu ignorieren\n- Fokus der Btrachtung auf eine höhere Ebene lenken\n- Gemeinsamkeiten erkennen\n\nBsp\n- Auto und Motorrad\n- beide motorisiert, beide fahren\n-- Klasse Fahrzeug\n\n- Uhranzeige = Nummernanzeige",
+     "answer": null
+    },
+    {
+     "id": 23,
+     "thema": "Was ist das Prinzip der Modularisierung?",
+     "solution": "- Prozess der Zerlegung eines Ganzen in wohl definierte Teile\n- Teile interagieren in wohl definierter Weise\n- Teile können getrennt erstellt und untersucht werden\n\nBsp\n- Auto zerlegen\n- Klasse Motor, Klasse Lenker\n\n- Uhranzeige = Stundenanzeige, Minutenanzeige",
+     "answer": null
+    },
+    {
+     "id": 24,
+     "thema": "Zusammenwirkung Prinzip Abstraktion, Prinzip Modulariersung",
+     "solution": "Uhranzeige\n- Modularisierung - Uhranzeige = Studenanzeige + Minutenanzeige\n- Abstraktion - Stundenanzeige \/ Minutenanzeige = Nummernanzeige\n\nUhranzeige = 2 x Nummernanzeige",
+     "answer": null
+    },
+    {
+     "id": 25,
+     "thema": "Interne\/Externe Methodenaufrufe",
+     "solution": "Intern - im Objekt oder innerhalb der Klasse die Methoden der Klasse selber aufrufen\nExterne - Methoden welche von anderen Objekten außerhalb der Klasse aufgerufen werden",
+     "answer": null
+    },
+    {
+     "id": 26,
+     "thema": "Was ist das Geheimnisprinzip",
+     "solution": "- Daten die zu einem Objekt gehören, bleiben anderen Objekten verboren\n- interessant ist, was ein Objekt machen kann, nicht wie es dies macht\n- erhöht Unabhängigkeit\n- Unabhängigkeit der Module ist wichtig für große Systeme und die Wartung\n\nBsp.\nArrayList.sort()\n- wichtig ist nur das sort die Liste sortiert\n- nicht wie die Methode sort funktioniert",
+     "answer": null
+    },
+    {
+     "id": 27,
+     "thema": "public, protected, \"default\", private\n- Wann werden sie warum eingesetzt? (siehe auch Geheimnisprinzip)",
+     "solution": "public \n- darf jeder verwenden\n\nprivate\n- nur die Klasse selber\n- darf auch von der Unterklasse nicht benutzt werden\n\nprotected \n- im gleichen Package und Unterklassen\n\ndefault (nichts davor schreiben)\n- nur im Package\n\nWelche wann?\n- So weit wie möglich Sichtbarkeit einschränken",
+     "answer": null
+    },
+    {
+     "id": 28,
+     "thema": "Mengen und Maps als Beispiele aus der Java-Klassenbibliothek (Sammlungsframework)",
+     "solution": "Maps\n- Sammlungen, die Wertpaar enthalten\n- Wertpaare bestehen aus einem Schlüssel und einem Wert (key-value pairs)\n",
+     "answer": null
+    },
+    {
+     "id": 29,
+     "thema": "Was ist die Klassenbilbliothek?",
+     "solution": "Funktionalitäten die Java als Programmiersprache mitbringt\n- tausende von Klassen\n- zehntausende von Methoden\n- viele nützliche Klassen, die die Programmierung stark vereinfachen\n- Klassen sind in Pakete organisiert\n- es können einzelne Klassen oder Pakete importiert werden",
+     "answer": null
+    },
+    {
+     "id": 30,
+     "thema": "Schnittstellen vs. Implementation",
+     "solution": "Schnittstelle\n- Name der Klasse\n- allgemeine Beschreibung der Klasse\n- Liste von konstruktoren und Methoden\n- Ergebnistypen und Parameter für die Konstruktoren und Methoden\n- Beschreibung des Zwekcs jedes Konstruktors und jeder Methode\n\nImplementation\n- private Datenfelder\n- private Methoden\n- die Rümpfe (Quellcode) der einzelnen Methoden",
+     "answer": null
+    },
+    {
+     "id": 31,
+     "thema": "Klassendokumentation",
+     "solution": "Schnittstellenbeschreibungen für alle Bibliotheksklassen\nsollte umfassen:\n- Klassenname\n- Kommentar der den allgemeinen Zweck und die Eigenschaften der Klasse beschreibt\n- Versionsnummer\n- Autorenname\n- eine Dokumentation für jeden Konstruktor und jede Methode",
+     "answer": null
+    },
+    {
+     "id": 32,
+     "thema": "Kostruktor Methoden Dokumentation (siehe auch Klassendokumentation)",
+     "solution": "Dokumentation für jeden Konstruktor und Methode sollte umfassen\n- Name der Methode\n- Ergebnistyp\n- Name und Typen der Parameter\n- Beschreibung des Zwecks und der Arbeitsweise der Methode\n- eine Beschreibung jedes Parameters\n- eine Beschreibung des Ergebnisses",
+     "answer": null
+    },
+    {
+     "id": 33,
+     "thema": "Javadoc\nWie erstellt man Javadoc-Kommentare",
+     "solution": "- Programm welches aus Javadoc Kommentaren eine HTML Seite erstellt\n\/**\n* @author \n* @version\n* @return\n* @throws\n* @param\n*\/",
+     "answer": null
+    },
+    {
+     "id": 34,
+     "thema": "Vererbung",
+     "solution": "erlaubt es Eigenschaften und Methoden weiter zu geben\n- sinnvoll gemeinsame Eigenschaften auszulagern und nicht zweimal umzusetzen (Wiederverwendung)\n- Vererbungskette kann beliebig tief gehen",
+     "answer": null
+    },
+    {
+     "id": 35,
+     "thema": "Was wird vererbt?",
+     "solution": "- alles außer Konstruktoren\n- es kann auf vererbte Attribute und Methoden zugegriffen werden, jedoch nur, wenn sie \"Public\" oder \"Protected\" sind",
+     "answer": null
+    },
+    {
+     "id": 36,
+     "thema": "Wie werden Klassen vererbt?",
+     "solution": "Durch das Schlüsselwort \"extends\"\npublic class Student extends Person {…}\n- das erste was machen im Kostrukter der Unterklasse tun musst, ist den Konstruktor der Oberklasse aufzurufen \nsuper(parameter) &lt;- immer in der 1. Zeile des Konstruktors!\n\n- jede Klasse ohne Vererbung erbt von der Klasse java.lang.Object",
+     "answer": null
+    },
+    {
+     "id": 37,
+     "thema": "Wie können Methoden der Oberklasse aus der Unterklasse aufgerufen werden?",
+     "solution": "super.METHODE",
+     "answer": null
+    },
+    {
+     "id": 38,
+     "thema": "Methoden überlagern",
+     "solution": "Methoden der Oberklasse können in der Unterklasse neu definiert werden",
+     "answer": null
+    },
+    {
+     "id": 39,
+     "thema": "Wann ist Vererbnung sinnvoll?",
+     "solution": "- Vererbung ist sinnvoll wenn man eine \"Ist ein\" Beziehung zwischen Klassen herstellen kann\n- Bsp. Privatperson ist eine Person",
+     "answer": null
+    },
+    {
+     "id": 40,
+     "thema": "Was ist mit Konstruktoren? Was macht \"super\"?",
+     "solution": "Konstruktoren werden nie vererbt\n- super ruft den Konstruktor der Oberklasse auf",
+     "answer": null
+    },
+    {
+     "id": 41,
+     "thema": "Worfür braucht man das Schlüsselwort \"super\" (in Bezug auf Methoden und Konstruktoren)",
+     "solution": "Mit super können die Methoden der Oberklasse aufgerufen werden\nsuper.METHODE\n\nMit super kann der Konstruktor der Oberklasse aufgrufen werden, dies muss in der 1. Zeile des Unterklassenkonstruktors erfolgen\nsuper(PARAMETER)",
+     "answer": null
+    },
+    {
+     "id": 42,
+     "thema": "Mehrfachvererbung\nWie könnte ein Konflikt auftreten?",
+     "solution": "- jede Klasse in Java darf nur 1 Superklasse haben\n\nKONFLIKT Diamond of Death Bsp\nOberklasse Fahrzeug\n- Unterklasse Auto (erbt von Fahrzeug)\n- Unterklasse Motorboot (erbt von Fahrzeug)\n-- Unterklasse Amphibienfahrzeug (erbt von Auto + Motorboot)\n\nstarteMotor() als Methode welche in Auto und Motorboot vorhanden ist\n-- Welche Methode soll das Amphibienfahrzeug nun aufrufen??\n--- DIAMOND OF DEATH\n\n",
+     "answer": null
+    },
+    {
+     "id": 43,
+     "thema": "Polymorphie",
+     "solution": " = Vielgestaltigkeit\n\nPerson p = new Student();\n\n- Polymorphie bedeutet in Java, dass zum Zeitpunkt des Compilierens nicht eindeutig ist, welcher Programmcode bei einem Methodenaufruf ausgeführt wird\n-  Der Grund dafür liegt darin, Bsp. dass in einer Variablen, die als \"person\" definiert wurden, Objekte der Klasse \"person\", \"Student\" und \"Dozent\" abgelegt werden können\n- dies ist möglich, da jeder Student und jeder Dozent auch all das \"kann\", was eine Person \"kann\"\n\n- es wird immer die Methode des Objekts aufruft welches wirklcih vorliegt\n\n- Methoden welche nur der Student besitzt können so NICHT aufgerufen werden",
+     "answer": null
+    },
+    {
+     "id": 44,
+     "thema": "Interfaces",
+     "solution": "als Alternative zur Mehrfachvererbung\n\n- es werden nur die Methodensignaturen angegeben\n- implementierende Klassen müssen diese Methoden mitleifern ansonsten gibt es ein Fehler beim kompilieren",
+     "answer": null
+    },
+    {
+     "id": 45,
+     "thema": "Warum kann durch das Interface das Diamond of Death nicht auftreten?",
+     "solution": "Wenn eine Klasse 2 Interfaces implementiert und diese die eine gleiche Methode haben, wird in der Klasse nur eine Methode definiert\n- Es wird immer der Code der implementierenden Klasse ausgeführt",
+     "answer": null
+    },
+    {
+     "id": 46,
+     "thema": "Wie implementiert man Interfaces?",
+     "solution": "public interface Klassenname {\n public void starteMotor(); &lt;-- Methode\n}\n\nKlassen können das Interface mit \"implements\" implementieren\n\npublic class Boot extends Fahrzeug implements Motorfahrzeug, Wasserfahrzeug",
+     "answer": null
+    },
+    {
+     "id": 47,
+     "thema": "Ist Mehrfachimplementation (von Interfaces) zulässig?",
+     "solution": "Ja",
+     "answer": null
+    },
+    {
+     "id": 48,
+     "thema": "Ist Mehrfachvererbung (von Klassen) zulässig?",
+     "solution": "Nein",
+     "answer": null
+    },
+    {
+     "id": 49,
+     "thema": "Was ist Überlagerung und Polymorphie?",
+     "solution": "Überschreibung\n- Man kann in der Unterkalsse die gleiche Methode nochmal implementeiren mit gleicher Signatur\n- Wenn auf dem Objekt etwas aufgerufen wird, wird nur die Methode der Unterklasse verwendet (Überschreibung)\n\nPolymorphie\n– eine Unterklasse kann wie eine Oberklasse verwendet werden\n- Eine Methode kann den gleichen Name mit verschiedenen Parametern haben\n- gleiche Methoden kann mit verschiedenen Parametern jeweils aufgrufen werden",
+     "answer": null
+    },
+    {
+     "id": 50,
+     "thema": "Modellbildung (Typische Fehler: Vermischung, Redundanz?",
+     "solution": "Modellbildung\n- Bevor ein umfangreiches Softwareprojekt angegangen werden kann, muss ein Modell der zu erstellenden Klassen angelegt werden\n- hilft bei der Klärung wichtiger Fragen wie:\n- Welche Klassen benötigen welche Eigenschaften?\n- Wie hängen verschiedene Klassen miteinander zusammen?\n- Welche Klasse ergbt gff von welcher anderen Klasse?\n- es wird von vornherein Struktur in ein Programm gebracht\n- hilft dabei typische Fehler bei der Erstellung von Klassen für ein Programm zu verhindern\n\nVermischung\n- bedeutet, dass eine Klasse geschreiben wurde, die eigentlich mehrere unabhängige Objekte der realen Welt in sich verein\n\nRedundanz\n- Daten werden mehrfach vorgehalten\n- Speicherverschwendung, synchron halten von Daten wird schwer",
+     "answer": null
+    },
+    {
+     "id": 51,
+     "thema": "Interfaces",
+     "solution": "Mehrfachimplementation erlaubt\n- enthalten nur Methodensignatur",
+     "answer": null
+    },
+    {
+     "id": 52,
+     "thema": "Variablen mit Interface-Typen?",
+     "solution": "vom Interface können Variablen erstellt werden\n– es können generifizierte Listen erstellt werden welche deisen InterfacteTyp entahlten",
+     "answer": null
+    },
+    {
+     "id": 53,
+     "thema": "Welcher Code wird aufgrufen (Interface)",
+     "solution": "es wird immer der Code der Klasse aufgrufen",
+     "answer": null
+    },
+    {
+     "id": 54,
+     "thema": "Abstrakte Klassen (NICHT IDENTISCH MIT PRINZIP DER ABSTRAKTION!)",
+     "solution": "- zählen als richtige Klassen\n- in diesen werden ein oder mehrere Methoden deklariert, aber nicht implementiert sind\n- es können eine Instanzen mit new erzeugt werden, es muss IMMER erst eine Subklasse definiert werden (extends)\n- Mischung aus Interface und Klasse\n– Es können Methoden entahlten werden die abstrakt sind (nur Methodensignatur) (abstract)\n- man darf abstrakte Klassen aber als Variablentyp verwenden (Figur fig = new Quadrat())\n(public abstract class Figur {})\n(public abstract String getFigur()}",
+     "answer": null
+    },
+    {
+     "id": 55,
+     "thema": "Innere Klassen",
+     "solution": "Klassen die man innerhalb Klassen implementiert (es geht nicht unterhalb der Klasse! NUR INNERHALB)\n- innere Klassen sind eng mit den Instanzen der äußeren Klasse verwoben\n- innere Klassen können nur im Zusammenhang mit Instanzen der äußeren Klasse existieren\n\n- können beliebig geschachtelt werden",
+     "answer": null
+    },
+    {
+     "id": 56,
+     "thema": "Wie kann eine innere Klasse von einer anderen Kalsse erstellt werden?",
+     "solution": "Äußere Klasse: Computer\ninnere Klasse: Keyboard\n\nComputer c = new Computer();\nComputer.Keyboard k = c.new Computer.Keyboard();",
+     "answer": null
+    },
+    {
+     "id": 57,
+     "thema": "Können Objekte innerer Klassen auf die Datenfelder einer Objektes der äußeren Klasse zugreifen?",
+     "solution": "Ja, sogar private\neine normale innere Klassen kann nur im Zusammenhang mit der Äußeren Klasse instantiert werden\n- innere Klasse in der äußeren Klasse instantiieren (new)\nOder \n- äußere Klasse vorher mitgeben",
+     "answer": null
+    },
+    {
+     "id": 58,
+     "thema": "Was sind anonyme innere Klassen? Java Stream API",
+     "solution": "Innere Klassen die kein Namen haben\n- es wird einfach ein Objekt erzeugt\n\nz.B.\nRunnable cmd = new Runnable {\npublic void run() {\n…\n}}\ndoWork(cmd)\n\npublic static void doWork(Runnable command) {\ncommand.run();\n}",
+     "answer": null
+    },
+    {
+     "id": 59,
+     "thema": "Lambda Ausdrücke Java Stream API",
+     "solution": "Consumer&lt;String printName = name - { … };\n\n- Es gibt verschiedne Lambda Ausdrücke in Java\n- (Function, Predicate, …)",
+     "answer": null
+    },
+    {
+     "id": 60,
+     "thema": "Java Stream API Streams",
+     "solution": "Streams haben eine Datenquelle (z.B: Collection)\n- Streams stellen Elemente aus der Datenquelle zur Bearbeitung zur Verfügung\n- die Elemente können mit Hilfe von Methoden bearbeitet werden\n- Streams können nur 1 mal verwendet werden, danach sind sie verbraucht",
+     "answer": null
+    },
+    {
+     "id": 61,
+     "thema": "Java Stream API Filter &amp; Count",
+     "solution": "- Filter\nStream&lt;String stream = names.stream();\n(names ist dabei eine ArrayListe mit Namen)\nstream.filter(n - n.startsWith(\"Hans\");)\n\n- Count\nlong count = stream.filter(n - n.startsWith(\"Hans\")).count();\n",
+     "answer": null
+    },
+    {
+     "id": 62,
+     "thema": "Java Stream API Map &amp; ",
+     "solution": "- Map = Umwandeln\nstream.map(n - n.length()).forEach(l - System.out.println(\"Länge: \" + l)",
+     "answer": null
+    },
+    {
+     "id": 63,
+     "thema": "Was sind statische innere Klassen?",
+     "solution": "static\n- können nicht auf Objekte der äußeren Klasse zugreifen\n- verhalten sich so wie normale Klassen nur das sie innerhalb einer anderen sind\n- können einfach so instatiiert werden",
+     "answer": null
+    },
+    {
+     "id": 64,
+     "thema": "Fehlerverarbeitung (Ursachen von Fehlern)",
+     "solution": "Ursachen Bsp.\n- wenn auf ein nicht gültigen Array Index zugegriffen wird\n- wenn versucht wird eine Methode auf einem Objekt aufzurufen, das noch garnicht erzeugt wurde\n- wenn versucht wird durch 0 zu teilen\n- wenn versucht wurd die Wurzel aus einer negativen Zahl zu zeuhen\n- wenn versucht wird Text in eine Ganzzahl umzuwandeln, der keine Zahl darstellt\n\nWenn solch ein Zustandt auftritt, wird ein entsprechendes \"Signal\" gestezt und die Programmausführung wird abgebrochen",
+     "answer": null
+    },
+    {
+     "id": 65,
+     "thema": "Wie wird in Java mit Fehlern umgegangen?",
+     "solution": "Ein Programm kann Fehler abfangen\n– bereits bei der Entwicklung eines Programmes Maßnahmen programmieren, die durchgeführt werden sollen, wenn ein Fehlerzustand auftritt (dadurch bricht das Programm nicht ab)\n- wird ein Fehler NICHT aufgefangen bricht das Programm vollständig ab",
+     "answer": null
+    },
+    {
+     "id": 66,
+     "thema": "Was bedeutet \"eine Exception werfen\"?",
+     "solution": "Ein Fehler signailisieren",
+     "answer": null
+    },
+    {
+     "id": 67,
+     "thema": "Was bedeutet \"eine Exception fangen\"?",
+     "solution": "Ein Fehler abfangen",
+     "answer": null
+    },
+    {
+     "id": 68,
+     "thema": "Wie können Exception geworfen und gefangen werden?",
+     "solution": "Exception werfen\n- throw new ExceptionTyp(\"fehlerText\")\n\nException fangen\n- try {hier kann der Fehler auftreten} catch (Exception Typ \"name\") {Programmcode für den Fehlerfall}",
+     "answer": null
+    },
+    {
+     "id": 69,
+     "thema": "Exception Typen (IllegalArgumentException, IllegalStateException, UnsupportedOperationException)",
+     "solution": "- IllegalArgumentException\n- wenn ein übergebener Parameter bei einem Methodenaufruf ungültig ist\n\n- IllegalStateException\n- wenn sich ein Objekt in einem Zustand befindet, in dem es eine bestimmte Aktion nicht ausführen kann\n\n-UnsupportedOperationException\n- wenn eine Objekt eine Methode anbietet, die vom Programmierer noch nicht entwickelt wurde (Methode schon mal hingeschrieben, aber nich nicht mit Inhalt gefüllt)",
+     "answer": null
+    },
+    {
+     "id": 70,
+     "thema": "Was genau passiert, wenn eine Exception geworfen wird?",
+     "solution": "Es wird von unten nach oben durch den Callstack gegangen und geschaut ob irgendwo ein try ist\n- wenn ja wird die Exception durch unseren Programmcode in catch abgefangen\n- wenn nicht landen wir irgendwann bei der Main methode und wenn dort ebenfalls ein try Block drin ist stürzt das Programm ab",
+     "answer": null
+    },
+    {
+     "id": 71,
+     "thema": "Bei throw - läuft die Methode weiter oder sind wir raus?",
+     "solution": "Bei throw wird die Methode direkt abgebrochen",
+     "answer": null
+    },
+    {
+     "id": 72,
+     "thema": "Bricht die Programmausführung im try Block bei einer Exception ab?",
+     "solution": "Ja, nach der Exception ist der nächste Teil der Anwendung immer der catch Teil! Das heißt Code im try Block nach dem Teil wo die Exception auftritt wird nicht ausgeführt!\n- ein try Block wirkt auch nur wenn der richtige Exceptiontyp abgenfangen wird",
+     "answer": null
+    },
+    {
+     "id": 73,
+     "thema": "Welche Exceptions MÜSSEN abgefangen werden, welche nicht?",
+     "solution": "Checked Exception\n- müssen abgefangen werden\n\nRuntime Exceptions\n- müssen nicht angefangen werden\n- bei nichtabgfangen und Fehler stürzt das Programm ab",
+     "answer": null
+    },
+    {
+     "id": 74,
+     "thema": "Wann sollen Exceptions verwendet werden?",
+     "solution": "Exceptions sollen nur in Ausnahmefälle verwendet werden\n- ist sehr teuer (Prozessorleistung)\n- wenn wir nur Rückgabewert brauchen dann einfachen Rückgabewert implementieren",
+     "answer": null
+    },
+    {
+     "id": 75,
+     "thema": "Wie könnte man universell jede Exception abfangen?",
+     "solution": "Als ExceptionTyp = Exception\n- alle ExceptionTypen erben von Exception",
+     "answer": null
+    },
+    {
+     "id": 76,
+     "thema": "Wie kann man sehen welche Exception bei einem Methodenaufruf gefangen werden können?",
+     "solution": "STRG Gedrückt halten + auf Methode klicken\n- Eclipse öffnet darauf hin die Methode und in deren Kommentar steht das drin",
+     "answer": null
+    },
+    {
+     "id": 77,
+     "thema": "Mit welcher Methode kann die Exception Fehlernachricht abfragen kann?",
+     "solution": "ExceptionName.getMessage();",
+     "answer": null
+    },
+    {
+     "id": 78,
+     "thema": "Was sollte man beim Exceptions fangen nicht tun?",
+     "solution": "Bestimmte Exceptions deuten auf schlechte Programmierung hin\n- ArryIndexOutOfBoundsException (Zugriff auf nicht gültige Array-Indizes\n- NullPointerException (Aufruf von Methoden auf nich nicht erstellten Objekten)\n- Division drurch Null (Arithmetic Exception)\n\n- es sollte auch keine Exception geworfen werden ohne das ein fehlerfall vorliegt (um Excelption als zusätzlichen Rückgabetyp zu verwenden \/ um schnell eine umfangreiche Bearbeitung zu beenden)",
+     "answer": null
+    },
+    {
+     "id": 79,
+     "thema": "Wie ist die Prozessorleistung bei Exceptions?",
+     "solution": "- Exceptions zu werfen ist sehr teuer\n- der Try Block Kostet an sich nichts",
+     "answer": null
+    },
+    {
+     "id": 80,
+     "thema": "Wie funktioniert in Java die Einagbe\/Ausgabe?",
+     "solution": "package Java I\/O\n- funktioniert über Datenströme \"Streams\"",
+     "answer": null
+    },
+    {
+     "id": 81,
+     "thema": "Was ist InputStream und OutputStream?",
+     "solution": "InputStream\n- dient der Eingabe in das Programm\n\nOutpurStream\n- dient der Ausgabe aus dem Programm\n\nStreams sind Basisklassen\n- sie funktionieren für jede denkbare Datenquelle bzw. jedes denkbare Datenziel\n- es werden Binärdaten gelesen\/geschrieben\n- Konvertierung müsste somit selbst erfolgen",
+     "answer": null
+    },
+    {
+     "id": 82,
+     "thema": "Wovon abstrahieren diese? (InputStream und OutputStream)",
+     "solution": "Abstrahieren alle lese und schreib Operationen\n- z.B. Lese Schreiboperationen auf Netzwerke, Console usw.\n- die Klassen lesen\/schreiben Binärdaten",
+     "answer": null
+    },
+    {
+     "id": 83,
+     "thema": "Was sind Reader und Writer?",
+     "solution": "- machen die Bedienung der Streams einfacher\n- lesen\/schreiben immer Zeichenweise\n- man muss wissen welche Art von Daten eingelesen\/geschreiben werden sollen (z.B. Text)",
+     "answer": null
+    },
+    {
+     "id": 84,
+     "thema": "Wie erleichtern Reader und Writer die EA Operationen",
+     "solution": "- Reader und Writer lesen keine Binärdaten ein\n- sie lesen Zeichenweise ein\n- der Reader\/Writer ließt Binärdaten ein (InputStream\/OutputStream) und wandelt sie in Zeichen um",
+     "answer": null
+    },
+    {
+     "id": 85,
+     "thema": "BufferedReader \/ PrintStream",
+     "solution": "- ist einer weitere Vereinfachung zum Lesen\/Schreiben\n- Reader kann z.B. zeilenweise ganze Strings von einem Reader einlesen\n- PrintStream kann z.B. jeden beliebigen Datentyp ein OutputStream schreiben\n- komfortabelsten Möglichkeiten aus externen Datenquellen zu lesen \/ zu schreiben\n- Voraussetzung: Die Datenquellen sind auch zeilenweise aufgebaut!",
+     "answer": null
+    },
+    {
+     "id": 86,
+     "thema": "Wie werden Dateien in Java repräsentiert?",
+     "solution": "- Mit Objekten der Klasse File\n- man kann ein File fragen, ob es nur ein Behälter für weitere Files ist\n- man kann ein File nach weiteren Informationen fragen, die in den meisten Dateisystemen verwaltet werden (z.B. Größe \/ Schreibschutz)\n- erzeugt man ein Objekt muss bei der Erzeugung angegeben werden weilche Datei im Dateisystem es repräsentiert\n- existiert die Datei nicht führt das zu keinem Fehler!\n- mit der Methode exists() kann abgefragt werden ob die Datei schon existiert\n- Mit der Methode createNewFile() kann die Datei ggf. angelegt werden",
+     "answer": null
+    },
+    {
+     "id": 87,
+     "thema": "was sollte geprüft werden bevor manin eine Datei schreibt oder aus ihr ließt?",
+     "solution": "-Existiert die Datei?\n- Ist die Datei eine \"normale\" Datei?\n- Kann ich in die Datei schreiben?",
+     "answer": null
+    },
+    {
+     "id": 88,
+     "thema": "Collections",
+     "solution": "Sind Interfaces (Sammlung)\n- stellt grundlegende Funktionalität für Einzelelement-Datenstrukturen zur Verfügung\n- jede Art von Datenstruktur (AarrayList, HashSet etc.) kann als Collection behandelt werden\n- !!! Das Vorhandensein einer Methoden sagt nichts über die Effizienz aus: contains(Object o) bei eine ArrayList hat Komplexität O(n), bei einem HashSet O(1), bei einem TreeSet O(log n)",
+     "answer": null
+    },
+    {
+     "id": 89,
+     "thema": "Iterable",
+     "solution": "Superinterface für alle Datenstrukturen (alles außer Map)",
+     "answer": null
+    },
+    {
+     "id": 90,
+     "thema": "Methoden der Iteratoren",
+     "solution": "Iteratoren sind Objekte mit Zustand\n- sie merken sich die aktuelle Position in der Datenstruktur\n- jeder Iterator kann dabei an einer anderen Position stehen\n- er merkt sich NUR die Position\n- die Daten werden immer aus der Datenstruktur entnommen",
+     "answer": null
+    },
+    {
+     "id": 91,
+     "thema": "Iterieren mit Iteratoren",
+     "solution": "for (Iterator&lt;String it = liste.iterator(); it.hasNext();) {\n String element = it.next();\n}\n\n- Iterator fängt bei Position -1 an",
+     "answer": null
+    },
+    {
+     "id": 92,
+     "thema": "Wie vergleicht man Strings miteinander",
+     "solution": "String 1 == String 2\n- so werden nur die Objekte vergleichen - die sind NIEMALS gleich\n\nString1.equals(String2)\n- so werden die Inhalte von 2 Strings verglichen\n- ! \"Anna\".equals(o);\n-- Warum? \n--- Wenn das Objekt null ist gibt es bei o.equals(\"Anna\") eine NullpointerException!",
+     "answer": null
+    },
+    {
+     "id": 93,
+     "thema": "Interface List",
+     "solution": "Abstraktion für Listen in Java\n- erlaubt neben Funktionalitäten von Iterable und Collection auch s.g. indizierte Zugriffe\n- verkettete Listen get() O(n)\n- ArrayList get() O(1)",
+     "answer": null
+    },
+    {
+     "id": 94,
+     "thema": "Interface Set",
+     "solution": "Repräsentiert Sets (Mengen)\n- Datenobjekte bei denen identische Objekte nur einmal vorkommen\n- (HashSet, TreeSet, LinkedHashSet)",
+     "answer": null
+    },
+    {
+     "id": 95,
+     "thema": "Interface Map",
+     "solution": "Repräsentieren Abbildungen (Maps)\n- Datenobjekte bei denen Schlüssel auf Wertpaare abgebildet werden\n- !!! DIESE GEHÖREN NICHT ZU COLLECTIONS !!!\n- (HashMap, TreeMap, LinkedHashMap)",
+     "answer": null
+    },
+    {
+     "id": 96,
+     "thema": "Interfaces Queue und Deque",
+     "solution": "Repräsentieren Warteschlangen\n- anders als Queus erlaben Deques das Einfügen und Entfernen am Anfang und am Ende der Warteschlange\n- LinkedList unterstützt das Deque Interface und repräsentiert somit eine verkettete Liste als auch eine Deque",
+     "answer": null
+    },
+    {
+     "id": 97,
+     "thema": "Vector",
+     "solution": "Repräsentiert eine Liste an Elementen mit Hilfe eines intern verwalteten Arrays ähnlich der ArrayList\n- Vector ist noch Uralt - erste \"wachsende\" Datenstruktur in Java 1.0\n- gilt inzwischen als veraltet und ist vollständig druch ArrayList ersetzbar",
+     "answer": null
+    },
+    {
+     "id": 98,
+     "thema": "Klasse oder Interface?",
+     "solution": "Welches?\n1. private ArrayList&lt;String names = new ArrayList&lt;();:\n2. private List&lt;String names = new ArravList&lt;();\n3. private Collection&lt;String names = new ArravList&lt;();\n4. private Iterable&lt;String names = new Arraylist&lt;();\n\n- Dauemregl - immer das umfangreichste \/ passende Interface? also Option 2\n\nWarum?\n- Interface bietet in den meisten Fällen fast alle nützlichen Methoden der Klasse, man ist bei der Wahl der Implementation aber felxibel: Um auf eine verkettete Liste umzusteigen, muss man nur das new ArrayList gegen New LinkedList austauschen ohne Code zu verändern\n",
+     "answer": null
+    },
+    {
+     "id": 99,
+     "thema": "Java Steam API",
+     "solution": "Macht es möglich Funktionen einer Variable zuzuordnen\n",
+     "answer": null
+    },
+    {
+     "id": 100,
+     "thema": "Wie werden Klassen in UML-Klassendiagrammen dargestellt?",
+     "solution": "Rechtecke in 3 Abschnitten\n– 1. Name der Klasse\n- 2. Datenfelder der Klasse\n- 3. Methoden der Klasse\n\nSichtbarkeiten\n+ public\n- private\n# protected\n~ package\n\nZugehörigkeiten (Scope)\n- Instanzvariablen\/-methoden gehören zu den Instanzen der Klasse und können sich z.B. in Wert und Verhalten zwischen Instanzen unterscheiden (normale Instanzvariablen und - methoden)\n- Klassifikatorvariablen\/-methoden gehören zu der Klasse und nicht zu der Instanz und sind somit für alle Instanzen gleich (static Datenfelder und Methoden)\n\nWeitere Eigenschaften\n- ordered - Rückgabewerte sind geordner (gibt es nicht in Java)\n- redifines - Die Methoden überschreibt eine Operation einer Oberklasse\n- read-only - Die Variable kann nur gelesen werden\n- in - der Methodenparameter wird nur gelesen\n- out - der Methodenparameter wird nur beschrieben\n",
+     "answer": null
+    },
+    {
+     "id": 101,
+     "thema": "Klassenbeziehungen (Assoziation) UML",
+     "solution": "Assoziation\n- beschreibt eine allgemene Beziehung uwischen 2 oder mehr Klassen\n- Beziehung kann einseitig gerichtet (Pfeil) oder beidseitig ungerichtet (Linie) sein\n- Zusätzlich kann Multiplizität vermerkt werden\n- beschreibt wie viele Instanzen einer Klasse mit wievielen Instanzen einer anderen Klasse assoziiert sind (1:1 \/ 1:n \/ n:m)",
+     "answer": null
+    },
+    {
+     "id": 102,
+     "thema": "Klassenbeziehungen (Generalisierung\/Vererbung) UML",
+     "solution": "Generalisierung\n- legt fest, dass eine Klasse eine Spezialisisierung (oder Generalisierung in die andere Richtung) einer andere Klasse dargestellt\n- Die Beziehung ist eine \"ist ein\" - (is a) Beziehung\n- Bsp. Privatkunde IST EINE Person",
+     "answer": null
+    },
+    {
+     "id": 103,
+     "thema": "Klassenbeziehung (Komposition \/ Aggregation) UML",
+     "solution": "Komposition\n- legt fest, dass Instanzen einer Klassen einen Teil von Instanzen einer anderen Klasse darstellt\n- es kann eine Kardinalität festgelegt werden, welche definiert, wie viele Instanzen auf beiden Seiten in eine solchen Beziehungen stehen können\n- Bsp. ein Gebäude besteht aus einem oder mehreren Räumen\n- bei der Komposition ergeben die Teile ohne das Ganze keinen Sinn\n- bei der AGGREGATION ergeben die Teile auch ohne das ganze einen Sinn",
+     "answer": null
+    },
+    {
+     "id": 104,
+     "thema": "Klassenbeziehungen (Realisierung oder Implementierung \/ Abhängigkeiten) UML",
+     "solution": "Realsiierung \/ Implementierung\n- drückt aus, dass eine Klasse z.B. eine Schnittstelle implementiert (Java: implements \/ Interfaces)\n- gestrichelter Pfeil mit leerer Pfeilspitze\n\nAbhängigkeiten\n- drücken aus, dass eine Änderung in einer Klasse Änderungen in einer anderen Klasse zu Folge haben kann\n- gestrichelter Pfeil mit linien Pfeilspitze (- - - )",
+     "answer": null
+    },
+    {
+     "id": 105,
+     "thema": "Komposition in der Programmiersprache",
+     "solution": "Anstatt Klassen wie z.B. Hund, Putzroboter, Killerroboterhund mit Methoden zu versehen\n---\n\"Funktionalität Klassen\" wie z.B. Fresser, Putzer, Fahrer\n- nun können den Anwendungsklassen die \"Funktionalität\" Klassen zugeordnet werden (als Instanzvariablen)\n\nMit Vererbung vorsichtig umgehen! - Im Zweifel Komposition verwenden",
+     "answer": null
+    },
+    {
+     "id": 106,
+     "thema": "Welche Beziehungen zwischen Klassen gibt es?",
+     "solution": "Assoziation\n- Dabei kennen sich die Objekte aber existieren unabhängig\n- Raum hat ein Stuhl\n\nAggregation\n- Sonderform der Assoziation\n- feste Beziehung zwischen Objekte\n- Bsp. Tisch besteht aus Twischplatte und Tischbein\n\nKomposition\n- Teile ergeben nur zusammen einen Sinn\n- bei der Löschung des ganzen wird alles andere auch gelöscht\n- Bsp. Dokument mit Inhaltsverzeichnis und Kapitel",
+     "answer": null
+    },
+    {
+     "id": 107,
+     "thema": "Vererbung vs Komposition",
+     "solution": "Komposition anstelle von vererbung\n-  durch dieses Prinzip werden Klassen entkollet, was zu flexibleren und stabilieren Entwürfen fürht\n- So ist es möglich, zur Luafzeit das Verhalten einer Klasse zu verändern\n",
+     "answer": null
+    },
+    {
+     "id": 108,
+     "thema": "Threads\/Parallelität",
+     "solution": "Threads\n- Die Kontrollflüsse eines Prozesses werden als Threads bezeichnet\n- Führen Nebenläufigkeit innerhalb von Prozessen ein\n- besitzen geringe Isolation\n- Kontextwechsel ist weniger aufwendig\n- Threads teile sich Codesegment, Datensegment, (außer Thread local Variable), die verwendete Dateidiskreption\n- Threads besitzten eigene: Programm Counter und Registerzustände, Callstacks, Zustände\n\n- Entkoppeln von der Hauptanwendung z.B. Rechtschreibprüfung, Autospeicherung\n- Sicherung der Reaktionsfähigkeit des Systems (GUI, Progress Bar)\n- bei Severanwendungen: - Dantenbankzugriffe mehrerer Benutzer, Web Anfragen bearbeiten",
+     "answer": null
+    },
+    {
+     "id": 109,
+     "thema": "Nebenläufigkeit \/ Parallelität",
+     "solution": "Nebenläufigkeit\n- A und B heißen nebenläufig, wenn sie voneinander unabhängig bearbeitet werden können\n\nParallelität\n- A und B heißen parallel, wenn sie gleichzeitig und unabhängig voneinander durchgeführt werden",
+     "answer": null
+    },
+    {
+     "id": 110,
+     "thema": "Wie können mehrere Ausführunsstränge gleichzeitig ablaufen?",
+     "solution": "Klasse Thread\n- Runnable in die Instanz des Threads und dann start\nODER\n- von Thread Unterklasse machen und run Methode überschreiben",
+     "answer": null
+    },
+    {
+     "id": 111,
+     "thema": "Wie werden Threads in Java gestartet und ausgeführt?",
+     "solution": "Eine Instanz der Klasse Thread repräsentiert die Betriebssystemressource selbst\n- public void testThreads() {\nThread t = new Thread(new Runnable() {\npublic void run() {…})\nt.start();\n}",
+     "answer": null
+    },
+    {
+     "id": 112,
+     "thema": "Wie beendet sich ein Thread?",
+     "solution": "Eigenständiges beenden\n- aus der run() Methode rauslaufen\n\nNICHT SO MACHEN - stop() (wird aus Java entfernt)\nNICHT SO MACHEN - Nachricht über Interrupt()",
+     "answer": null
+    },
+    {
+     "id": 113,
+     "thema": "Wie kann man auf Threads warten?",
+     "solution": "try {\nt1.join()\nt2.join()\n} catch (InterruptedException e) {...}",
+     "answer": null
+    },
+    {
+     "id": 114,
+     "thema": "Nichtdeterminismus (Threads)",
+     "solution": "Threads führen dazu, dass sehr viele unterschiedlcieh Ausführungsreihenfolgen (Interleavings) auftreten können",
+     "answer": null
+    },
+    {
+     "id": 115,
+     "thema": "Was sagt es aus wenn alle Tests bei Nebenläufigkeit funktionieren?",
+     "solution": "Das genau diese Ausführungsreihenfolge funktioniert hat - Über andere sagt es nichts aus",
+     "answer": null
+    },
+    {
+     "id": 116,
+     "thema": "Konsistenzprobleme von Threads",
+     "solution": "Wenn der Zugriff auf geteilte Ressourcen nicht klar geregelt ist, entstehen Probleme\n- Race Condition - Das Ergebnis der Programmausführung hängt entscheidend von der Abarbeitungsreihenfolge der Threads ab (Bsp: T1: x=1; T2: x=2 -- welcher ist zuletzt fertig?)\n- Data Race - Ist eine Konstellation in der mind. 2 Threads zu selben Zeit auf eine gemeinsame Variable zugreifen. Zumindest 1 Thread versucht, diese zu verändern und der Zugriff ist nicht synchronisiert (Bsp. T1: a=t; t=a+1; T2: b=t; t=b+1)\n- Inkonsistente Daten - Threads greifen auf gecachte Variablenwerte zu (Prozessorcache). Beim Schreibenwird nur der Cache geändert und andere Threads sehen den neuen Wert eventuell nicht",
+     "answer": null
+    },
+    {
+     "id": 117,
+     "thema": "Koordination bei Nebenläufigkeit",
+     "solution": "Möglichkeiten\n- Verzögerung eines Threads sleep() (nicht gut)\n- Warten auf das Beenden einen Threads join()\n- Warten und Notifizieren mit wait() \/ notify()\n- Realisieren des wechselseitigen Ausschlusses mit Hilfe von Monitoren wait() und notify() sowie mit Semaphoren acquire() und release()\n- Warten auf Barrieren",
+     "answer": null
+    },
+    {
+     "id": 118,
+     "thema": "Kritische Abschnitte (Threads)",
+     "solution": "Atomar\n- Eine Routine heißt atomar, wenn sie nicht in separate kleinere Einheiten unterteilt werden kann und bei deren Ausführung unterbrochen werden kann\n\nKritischer Abschnitt\n- Kritische Abschnitte bestehen aus mehreren Anweisungen, deren Zwischenergebnisse inkonsistente Zustände darstellen, auf die andere Threads keinen Zugriff erhalten dürfen. Das Ergebnis eines kritischen Abschnittes darf nur als eine unteilbare Einheit nach außen sichtbar werden",
+     "answer": null
+    },
+    {
+     "id": 119,
+     "thema": "Wechselseitiger Ausschluss",
+     "solution": "Wechselseitiger Ausschluss (mutual exclusion)\n- stellt sicher, dass sich zu jedem Zeitpunkt höchstens ein Programminhalt in einem kritischen Abschnitt befindet",
+     "answer": null
+    },
+    {
+     "id": 120,
+     "thema": "Monitor (Threads) (synchronized)",
+     "solution": "Ein Monitor ist die Kapselung eines kritischen Abschnittes mit Hilfe einer automatisch verwalteten Sperre\n- synchronized \n\nBsp\n- public synchronized void ueberweise(int amount){}\n\n- Kann vor der Methode \/ vor einem Codeabschnitt\n\nBsp\n- synchronized(this) { count++ }\n\nNUR OBJEKTE HABEN MONITORE",
+     "answer": null
+    },
+    {
+     "id": 121,
+     "thema": "Semaphor",
+     "solution": "private static Semaphore sem = new Semaphore(1);\n\ntry{\nsem.acquire();\ncount++\nsem.release()\n} catch (InterruptedException e) {..}",
+     "answer": null
+    },
+    {
+     "id": 122,
+     "thema": "Barrieren",
+     "solution": "Eine Barriere kann zum Warten auf mehrere Threads genutzt werden.\nEin Thread der auf die Barriere trifft wird solange angehlaten bis alle erwarteten Threads eingetroffen sind. Die Anzahl der Threads is in der Barriere konfiguriert.\n\n- CyclingBarrier barrier = new CyclingBarrier(5); ((warten auf 5 Threads))\ntry {\nbarrier.await();\n} catch (InterrupterException e) {...}",
+     "answer": null
+    },
+    {
+     "id": 123,
+     "thema": "Was ist ein kritischer Abschnitt? Wie kann man in Java kritische Abschnitte schützen (es gibt hier mind. 2 Varianten, wobei sie zumindest den Ansatz \"Monitor\" \/ synchronized kennen sollten)?",
+     "solution": "Kritische Abschnitte\n- man greift aus mehreren Threads gemeinsam auf Daten zu\n- gegenseitig könnten die Daten überschreiben werden\n- Kritische Abschnitte müssen geschützt werden\n\nsynchronized\/Monitor\n- schützt den Abschnitt",
+     "answer": null
+    },
+    {
+     "id": 124,
+     "thema": "Speicherbasierte Sychronization",
+     "solution": "Schwäche Art der Sychronization durch \"volatile\" Variablen\n- Sorgen dafür, dass Variablenwerte von alle Threads sofot gesehen werden können (keine Caches)\n\n- ! Stellt keine atomarität sicher ! (wird nicht so häufig verwendet)",
+     "answer": null
+    },
+    {
+     "id": 125,
+     "thema": "Was ist ein Deadlock? Wieviele Threads\/Resourcen benötigt man mindestens für eine Deadlock?",
+     "solution": "Deadlock - eine Mengen von Prozessen befinden sich in einem Deadlock, falls jeder Prozess der Menge auf ein Ereignis wartet, das nur ein anderer Prozess der Menge auslösen kann\n- mind 2 Threads und 2 Resourcen",
+     "answer": null
+    },
+    {
+     "id": 126,
+     "thema": "Welche Deadlock-Bedingungen gibt es? (4 Stück)",
+     "solution": "- Wechselseitiger Ausschluss - d.h. Betriebsmittel darf nur von einem Prozess verwendet werden\n- Belegungs- und Wartebedingungen - ein Prozess der bereits Betriebsmittel belegt, kann weitere anfordern\n- Ununterbrechbarkeitsbedingung - Betriebsmittel können nicht entzogen werden\n- Zyklische Wartebedingungen - Es gibt eine zyklische Wartebeziehung zwischen Prozessen, die jeweils auf Betriebsmittel warten, die andere bereits halten",
+     "answer": null
+    },
+    {
+     "id": 127,
+     "thema": "Wie kann man Deadlocks vermeiden?",
+     "solution": "- Ignorieren - wegen geringer Deadlock Wahrscheinlichkeit teilweis akzeptieren\n- Vorbeugung - Vehinderung des Eintretens mindestens einer Deadlockbedingung\n- Beseitigung - Situationsbedingte Detektion von Deadlock Situationen und deren Aufhebung\n- Vermeidung - Umsichtige Vergabe von Betriebsmitteln, d.h. nur wenn ein sicherer Zustand erreicht wird",
+     "answer": null
+    },
+    {
+     "id": 128,
+     "thema": "Was sind Entwurfsmuster (Patterns)? Wie unterscheiden sie sich z.B. bezüglich Bibliotheken",
+     "solution": "Entwurfmuster\n- abstrakte Modellierungsentwürfe die verwenden werden können\n- treten häufig in gut programmeirten System auf\n- sind bewährt und bringen immer gute resultate",
+     "answer": null
+    },
+    {
+     "id": 129,
+     "thema": "Beispiele Entwurfsmuster? (mind 2 nennen + erklären)",
+     "solution": "Singelton Pattern\n- es soll erreicht werden, dass von einer Klasse nur genau 1 Objekt existiert mit einem globalen Zugriffspunkt\n-- private static KLASSENNAME instance;\n-- private KLASSENNAME () {} (leerer Konstruktor)\n-- public static getInstance() {... return instance}\n\nBuilder Pattern (sehr nützlich)\n- Klasse mit required und optinal Variablen\n- Dient dazu die Objekterzeugung zu vereinfachen und den Erzeugungsprozess auszulagern\n--- Trennung des Erzeugens in 2 Anteile (Erstellungsprozess - Director \/ Erstellen der Bauteile - Builder) (Director ist nicht immer notwendig)\n--- Konstruktor des Builders nur mit den required Variablen\n--- für optinal Variablen extra Methoden mit return this;\n--- User.UserBuilder(\"Name\").age(30).phone(011).build();\n\nProxy Pattern\n- Der Zugriff auf ein objekt findet durch ein vorgelagertes Stellvertreterobjekt statt\n- Virtual Proxy - verzögert Erstellung\n- Security Proxy - Der  Zugang zum Objekt wird kontrolliert\n- Smart Reference - Funktionalitätserweiterung\n- Remote Proxy - Transparente entfernte Kommunikation\n",
+     "answer": null
+    },
+    {
+     "id": 130,
+     "thema": "Was sind Gegenmuster (Antipatterns)?",
+     "solution": "Gegenmuster\n- Konstrukte \/ Entwürfe \/ Teilentwürfe für Systeme die öfters auftreten aber schlecht sind",
+     "answer": null
+    },
+    {
+     "id": 131,
+     "thema": "Beispiele Antipatterns?",
+     "solution": "- The Blob (God Class) - Zentrale Objekte\n- eine Klasse erhält ein Großteil der gesamten Programmlogik\n- Klasse mit vielen Attributen und Methoden\n- Wartbarkeit ist herabgesetzt, Wiederverwendung wird erschwert\n\n- Lava Flow - Dead Code\n- Beschreibt ein System mit vielen COdestellen von denen unklar ist was sie machen und wofür\/ob sie verwendet werden\n- langsam entwickelnde Architektur\n\n- Poltergeists - Kurz auftretende Objekt eohne echte Funktion\n\n- Spaghetti Code - keine klare Struktur\n- alles redet mit allem, Wichtige Daten werden global gespeichert\n- Geringe Wartbarkeit, Kaum erweiterbar, Kaum Wiederverwendbar",
+     "answer": null
+    },
+    {
+     "id": 132,
+     "thema": "forEach Schleife",
+     "solution": "for (int element : numbers) {...}\n- verkürzte Form der for-Schleife, wenn über alle Elemente iteriert werden soll",
+     "answer": null
+    },
+    {
+     "id": 133,
+     "thema": "Schleifenabbruch break",
+     "solution": "break;\n- erreicht das Programm das Schlüsselwort \"break\" dann wird die aktuelle (innerste) Schleife sofort beendet und dan Programm nach der Schleife weiter ausgeführt\n- für for, while, do-while verwendbar\n- es ist unelegant mit break aus einer Schleife rauszuegehn, aber besser als die Schleife unnötig weiter laufen zu lassen ",
+     "answer": null
+    },
+    {
+     "id": 134,
+     "thema": "Schleifenabbruch break mit Label",
+     "solution": "break mit Label\nouter:\nfor (int element : numbers) {\n for (int element : numbers) {\n break outer;\n }\n}\n\n- bricht die äußere Schleife ab und somot das ganze Schleifenkonstrukt\n- mit einem Label wird festgelegt welche Schleife beendet werden soll",
+     "answer": null
+    },
+    {
+     "id": 135,
+     "thema": "switch Anweisung",
+     "solution": "switch(variable) {\ncase 1:\n…\nbreak;\ncase 2:\ncase 3.\n…\nbreak;\ndefault:\n…\n}\n\n– break verlässt den switch Block\n- default fängt alles ab was bei case . Nicht abgefangen werden konnte\n- switch ist NUR mit int und String möglich",
+     "answer": null
+    },
+    {
+     "id": 136,
+     "thema": "Delegationsprinzip",
+     "solution": "- man will die Arbeit nicht selber machen\n- man lässt diese andere Klassen machen\n\nBsp\n- zwei Nummernanzeigen ergeben eine Uhrenanzeige\n- Klasse Uhrenanzeige musst selbst fast nichts machen\n- nur die beiden Nummernanzeigen koordinieren",
+     "answer": null
+    },
+    {
+     "id": 137,
+     "thema": "Modulo Operator",
+     "solution": "liefert den Rest einer ganzzahligen Division",
+     "answer": null
+    },
+    {
+     "id": 138,
+     "thema": "Objektdiagramm",
+     "solution": "Schnappschuss zur Laufzeit\n- gibt es nur während das Programm läuft",
+     "answer": null
+    },
+    {
+     "id": 139,
+     "thema": "Klassendiagramm",
+     "solution": "Blaupause des Programms",
+     "answer": null
+    },
+    {
+     "id": 140,
+     "thema": "Datenfelder public oder private",
+     "solution": "Datenfelder sollten nicht public sein\n- nur Methoden die für andere Klassen betsimmt sind, sollten öffentlich sein",
+     "answer": null
+    },
+    {
+     "id": 141,
+     "thema": "Nenne die 3 Tugenden eines guten Programmierers.",
+     "solution": "Faulheit, Ungeduld, Stolz",
+     "answer": null
+    },
+    {
+     "id": 142,
+     "thema": "Kann eine Klasse mehrere Konstruktoren besitzen?",
+     "solution": "Ja",
+     "answer": null
+    }
+   ]

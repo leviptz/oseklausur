@@ -1,0 +1,830 @@
+[
+ {
+  "id": 1,
+  "thema": "Worin bestehen die Hauptziele von BPMN 2.0?",
+  "solution": "1. Eine Notation bereitzustellen, die alle für alle fachlichen Nutzer*innen unmittelbar verständlich ist.\n2. Sicherzustellen, dass XML-basierte Prozessausführungssprachen mit einer fachlich orientierten Notation visualisiert werden können.",
+  "answer": null
+ },
+ {
+  "id": 2,
+  "thema": "Welche der BPMN-Grundelemente gehören sämtlichst zu den Flusselementen?",
+  "solution": "Aktivität, Ereignis und Gateway",
+  "answer": null
+ },
+ {
+  "id": 3,
+  "thema": "Was modelliert der Sequenzfluss?",
+  "solution": "er modelliert die Reihenfolge der Flusselemente und den Informationsfluss",
+  "answer": null
+ },
+ {
+  "id": 4,
+  "thema": "Was modelliert der Pool?",
+  "solution": "er modelliert den\/die Prozessbeteiligten und beinhaltet den Prozess von Anfagng bis Ende\n\n- symbolisiert in BPMN einen prozessweit wirksamen Informatiosnraum\n- Poolname benennt den Prozessnamen oder die beteiligten Rollen\/Organisationseinheiten\n- Alle internen Prozessbeteiligten verfügen je nach Prozessfortschritt über einen einheitlichen Informationsstand\n- beeinhaltet den Prozess von Anfang bis Ende. Die Flusselemente des Prozesses sind durchgängig miteinander verbunden\n- ist nach \"Draußen\" grundsätzlich abgeschlossener Informatiosnraum",
+  "answer": null
+ },
+ {
+  "id": 5,
+  "thema": "Was modelliert die Aktivität?",
+  "solution": "sie modelliert die im Prozess verrichteten Arbeitsaufgaben",
+  "answer": null
+ },
+ {
+  "id": 6,
+  "thema": "Welche Zustände kann eine Aktivität einnehmen (+ Erklärung)?",
+  "solution": "1. deaktiviert - vor Eintritt des Sequenzflusses\n2. aktiviert - mit dem Eintritt des Sequenzflusses\n3. begonnen - mit Beginn der eigentlichen Aktivität\n4. beendet - nach Abschluss der Aktivität\n1. deaktiviert - nach Austritt des Sequenzflusses",
+  "answer": null
+ },
+ {
+  "id": 7,
+  "thema": "Was modelliert das Ereignis?",
+  "solution": "modelliert die den Prozess auslösenden oder im Prozess erreichten Zuständ",
+  "answer": null
+ },
+ {
+  "id": 8,
+  "thema": "Was modelliert das Gateway?",
+  "solution": "modelliert die Ablauflogiken ggf. unter Nennung von Bedingungen",
+  "answer": null
+ },
+ {
+  "id": 9,
+  "thema": "Können Zeitereignisse sowohl als Start und auch als Ziel Ereignisse definiert werden?",
+  "solution": "Keineswegs. Die Zeit ist ein Zustand, der dem Prozess von außen vorgegeben wird. Ein Prozess kann zu einem bestimmten Zeitpunkt ausgelöst werden, d. h. Zeit-Startereignisse machen Sinn. Der Prozess kann jedoch auf keinen Fall die Uhr schneller oder langsamer laufen lassen.",
+  "answer": null
+ },
+ {
+  "id": 10,
+  "thema": "Welche logiken gibt es bei den BPMN Gateways?",
+  "solution": "alternative, parallele, gemischte und komplexe Logiken",
+  "answer": null
+ },
+ {
+  "id": 11,
+  "thema": "Kann ein Prozess mehrere alternative oder auch in Summe auftretende Startereignisse haben?",
+  "solution": "Ja",
+  "answer": null
+ },
+ {
+  "id": 12,
+  "thema": "Welche sind die 2 grundlegenden Logikmuster?",
+  "solution": "das alternative und das parallele Muster.",
+  "answer": null
+ },
+ {
+  "id": 13,
+  "thema": "Was ist gemeint, wenn der Pool als prozesswirksamer Informationsraum charakterisiert wird?",
+  "solution": "Dass alle Prozessbeteiligten über den Sequenzfluss mit allen bis dahin aufgelaufenen Daten und Informationen im Prozess versorgt werden.",
+  "answer": null
+ },
+ {
+  "id": 14,
+  "thema": "Was bedeutet wenn eien Aktivität den Status \"deaktiviert\" besitzt?",
+  "solution": "Eine Aktivität ist im Status \"deaktiviert\", wenn sie vom Sequenzfluss noch nicht erreicht wurde oder der Sequenzfluss sie bereits verlassen hat.",
+  "answer": null
+ },
+ {
+  "id": 15,
+  "thema": "Wie können alternative Prozesspfade im Modell wieder zusammengeführt werden?",
+  "solution": "Entweder über ein XOR-Einmündungsgateway oder auch implizit, wenn auf die Zusammenführung eine Aktivität folgt.",
+  "answer": null
+ },
+ {
+  "id": 16,
+  "thema": "Sind Aktiviäten die sich auf unterschiedlichen paralleln Prozasspfaden befinden, sowohl zeitlich als auch fachlich voneinenader unabhängig?",
+  "solution": "Ja",
+  "answer": null
+ },
+ {
+  "id": 17,
+  "thema": "Ein Verwaltungsprozess wird durch den Eingang von Antragsunterlagen ausgelöst. Im ersten Schritt geht es um die Überprüfung dieser Antragsunterlagen. Wie ist diese erste Aktivität zu bezeichnen?",
+  "solution": "Antragsunterlagen prüfen",
+  "answer": null
+ },
+ {
+  "id": 18,
+  "thema": "Ein Prozess wird durch den Eingang einer Bestellung ausgelöst. Wie ist das Startereignis richtig zu bezeichnen?",
+  "solution": "Bestellung eingegangen",
+  "answer": null
+ },
+ {
+  "id": 19,
+  "thema": "Was ist ein Token?",
+  "solution": "Als Token wird ein Informations-Artefakt bezechnet, was über den Sequenzfluss den Prozess vorantreibt und dabei weitere Informationen aufsammelt, die den Prozess erreichen oder im Prozess erzeugt werden",
+  "answer": null
+ },
+ {
+  "id": 20,
+  "thema": "Starteregnisse",
+  "solution": "- Startereignis kommt immer von außerhalb des Prozesses (eingehende Nachricht, festgelegter Termin etc.)\n- Ein Prozess kann mehrere alternative oder auch in Summe auftretende Startereignisse haben",
+  "answer": null
+ },
+ {
+  "id": 21,
+  "thema": "Endereignisse",
+  "solution": "- Endereignisse kommunizieren die Ergebnisse eines Prozesses nach außen, z.B. als Nachricht oder Signal\n- Der Prozess kann mehrere (unterschiedliche) Enderereignisse haben\n\n- Typen:\n- Signal Sirene\/Alarm\/Push-Mitteilung -> Luft\/Schall\/App-Abonnement -> breit gestreute Übermittlung\n- Terminierung -> der Gesamtprozess wird terminiert, verschiede Prozesspfade werden terminiert",
+  "answer": null
+ },
+ {
+  "id": 22,
+  "thema": "Kann ein Prozess mehrere Endereignisse haben?",
+  "solution": "Ja",
+  "answer": null
+ },
+ {
+  "id": 23,
+  "thema": "Was ist bei einem AND Gateway notwendig?",
+  "solution": "Eine Sychronisation bei der Zusammenführung",
+  "answer": null
+ },
+ {
+  "id": 24,
+  "thema": "Sollte das einmündenden Gateway eines XOR Gateways verzichtet werden?",
+  "solution": "Ja, weil dieses keine logische und ablauftechnische Funktion erfüllt, es leitet das Token einfach weiter -> deshalb wird empfohlen, auf solche Gateways im Modell zu verzichten",
+  "answer": null
+ },
+ {
+  "id": 25,
+  "thema": "AND Gateway",
+  "solution": "- Prozesschritte können unabhängig voneinander durchgeführt werden\n- der Schritt kann erst erledigt werden, wenn alle Aufgaben auf den parallelen Pfaden abgeschlossen sind",
+  "answer": null
+ },
+ {
+  "id": 26,
+  "thema": "Ereignistypen",
+  "solution": "Ereignisse könnem mit einem Marker versehen werden\n\n- Signal -> Sirene\/Alarm\/Push-Mitteilung -> Luft\/Schall\/App-Abonnement -> breit gestreute Übermittlung\n- Bedingung (nur eignetreten) -> Temperatur\/Füllstand\/Gefahrensituation -> Funkübertragung von Sensordaten\/Dashboard\n- Zeit (nur eintgetreten) -> Termin\/Frist\/Zeitraum -> ubiquitär im System verfügrbar\n- Nachricht -> Nachricht senden, empfangen\/Brief senden, Empfangen -> direkte Übermittlung",
+  "answer": null
+ },
+ {
+  "id": 27,
+  "thema": "dualer Charakter",
+  "solution": "- Grafisches Modell\n-> kommunikation zwischen Menschen (png, svg, pdf)\n\n- technisches Modell\n-> Kommunikation zwischen und mit Matschinen (XML bpmn)",
+  "answer": null
+ },
+ {
+  "id": 28,
+  "thema": "Hirachien in grafischen Modellen zur gezielten Kommunikation",
+  "solution": "- BPMN ist stark vom wechselseitigen Zusammenhang zwischen grafischen und technischen Modell gekennzeichnet. Dennoch gibt es es Askpekte, die nur einem der Bereiche zuzuordnen sind\n-> das technische Modell enthält Spezifikationen (z.B: Aufruf technischen Schnittstelle oder Skript), was im grafischen Modell nicht abgebildet wird\n-> Ebenso gibt es grafische Elemente, die für das technische Modell irrelevant sind, die jedoch für eine gezielte Kommunikation zwsicehn Mdenschen von bedeutung sind",
+  "answer": null
+ },
+ {
+  "id": 29,
+  "thema": "kompakte\/detaillierte Modellierung (Modellierungshirachien)",
+  "solution": "- Interne Prozessteilnehmer -> ungegliederter Pool \/ gegliederter Pool\n- Externe Prozessteilnehmer -> zugeklappter Pool \/ aufgeklappter Pool\n- Komplexe Aktivitäten -> zugeklappter Teilprozess \/ aufgeklappter Teilprozess",
+  "answer": null
+ },
+ {
+  "id": 30,
+  "thema": "Was verbirgt sich hinter der Aussage: \"BPMN-Prozessmodelle haben einen dualen Charakter\".",
+  "solution": "BPMN-Modelle existieren sowohl als grafisches als auch als technisches Prozessmodell. Das grafische Modell dient der Kommunikation zwischen Menschen, das technische der Kommunikation zwischen und mit Maschinen.",
+  "answer": null
+ },
+ {
+  "id": 31,
+  "thema": "Welche grundlegenden Modellierungsoptionen gibt es für komplexe Aktivitäten in BPMN?",
+  "solution": "Zugeklappter oder aufgeklappter Teilprozess, je nach gewünschter Modellierungstiefe wird eine solche Aktivität kompakt oder im Detail dargestellt.",
+  "answer": null
+ },
+ {
+  "id": 32,
+  "thema": "Ein Auftragsprüfungsprozess startet unmittelbar nach Eingang eines Kundenauftrags im Online-Shop. Wie sollte der Prozessstart in BPMN modelliert werden?",
+  "solution": "durch ein Nachrichten-Startereignis, der Kundenauftrag ist als eingehende Nachricht im Shop-System zu verstehen. Sie richtet sich an einen eindeutigen Empfängerkreis im Unternehmen, das den Shop betreibt.",
+  "answer": null
+ },
+ {
+  "id": 33,
+  "thema": "Für die Differenzierung interner Prozessbeteiligter gibt es in BPMN ein spezielles Modellierungselement. Wie heißt es?",
+  "solution": "Swimlane, manchmal auch einfach Lane genannt",
+  "answer": null
+ },
+ {
+  "id": 34,
+  "thema": "Entscheiden Sie, welche Kombination aus Start- und Endereignis für die Ereignisse (Start: IT-Sicherheitsvorfall eingetreten) (End: IT Sicherheitsvorfall publiziert)",
+  "solution": "Bedingungs-Startereignis und Signal-Endereignis",
+  "answer": null
+ },
+ {
+  "id": 35,
+  "thema": "Ein Notfallprozess wird durch einen akustischen Alarm ausgelöst. Wie sollte der Prozessstart modelliert werden?",
+  "solution": "durch ein Signal-Startereignis, der Prozess wird durch ein akustisches Signal ausgelöst.",
+  "answer": null
+ },
+ {
+  "id": 36,
+  "thema": "Eine Prozesskette besteht aus zwei aufeinander folgenden Prozessen. Der zweite Prozess startet unmittelbar nach Ende des ersten. Wie sollte das Ende des ersten Prozesses modelliert werden? ",
+  "solution": "durch ein Signal-Endereignis, dieses Signal kann dann den zweiten Prozess auslösen. Das erfordert natürlich, dass dieser zweite Prozess mit einem passenden Signal-Startereignis modelliert wird.",
+  "answer": null
+ },
+ {
+  "id": 37,
+  "thema": "Zwischenereignisse",
+  "solution": "Eingetretene (prozessexterne) Ereignisse können einen Prozess nicht nur starten und ausgelööste (prozessinterne) Ereignisse nicht nur sein Ende kommunizieren. Als Zwischenereignisse können sie auch den internen Fluss eines Prozesses steuern bzw. kommunizieren\n- Zwischenereignisse haben eine doppelte dünne Randlinie",
+  "answer": null
+ },
+ {
+  "id": 38,
+  "thema": "Ereignisbasierte Gateways",
+  "solution": "XOR --- Unterlagen eingegangen Ereignis \/\/ --- Zeitereignis\n\n-> das was als erstes ausgelöst wird, da geht der Pfad lang",
+  "answer": null
+ },
+ {
+  "id": 39,
+  "thema": "Reaktion des Prozesses auf externe Bedingungeb",
+  "solution": "Wird das Eintreten der Bedingung aus dem Prozess selbst überwacht\/abgewartet, dann kommen Bedingungsereignisse zum Einsatz. Wie Zeitereignisse sidn diese immer eingetretene Ereignisse.",
+  "answer": null
+ },
+ {
+  "id": 40,
+  "thema": "Kommunikation zwischen Prozesspfaden mit Signal Zwischenereignissen",
+  "solution": "Die Kommunikation innerhalb eines Prozesses erfolgt in und mit dem Sequenzfluss. Sofern eine nicht-terminierende Kommunikation notwendig ist, kommen Signalereignisse zum Einsatz. (ein Pfad Signal senden - andere Pfad Signal fangen -> ohne Pfeile)",
+  "answer": null
+ },
+ {
+  "id": 41,
+  "thema": "Parallelisierung",
+  "solution": "Kann auch ohne AND Gateway modelliert werden, sofern der Verzweigung eine Aktivität vorangeht. Die parallelen Prozesspfade entspringen dann einfach dieser Aktivität. Das synchronisierende AND Gateway MUSS immer gesetzt sein!",
+  "answer": null
+ },
+ {
+  "id": 42,
+  "thema": "Bedingt-parallele Sequenzflüsse mit Datenbasiereten OR Gateways",
+  "solution": "Das logische OR Gateway nimmt eine Zwischenstelltellung zwischen den logischen Basismustern AND und XOR. Es kann je nach Datenlage sowohl parallele als auch alternative Sequenzflüsse verarveiten. Das mündende OR Gateway sorgt im Fall paralleler Pfade für Synchronisation.",
+  "answer": null
+ },
+ {
+  "id": 43,
+  "thema": "bedingte Flüsse",
+  "solution": "alternativ zur Modellierung mit einem ab- bzw. verzweigenden OR-Gateway können auch bedingte Sequenzflüsse eingestezt werden. Sie implementiere eine Prüflogik, für die Daten un dwerden nur aktiviert, wenn die explizierten Bedingungen erfüllt werden. Aus einer Aktivität können auch mehrere bedingte Sequenzflüsse ausgehen. Ein Sychronisierendes OR Gateway ist aber ein MUSS!",
+  "answer": null
+ },
+ {
+  "id": 44,
+  "thema": "bedingter Standardfluss",
+  "solution": "Der Standardfluss wird nur dann aktiviert, wenn keine der Bedingungen an weiteren aus derselben Aktivität ausgehenden bedingten Sequenzflüsse erfüllt wird. Er ist auch bei XOR und OR Gateways anwendbar. (Sequenzfluss mit schräg Strich am Anfang)",
+  "answer": null
+ },
+ {
+  "id": 45,
+  "thema": "Annotationen",
+  "solution": "Text Annotation als rein grafisches Modellierungselement.\n- liefern zusätzliche Informationen, die vom Menschen aufngenommen werden\n- für Maschinen sind sie irrelevant",
+  "answer": null
+ },
+ {
+  "id": 46,
+  "thema": "Nenne alle möglichen eingetretene Zwischenereignisse",
+  "solution": "Nachrichten Empfang, Singal Empfang, engetretene Zeit, eingetretene Bedingung",
+  "answer": null
+ },
+ {
+  "id": 47,
+  "thema": "Nenne alle möglichen ausgelösten Zwischenereignisse",
+  "solution": "Nachrichten Versand, Signal Aussendung",
+  "answer": null
+ },
+ {
+  "id": 48,
+  "thema": "Nenne alle möglichen Gateways",
+  "solution": "- datenbasiertes XOR Gateway (abzweigend, mündend)\n- AND (verzweigend, verschmelzend)\n- Ereignis basiertes XOR (nur abzweigend)\n- Datenbasiertes OR (ab-\/verzweigend, mündend\/verschmelzend)",
+  "answer": null
+ },
+ {
+  "id": 49,
+  "thema": "Welche Modellierungsoptionen gibt es für externe Bedingungen?",
+  "solution": "Externe Bedingungen können sowohl als Nachricht- oder Signalereignisse, als auch als Bedingungsereignisse modelliert werden.",
+  "answer": null
+ },
+ {
+  "id": 50,
+  "thema": "Welche Alternative gibt es zur Modellierung mit ab- bzw. verzweigenden OR-Gateway?",
+  "solution": "bedingter Sequenzfluss",
+  "answer": null
+ },
+ {
+  "id": 51,
+  "thema": "Ein Prozess wartet an einer bestimmten Stelle auf das Erreichen einer festgesetzten Temperatur. Wie wird das Zwischenereignis genannt, dass den Prozess automatisch wieder aktiviert?",
+  "solution": "eingetretenes Signalereignis",
+  "answer": null
+ },
+ {
+  "id": 52,
+  "thema": "Welche der folgenden Regeln entspricht der BPMN-Spezifikation?",
+  "solution": "Die Marker eines ausgelösten Zwischenereignisses sind gefüllt, die eines eingetretenen Zwischenereignisses ungefüllt.",
+  "answer": null
+ },
+ {
+  "id": 53,
+  "thema": "Was passiert im Prozess bei eingetretene Zwischenereignisse?",
+  "solution": "Eingetretene Zwischenereignisse versetzen einen Prozess in den Wartezustand.",
+  "answer": null
+ },
+ {
+  "id": 54,
+  "thema": "Sind Prozessmodelle ohne Aktivitäten denkbar?",
+  "solution": "Nein",
+  "answer": null
+ },
+ {
+  "id": 55,
+  "thema": "Benutzer Aufgaben (kleines Menschsymbol in Aktivität)",
+  "solution": "Interaktion von Mensch und Maschine (z.B. DMS basierter Prozess)\n- modellieren die Ausführung einer Prozessaufgabe durch einen Menschen unter Nutzung eines IT-Systemes, idealerweise im Rahmen eines verundenen Workflows",
+  "answer": null
+ },
+ {
+  "id": 56,
+  "thema": "Manuelle Aufgabe (keine Hand in Aktivität)",
+  "solution": "manuelle Aufgaben wo nur der Mensch involviert ist (z.B. papier gebundener Prozess)\n- modellieren die autonome Ausführung einer Prozessaufgabe durch einen Menschen\n- manuelle Aufgaben sind in der Regel mit körperlichen Aktivitäten oder materiellen Artefakten verbunden",
+  "answer": null
+ },
+ {
+  "id": 57,
+  "thema": "Geschäftsregel- \/ Entscheidungsaufgabe (kleine Tabelle in Aktivität)",
+  "solution": "Werden bei einer Prozessaktivität klar definierte Regeln angewandt, um in Abhängigkeit von den Eingangsdaten passende Ausgabewerte zu ermitteln, wird die Aktivität als Geschäftsregelaufgabe modelliert.",
+  "answer": null
+ },
+ {
+  "id": 58,
+  "thema": "Skriptaufgaben (kleines gewelltes Papier in Aktivität)",
+  "solution": "werden automatische Aktivitäten bezeichnet, die direkt im Workflow System (z.B. DMS) abgearbeitet werden. Das dafür eingebundene Skript wird automatisch ausgeführt. Skirpt Aufgaben starten sofort nach Aktivierung und erfordern in der Regel keine Bearbeitungszeit, es kann jedoch zu technischen Fehlern kommen.",
+  "answer": null
+ },
+ {
+  "id": 59,
+  "thema": "Service Aufgaben (kleines Zahnrad in Aktivität)",
+  "solution": "werden automatische Aktivitäten bezeichnet, die einen Service außerhalb des DMS aufrufen. Im Erfolgsfall werden die Ergebnisse als Serviceaufrufs aufgefangen und witergegeben.",
+  "answer": null
+ },
+ {
+  "id": 60,
+  "thema": "Sende- und Empfangsaufgaben (kleiner Brief in Aktivität)",
+  "solution": "Unterscheidung zwischen Sende und Empfangsereignisse:\n- Aufgaben erfordern Ressourcen, Ereignisse sind zustände",
+  "answer": null
+ },
+ {
+  "id": 61,
+  "thema": "Gruppierung als grafisches Modellierungselement (gestrichelte Linie um einen Bereich drum rum)",
+  "solution": "Um fachlogische Zusammenhänge in einem grafischen Modell zu verdeutlichen, kann das Element Gruppierung verwendet werden. Der Rahmen hat keine technische Relevanz.",
+  "answer": null
+ },
+ {
+  "id": 62,
+  "thema": "Mehrfachinstanziierung - Schleifen Aktivität (Rundpfeil-Symbol in Aktivität)",
+  "solution": "2 Möglichkeiten\n- Explizitie Modellierung (XOR Gateway)\n- Kompakte Modellierung (Schleifen-Aktivität)\n-> Aktivität wird solange wiederholt, bis die zugehörige Abbruchbedingung erfüllt ist\n-> Abbruchbedingung wird als Textannotation an die Aktivität geschrieben",
+  "answer": null
+ },
+ {
+  "id": 63,
+  "thema": "Sequenzielle Mehrfachinstanziierung (drei kleine horizontale Striche in Aktivität)",
+  "solution": "Muss eine Aktivität eine bestimmte Anzahl an Wiederholungen nacheinander ausgeführt werden, verwendet man eine sequenzielle Mehrfachausführung",
+  "answer": null
+ },
+ {
+  "id": 64,
+  "thema": "Parallele Mehrfachinstanziierung",
+  "solution": "Muss eine Aktivität auf eine betsimmte Anzhal von Objekten angewandt werden, die jedoch unabhängig voneinander bearbeitet werden können, verwendet man eine parallele Mehrfachinstanziierung",
+  "answer": null
+ },
+ {
+  "id": 65,
+  "thema": "Ad Hoc Aktivitäten (Rahmen um Aktivitäten welche nicht durch Sequenzflüsse verbunden sind + kleine Welle im Rahmen)",
+  "solution": "(Teil-)Prozesse bei denen Ablauflogik weniger stringent ist. Das betrifft insbesondere wissensintensive Prozesse",
+  "answer": null
+ },
+ {
+  "id": 66,
+  "thema": "Welcher Kategorie von BPMN-Elementen ist eine Gruppierung zuzuordnen?",
+  "solution": "sonstige Artefakte, dieses rein grafische Modellierungselement gehört zusammen mit der Text-Annotation und ggf. weiteren selbst-definierten grafischen Modellierungselementen zur Kategorie der sonstigen Artefakte.",
+  "answer": null
+ },
+ {
+  "id": 67,
+  "thema": "BPMN erlaubt die Spezifikation von Aktivitäten\n 1. nach dem Charakter der Aufgabe und \n 2. nach dem Ausführungsverhalten.\nWelche der folgenden Aktivitäten gehören die Aktivitäten \"Service Aufgabe, Geschäftsregel Aufgabe, Benutzer Aufgabe und Schleifen AKtivität\"?",
+  "solution": "1. Service Aufgabe, Geschäftsregel Aufgabe, Benutzer Aufgabe\n2. Schleifen Aktivität",
+  "answer": null
+ },
+ {
+  "id": 68,
+  "thema": "Wie lassen sich manuelle Aufgaben und Benutzeraufgaben in BPMN differenzieren?",
+  "solution": "Benutzeraufgaben modellieren die Ausführung einer Prozessaufgabe durch einen Menschen unter Nutzung eines IT-Systems, manuelle Aufgaben die autonome Ausführung durch einen Menschen.",
+  "answer": null
+ },
+ {
+  "id": 69,
+  "thema": "Was machen Ad Hoc (Teil-) Prozesse so besonders?",
+  "solution": "Der\/die Prozessteilnehmer*in kann selbst entscheiden, welche der Aktivitäten im (Teil-)Prozess er\/sie ausführt bzw. in welcher Reihenfolge. Die Aktivitäten sind damit optional und unabhängig.",
+  "answer": null
+ },
+ {
+  "id": 70,
+  "thema": "Wie unterscheiden sich sequenzielle und parallele Mehrfachinstanziierung von Aktivitäten?",
+  "solution": "Bei diesen Formen der Mehrfachinstanziierung wird eine Aktivität genau so oft wie vorgegeben aktiviert (oder instanziiert). Bei einer sequenziellen Mehrfachinstanziierung erfolgt die Abarbeitung nacheinander, bei der parallelen unahbhängig voneinander.",
+  "answer": null
+ },
+ {
+  "id": 71,
+  "thema": "Nutzen + Bedeutung zusätzliche grafische Modellierungselemente",
+  "solution": "- mehr Details im grafischen Modell\n- eigentlich entbehrlich, aber bleibt bei grafischen Modelliererb",
+  "answer": null
+ },
+ {
+  "id": 72,
+  "thema": "Nutzen + Bedeutung komplexe Ausnahmebehandlung",
+  "solution": "- Portfolio flexibel kombinierbarer Elemente für diverse Ausnahmen\n- erfordert technisches Verständnis, von grafischen Modellierern selten genutzt",
+  "answer": null
+ },
+ {
+  "id": 73,
+  "thema": "Nutzen + Bedeutung Aufruf Aktivitäten",
+  "solution": "- Wiederverwendung generischer Teilprozesse\n- technisch hoch relevant; fördert Verständnis für Rationalisierung",
+  "answer": null
+ },
+ {
+  "id": 74,
+  "thema": "Datenobjekte",
+  "solution": "Daten bewegen sich mit dem Sequenzfluss druch den Prozess. Zunächst ohne Datenobjekte modellieren. Im Nachgang Datenobjekte nur dort ergänzen, wo ein zusätzlicher Erkenntnisgewinn explizit gewünscht ist.",
+  "answer": null
+ },
+ {
+  "id": 75,
+  "thema": "Dateninput und -output (Kriterienliste + Datenbankobjekt)",
+  "solution": "Datenobjekte werden über gestrichelte Assoziationen an Aktivitäten und Ereignissen angedockt. Die Richtung des Pfeils gibt an, ob es sich um ein Dateninput oder - output handelt.",
+  "answer": null
+ },
+ {
+  "id": 76,
+  "thema": "Listen Datenobjekt als Datenoutput",
+  "solution": "Eine Aktivität im Prozess kann auch ein Bündel an gleichartigen Datenobjekten verarbeiten oder ausgeben. (Art von Mehrfachinstanziierung) Die gleichartigen Datenobjekte existieren parallel und werden deshalb mit demselben Marker gekennzeichnet, wie parallel mehrfachinstanziierte Aktivitäten (3 vertikale Striche)",
+  "answer": null
+ },
+ {
+  "id": 77,
+  "thema": "angeheftete Zwischenereignisse",
+  "solution": "Werden für das auftreten von Fehlern während der Ausführung einer Aktivität benutzt.\n-> bei gravierenden Problemen wird die Aktivität abgebrochen und ein alternativer Pfad eingeschlagen. Die Modellierung erfolgt mit einem angehefteten unterbrechenden Zwischenereignis\n-> bei leichteren Problemen kommt es nicht zum Abbruch, aber es werden ergänzende Bearbeitungspfade initialisiert. Hier werden angeheftete nicht-unterbrechende Zwischenereignisse verwendet",
+  "answer": null
+ },
+ {
+  "id": 78,
+  "thema": "Ereignis Teilprozess",
+  "solution": "sind kompakte Alternative zur Modellierung der Ausnahmebehandlung",
+  "answer": null
+ },
+ {
+  "id": 79,
+  "thema": "Angeheftetes fehler Zwischenereignis",
+  "solution": "Nebenden der Reaktion auf externe Probleme, können angeheftete Zwischenereignisse auch zur Modellierung der Ausnahmebehandlung auf untergeordneten Prozessebenen eingesetzt werden",
+  "answer": null
+ },
+ {
+  "id": 80,
+  "thema": "Throw Catch Fehlerkommunikation",
+  "solution": "Wird der fehlererzeugende Teilprozess aufgeklappt, so wird auch der auslösende Fehler im Modell sichtbar\n-> Der ausgelöste Fehler und das angeheftete Fehlerereignis kommunizieren in einem Throw-Catch-Muster",
+  "answer": null
+ },
+ {
+  "id": 81,
+  "thema": "Throw Catch Muster mit Eskalationseregnissen",
+  "solution": "Sind Probleme auf einer untergeordneten Prozessebene innerhalb des Prozesses behebbar, wird statt mit Fehlerereignissen mit Eskalationsereignissen gearbeitet. Eskalation bedeutet, dass weitere zur Problembehebung eingesetzt werden. Die angehefteten Zwischenereignisse sind dann NICHT unterbrechend und eröffnen parallele Prozesspfade",
+  "answer": null
+ },
+ {
+  "id": 82,
+  "thema": "Teilprozesse",
+  "solution": "Während die Mehrzahl der Aktivitäten in einem Prozess spezifischer Natur ist, kann es Teilprozesse geben, die so generisch sind, dass sie in den verschiedenen Prozessen nahezu strukturgleich vorkommen",
+  "answer": null
+ },
+ {
+  "id": 83,
+  "thema": "Was ist eine Aufruf-Aktivität?",
+  "solution": "ein extern modellierter Teilprozess, der von verschiedenen Prozessen aufgerufen werden kann",
+  "answer": null
+ },
+ {
+  "id": 84,
+  "thema": "Was versteht man unter einem Throw-Catch-Muster?",
+  "solution": "Throw-Catch-Muster sind Ereignis-basierte Kommunikationsmuster zwischen mehreren Prozessen oder zwischen verschiedenen Prozessebenen.",
+  "answer": null
+ },
+ {
+  "id": 85,
+  "thema": "Sind angeheftete Zwischenereignisse immer eingetretene Zwischenereignisse?",
+  "solution": "Ja",
+  "answer": null
+ },
+ {
+  "id": 86,
+  "thema": "Wie können Ereignis-Teilprozesse weiter spezifiziert werden?",
+  "solution": "Zum einen nach der Wirkung auf den umgebenden Teilprozess und zum anderen nach der Art des lauschenden Ereignisses.",
+  "answer": null
+ },
+ {
+  "id": 87,
+  "thema": "BPM Lebenszyklus \/ Lifecycle",
+  "solution": "Prozess identifizieren -> Prozess bestimmen -> Prozess analysieren -> Prozess umgestalten -> Prozess implementieren -> Prozess beobachten und kontrollieren -> Prozess bestimmen -> …",
+  "answer": null
+ },
+ {
+  "id": 88,
+  "thema": "Prozessidentifikation",
+  "solution": "Was? -> Prozesse einer Organisation identifizieren -> Ihr Management anhand bestimmter Kriterien priorisieren\nWarum? -> Organisation verstehen -> Wert von GPM Projekten optimieren",
+  "answer": null
+ },
+ {
+  "id": 89,
+  "thema": "Vorgehen Prozessidentifikation",
+  "solution": "1. Kennzeichnung -> Aufzählen der Hauptprozesse -> Bestimmen den Prozessumfang ==> Prozessarchitektur\n2. Priorisierung -> Priorisieren der Prozesse auf der Grundlage von (Bedeutung, Gesundheit, Machbarkeit) ==> Priorisiertes Prozessportfolio",
+  "answer": null
+ },
+ {
+  "id": 90,
+  "thema": "Prozesstypen",
+  "solution": "Kerngeschäftsprozesse, Managementprozesse, Unterstützungsprozesse",
+  "answer": null
+ },
+ {
+  "id": 91,
+  "thema": "Kerngeschäftsprozesse",
+  "solution": "Prozesse, die direkt an der Umsatzerzeugung beteiligt sind\n- Generieren einen Mehrwert, weil sie direkt mit externen Kunden verbunden sind",
+  "answer": null
+ },
+ {
+  "id": 92,
+  "thema": "Managementprozesse",
+  "solution": "Prozesse, die Effizienz, Governance und Erfüllung der Unternehmensziele gewährleisten\n– Bieten allgemeine Orientierung und Regeln sowie Praktiken",
+  "answer": null
+ },
+ {
+  "id": 93,
+  "thema": "Unterstützungsprozesse",
+  "solution": "Prozesse, die nicht direkt an der Wertschöpfung beteiligt, aber unbedingt notwendig für die Erfüllung der Geschäftsziele sind\n- Bieten Ressourcen an, die von anderen Prozessen gebraucht werden",
+  "answer": null
+ },
+ {
+  "id": 94,
+  "thema": "Strukturierung der Prozesse nach Varianten- Process Cases",
+  "solution": "Fallart - klassifiziert die Art von Fällen, die von der Organisation bearbeitet werden\n- ein Fall ist etwas, das eine Organisation oder ein Teil einer Organisation, bearbeitet\n- typischerweise ist ein Fall ein Produkt oder eine Dienstleistung, die von einer Organisation an ihre Kunden liefert, z.B. eine Versicherung, Logistikdienstleistung",
+  "answer": null
+ },
+ {
+  "id": 95,
+  "thema": "Strukturierung der Prozesse nach Funktionen",
+  "solution": "Eine Funktion ist etwas, das eine Organisation tut\n- eine Funktion besteht aus Unterfunktionen, die wiederum aus anderen Unter-Unterfunktionen bestehen usw.\n- Bsp. Ein Produktionsunternehmen die Funktion Einkauf, Produktion, Verkauf - Die EInkaufsfunktion kann in die Funktionen Lieferantenauswahl und operative Beschaffung unterteilt werden",
+  "answer": null
+ },
+ {
+  "id": 96,
+  "thema": "Prozessarchitektur entwickeln",
+  "solution": "1. Falltyp identifizieren\n2. Funktion für Fallarten identifizieren\n3. Eine oder mehrere Fall-\/Funktionsmatritzen konstruieren\n4. Prozesse identifizieren",
+  "answer": null
+ },
+ {
+  "id": 97,
+  "thema": "Wonach werden Falltypen unterschieden?",
+  "solution": "- Produkttyp\n- Dienstart\n- (Vertriebes-)Kanal \n- Kundentyp",
+  "answer": null
+ },
+ {
+  "id": 98,
+  "thema": "Wie können Funktionen identifiziert werden?",
+  "solution": "- Funktionen aus den Referenzmodellen ableiten\n- Interviews\n- Beobachtung\n- Sichtung der Dokumentation\n- Funktionen für jede Rolle ermitteln",
+  "answer": null
+ },
+ {
+  "id": 99,
+  "thema": "Wann ist ein Prozess abzugrenzen?",
+  "solution": "1. Wenn ein Prozess verschiedene Informationsobjekte hat,\n2. Wenn das Informationsobjekt eines Prozesses die Multiplizität ändert,\n3. Wenn ein Prozess den Transaktionszustand ändert,\n4. Wenn ein Prozess eine logische Trennung in der Zeit enthält,\n5. Wenn ein Prozess eine logische Trennung im Raum enthält,\n6. Wenn ein Prozess eine logische Trennung in einer anderen relevanten Dimension enthält,\n7. Wenn ein Prozess in einem Referenzmodell aufgeteilt ist,\n8. Wenn ein Prozess in einer Fallart (viel) mehr Funktionen umfasst als in einer anderen",
+  "answer": null
+ },
+ {
+  "id": 100,
+  "thema": "Prozesse beobachten und kontrollieren",
+  "solution": "Prozesse modellieren -> KPIs definieren -> Automatisieren bzw. Dasten generieren -> Visualisieren-Dashboard erstellen -> Entscheidungen treffen -> ggf Prozesse anpassen -> Prozesse modellieren -> …",
+  "answer": null
+ },
+ {
+  "id": 101,
+  "thema": "Datenanalyse im betrieblichen Kontext",
+  "solution": "Process Monitoring, Business activity monitoring, Business Intelligence, Process Mining",
+  "answer": null
+ },
+ {
+  "id": 102,
+  "thema": "Balanced scoreboard BSC",
+  "solution": "Finanzen, Kunden, Interne Prozesse, Innovation und Lernen",
+  "answer": null
+ },
+ {
+  "id": 103,
+  "thema": "Prozessleistung- Dimensionen aka “Das magische Dreieck der Prozessleistung”",
+  "solution": "Zeit - Qualität - Kosten",
+  "answer": null
+ },
+ {
+  "id": 104,
+  "thema": "Zeit Indikator",
+  "solution": "- Durchlaufzeit (in Minuten) \n- Wartezeit\n- Liegezeit\n- Bearbeitungszeit",
+  "answer": null
+ },
+ {
+  "id": 105,
+  "thema": "Kosten Indikator",
+  "solution": "- ROI\n- Anteil der Mahnungskosten",
+  "answer": null
+ },
+ {
+  "id": 106,
+  "thema": "Qualität Indikator",
+  "solution": "- Anteil der Fehler am Output (in %)\n- Kundenzufriedenheit\n- Anteil der Überarbeitungsarbeiten",
+  "answer": null
+ },
+ {
+  "id": 107,
+  "thema": "betriebswirtschaftliche Anwendungsfälle für Process Analytics",
+  "solution": "- Echtzeit-Überwachung von offenen Aufträgen\n- Rückstand an offenen Auslieferungen\n- Sichtbarkeit der Sales Pipeline\n- Prozess-Benchmarking zwischen Unternehmen\n- Nachverfolgung von Stammdatenänderungen\n- Alarmierung bei Feldänderungen, z.B. Rechnungssperre oder Wunschlieferdatum\n- Analyse und Überwachung des Belegflusses\n- Berechnung von Zykluszeiten von End-to-End-Prozessen oder\nAbfolgen von Aktivitäten\n- Verfolgung von SLA-Verletzungen\n- Prozessvisibilität für Vertriebs-, HR-, Finanz- und Logistikprozesse",
+  "answer": null
+ },
+ {
+  "id": 108,
+  "thema": "Dashboard-Typen",
+  "solution": "* Strategisch - Konzentriert sich auf langfristige Strategien und Metriken auf hoher Ebene\n* Operativ - Zeigt kürzere Zeiträume und operative Prozesse\n*Analytisch - Enthält große Datenmengen, die von Analysten erstellt und ausgewertet werden\n*Taktisch - Wird vom mittleren Management verwendet, um die (Prozess-)Leistung zu verfolgen",
+  "answer": null
+ },
+ {
+  "id": 109,
+  "thema": " Betriebliche Fragestellungen aus den Betriebsdaten:",
+  "solution": "1. Welche Indikatoren werden hier verwendet?\n2. Wie häufig werden diese erhoben (Frequenz)?\n3. Welche Betrieblichen Fragestellungen lassen sich mit diesen Informationen beantworten? (soweit ersichtlich)\n4. Was ist die Zielgruppe der Informationen?\n5. Um was für ein Dashboard-Typ (strategisch, taktisch oder operativ, analytisch) handelt es sich hier?",
+  "answer": null
+ },
+ {
+  "id": 110,
+  "thema": "Definition Business Intelligence",
+  "solution": "The methods of business intelligence allow, using transformation, a simplified, targeted access to decision- relevant information.",
+  "answer": null
+ },
+ {
+  "id": 111,
+  "thema": " ARIS – Architektur betrieblicher Informationssysteme",
+  "solution": "- Organisationssicht – Organisationseinheiten und MA\n- Datensicht – Daten und Informationen, die im Prozess benötigt oder erzeugt werden\n- Prozesssicht - Darstellung der Abläufe, macht die Verbindung zwischen den anderen Sichten deutlich\n- Funktionssicht - Beschreibung auszuführender Funktionen und deren Zusammenhang\n- Leistungssicht - Beschreibung der Prozessergebnisse",
+  "answer": null
+ },
+ {
+  "id": 112,
+  "thema": " Regeln der Modellierung mit eEPK",
+  "solution": "1. Ein eEPK beginnt und endet mit einem Ereignis.\n2. Ereignisse und Funktionen wechseln sich im Ablauf immer ab.\n3. Sowohl Ereignis aus auch Funktion haben jeweils nur einen Kontrollfluss- Input einen Kontrollfluss- Output\n4. Ein Konnektor kann mehrere Kontrollfluss- Inputs und mehrere - Outputs haben.\n5. Mehrere Teilabläufe werden durch die gleiche Art Konnektor zusammengeführt, mit der sie aufgeteilt wurden.\n6. Nach einem XOR-Konnektor können nur Ereignisse folgen!",
+  "answer": null
+ },
+ {
+  "id": 113,
+  "thema": " Wissenspyramide ",
+  "solution": "Wissen -> Information - Daten - Zeichen",
+  "answer": null
+ },
+ {
+  "id": 114,
+  "thema": " DFD",
+  "solution": "- Bildet Aufgaben und Arbeitsschritte ab\n- Bildet Datenflüsse zwischen Elementen ab\n- Bildet Datenspeicher ab\n- Ordnet Datenflüsse Organisationseinheiten zu\n- Bildet Informationssenken und –Quellen ab\n- Keine Abbildung von Steuerungsflüssen\n- Keine Fallunterscheidungen",
+  "answer": null
+ },
+ {
+  "id": 115,
+  "thema": " Entwicklung eines DFD",
+  "solution": "1. Darstellung der Systemgrenze mit externen Größen.  Analyse und Darstellung der ein- und ausgehenden Informationsflüsse\n2. Start mit der bedeutendsten externen Größe (Input). Zeichnen der auftretenden Datenflüsse. Zeichnen der logisch-notwendigen Prozesse. Zeichnen der notwendigen Datenspeicher.\n3. Reinzeichnung des zweiten Entwurfs. Minimierung der Überschneidungen von Datenflüssen. Duplikation der externen Quellen\/Senken und Datenspeichern. Überprüfung durch die Benutzenden.\n4.-6. Disaggregation durch Verfeinerung der Prozesse. Integration der Fehlbedienungen und Ausnahmen. Ggf. Überarbeitung des vorhergehenden Entwurfs.",
+  "answer": null
+ },
+ {
+  "id": 116,
+  "thema": " DFD: Grundregel",
+  "solution": "Jeder Daten-Fluss muss mit einem Verarbeitungsschritt (Prozess) beginnen und an diesem enden. Daten können sich nicht selbständig umwandeln, wenn sie verarbeitet werden.",
+  "answer": null
+ },
+ {
+  "id": 117,
+  "thema": "DFD Modellierungsregeln",
+  "solution": "- Eine Entität kann einer anderen Entität keine Daten zur Verfügung stellen, ohne dass eine Verarbeitung stattgefunden hat.\n- Daten können nicht direkt von einer Entität zu einer Datengeschichte übertragen werden, ohne verarbeitet zu werden.\n- Daten können nicht direkt aus einer Datenablage verschoben werden, ohne verarbeitet zu werden.\n- Daten können nicht direkt von einem Datenspeicher in einen anderen verschoben werden, ohne verarbeitet zu werden.",
+  "answer": null
+ },
+ {
+  "id": 118,
+  "thema": " Sachverhalte mit DFD Modellieren",
+  "solution": "- Informationsquellen erkennen\n- Datenspeicher erkennen\n- Prozessgruppen erkennen\n- Informationsflüsse kennzeichnen",
+  "answer": null
+ },
+ {
+  "id": 119,
+  "thema": "Was ist Threat Modeling?",
+  "solution": "Prozess zur Identifizierung und Einstufung von Risiken und Bedrohungen für Architektur- und (Software-) Artefakte auf Entwurfsebene.\nEs folgt dem Prozess der Hypothesenbildung (aus der Sicht des Angreifenden) über potenzielle Sicherheitsbedrohungen, der Bewertung der Bedrohungen, Einstufung der Bedrohungen und Vorschlag von Abhilfestrategien.",
+  "answer": null
+ },
+ {
+  "id": 120,
+  "thema": "Wann soll ein Threat Model erstellt werden und was soll dokumentiert werden?",
+  "solution": "- DFD\n- Use Case \n- STRIDE \n- DREAD",
+  "answer": null
+ },
+ {
+  "id": 121,
+  "thema": " Schutzziele der Informationssicherheit",
+  "solution": "* Vertraulichkeit - Ein System gewährleistet die Informationsvertraulichkeit (engl. confidentiality), wenn es keine unautorisierte Informationsgewinnung ermöglicht. \n* Integrität - Ein System gewährleistet die Daten\/Informationsintegrität (engl. integrity), wenn es Subjekten nicht möglich ist, die zu schützenden Daten\/Informationen unautorisiert und unbemerkt zu manipulieren.\n* Verfügbarkeit - Das System gewährleistet die Verfügbarkeit (engl. availability), wenn authentifizierte und autorisierte Subjekte in der Wahrnehmung ihrer Berechtigungen nicht unautorisiert beeinträchtigt werden können.",
+  "answer": null
+ },
+ {
+  "id": 122,
+  "thema": "Schwachstelle: (engl. weakness)",
+  "solution": "ein Punkt, an dem das System verwundbar werden kann",
+  "answer": null
+ },
+ {
+  "id": 123,
+  "thema": "Verwundbarkeit: (engl. vulnerability)",
+  "solution": "ist eine Schwachstelle, über die die Sicherheitsdienste des Systems umgangen, getäuscht oder unautorisiert modifiziert werden können.",
+  "answer": null
+ },
+ {
+  "id": 124,
+  "thema": "Bedrohung (engl. threat) des Systems",
+  "solution": "zielt darauf ab, eine oder mehrere Bedrohungen, Schwachstellen oder Verwundbarkeiten auszunutzen, um einen Verlust der Datenintegrität, der Informationsvertraulichkeit oder der Verfügbarkeit zu erreichen, oder um die Authentizität von Subjekten zu gefährden.",
+  "answer": null
+ },
+ {
+  "id": 125,
+  "thema": "Risiko (engl. risk) einer Bedrohung",
+  "solution": "Wahrscheinlichkeit (oder relative Häufigkeit) des Eintritts eines Schadensereignisses und die Höhe des potentiellen Schadens, der dadurch hervorgerufen werden kann.",
+  "answer": null
+ },
+ {
+  "id": 126,
+  "thema": "Angriff (engl. attack)",
+  "solution": "- nicht autorisierter Zugriff bzw. einen nicht autorisierter Zugriffsversuch auf das System.\n- Passive Angriffe betreffen die unautorisierte Informationsgewinnung und zielen auf den Verlust der Vertraulichkeit ab.\n- Z.B. eavesdropping, sniffer\n- Aktive Angriffe betreffen die unautorisierte Modifikation von Datenobjekten und richten sich gegen die Datenintegrität oder Verfügbarkeit eines IT-Systems.\n- Z.B. Verändern oder Entfernen von Daten- Paketen aus einem Strom von übertragenen Nachrichten, das Wiedereinspielen von Nachrichten\n oder das unautorisierte Schreiben in Dateien.",
+  "answer": null
+ },
+ {
+  "id": 127,
+  "thema": "Asset",
+  "solution": "Elemente im Unternehmen (physisch, oder daten-basiert), die, wenn angegriffen, die Sicherheit der MA oder das Bestehen des Unternehmens gefährden können",
+  "answer": null
+ },
+ {
+  "id": 128,
+  "thema": "Spoofing:",
+  "solution": "Maskierungsangriff; Falsche Identität vorspiegeln",
+  "answer": null
+ },
+ {
+  "id": 129,
+  "thema": "DoS (Denial of Service, Resource Clogging):",
+  "solution": "Angriffe, die darauf abzielen, die Verfügbarkeit von Systemkomponenten oder -diensten infrage zu stellen",
+  "answer": null
+ },
+ {
+  "id": 130,
+  "thema": "Repudiation (Un-Verbindlichkeit):",
+  "solution": "Nicht-Zuorderbarkeit der Aktivitäten",
+  "answer": null
+ },
+ {
+  "id": 131,
+  "thema": "Ziele des Threat Modelings",
+  "solution": "- Ein besseres Risikomanagement\n- Identifikation von geschäftsrelevanten Elementen\n- Erstellung eines Sicherheitsprofils der Anwendung bzw. des Prozesses\n- Aufwandsabschätzung, um ein System sicher zu halten",
+  "answer": null
+ },
+ {
+  "id": 132,
+  "thema": " Methoden des Threat Modeling (Bedrohungsmodellierung)",
+  "solution": "* Stride - Kategorisierung der Bedrohungen\n* DFD - Modellierung der Bedrohungen\n* UML Use Case - Modellierung der Bedrohungen\n* DREAD - Bewertung der Bedrohungen bzgl. ihrer Auswirkung auf die Software",
+  "answer": null
+ },
+ {
+  "id": 133,
+  "thema": " Wie können Bedrohungen (threats) identifiziert werden? – Methoden",
+  "solution": "* Fachlich: Use Cases - nützlich für die Identifizierung von Fehlern bei bestimmten Anwendungsmerkmalen\n* Architektonisch: Datenflüsse - Welche Bedrohungen können wir erkennen, wenn wir uns den Datenfluss der Anwendung ansehen?\n- Die Datenspeicher, Dienste, Prozesse usw. des gesamten Systems. - Die Interaktion zwischen diesen Komponenten\n* Funktional: Sicherheit - Identifizieren von Sicherheitsmerkmale und Analysieren aus der Sicht des Angreifers\n*  Threat Trees: Standpunkt des Angreifers - Ziel- Mittel- Analyse (wie dieses Ziel zu erreichen ist)\n* Kombinieren von diesen Techniken zum Brainstorming\n ",
+  "answer": null
+ },
+ {
+  "id": 134,
+  "thema": " Schritte zur Bedrohungsmodellierung",
+  "solution": "1. Das zu analysierende System (Anwendung oder Software) beschreiben und verstehen\n2. Assets identifizieren\n3. Daten- und Informationsflüsse identifizieren (DFD)\n4. Bedrohungsquellen und Agenten für die Assets sowie Daten- und Informations-Flüsse identifizieren (DFD, Anwendungsfall)\n5. Bedrohungen priorisieren und Auswirkungen bewerten (DFD, Use Case, BPMN, DREAD)\n6. Gegenmaßnahmen ableiten und dokumentieren\n7. Ergebnisse an die Entwicklungsteams weitergeben",
+  "answer": null
+ },
+ {
+  "id": 135,
+  "thema": "STRIDE",
+  "solution": "- Spoofing identitiy: Identitäsverschleierung\n- Tampering with Data: Manipulation\n- Repudiation: Verleumdung\n- Information Disclosure: Verletzung der Privatsphäre oder Datenpanne\n- Denial of Service (Verweigerung des Dienstes)\n- Elevation of Privilege (Rechteausweitung)",
+  "answer": null
+ },
+ {
+  "id": 136,
+  "thema": "Was kann durch Denial-of-Service-Angriffe bedroht werden?",
+  "solution": "- Z.B. Datenspeicher\n- Anwendungsprozesse\/Betriebseinheiten\n- Externe Akteure, z. B. Authentifizierungsanbieter",
+  "answer": null
+ },
+ {
+  "id": 137,
+  "thema": "Welche Stellen verwalten die Privilegien? (Wer definiert Rollen und deren Zugriffspotenzial?)",
+  "solution": "- Anwendung:\n- Verwaltung des Zugriffs auf Funktionen\/Daten\n- Berechtigungsnachweise verwalten\n- Netzwerk vertraut der Anwendung:\n- Batch-Prozesse greifen auf das Dateisystem zu und verwalten die Berechtigungsnachweise\n Sind diese Privilegien angemessen?\n- zu großzügig?\n- Anfällig für Offenlegung?\n- Schlechtes Betriebsmanagement?",
+  "answer": null
+ },
+ {
+  "id": 138,
+  "thema": "DREAD",
+  "solution": "* Damag potential - the damage caused when the threat exploits\n* Repruducibility - how easily the threat can be exploited\n* Exploitability - the frequency or size of the vector related to the threat\n* Affected users - how wide the impact of the threat would be felt if realized\n* Discoverability - how easy it is to discover the threat",
+  "answer": null
+ }
+]
