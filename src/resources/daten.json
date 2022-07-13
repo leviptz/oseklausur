@@ -1,830 +1,854 @@
 [
- {
-  "id": 1,
-  "thema": "Worin bestehen die Hauptziele von BPMN 2.0?",
-  "solution": "1. Eine Notation bereitzustellen, die alle für alle fachlichen Nutzer*innen unmittelbar verständlich ist.\n2. Sicherzustellen, dass XML-basierte Prozessausführungssprachen mit einer fachlich orientierten Notation visualisiert werden können.",
-  "answer": null
- },
- {
-  "id": 2,
-  "thema": "Welche der BPMN-Grundelemente gehören sämtlichst zu den Flusselementen?",
-  "solution": "Aktivität, Ereignis und Gateway",
-  "answer": null
- },
- {
-  "id": 3,
-  "thema": "Was modelliert der Sequenzfluss?",
-  "solution": "er modelliert die Reihenfolge der Flusselemente und den Informationsfluss",
-  "answer": null
- },
- {
-  "id": 4,
-  "thema": "Was modelliert der Pool?",
-  "solution": "er modelliert den\/die Prozessbeteiligten und beinhaltet den Prozess von Anfagng bis Ende\n\n- symbolisiert in BPMN einen prozessweit wirksamen Informatiosnraum\n- Poolname benennt den Prozessnamen oder die beteiligten Rollen\/Organisationseinheiten\n- Alle internen Prozessbeteiligten verfügen je nach Prozessfortschritt über einen einheitlichen Informationsstand\n- beeinhaltet den Prozess von Anfang bis Ende. Die Flusselemente des Prozesses sind durchgängig miteinander verbunden\n- ist nach \"Draußen\" grundsätzlich abgeschlossener Informatiosnraum",
-  "answer": null
- },
- {
-  "id": 5,
-  "thema": "Was modelliert die Aktivität?",
-  "solution": "sie modelliert die im Prozess verrichteten Arbeitsaufgaben",
-  "answer": null
- },
- {
-  "id": 6,
-  "thema": "Welche Zustände kann eine Aktivität einnehmen (+ Erklärung)?",
-  "solution": "1. deaktiviert - vor Eintritt des Sequenzflusses\n2. aktiviert - mit dem Eintritt des Sequenzflusses\n3. begonnen - mit Beginn der eigentlichen Aktivität\n4. beendet - nach Abschluss der Aktivität\n1. deaktiviert - nach Austritt des Sequenzflusses",
-  "answer": null
- },
- {
-  "id": 7,
-  "thema": "Was modelliert das Ereignis?",
-  "solution": "modelliert die den Prozess auslösenden oder im Prozess erreichten Zuständ",
-  "answer": null
- },
- {
-  "id": 8,
-  "thema": "Was modelliert das Gateway?",
-  "solution": "modelliert die Ablauflogiken ggf. unter Nennung von Bedingungen",
-  "answer": null
- },
- {
-  "id": 9,
-  "thema": "Können Zeitereignisse sowohl als Start und auch als Ziel Ereignisse definiert werden?",
-  "solution": "Keineswegs. Die Zeit ist ein Zustand, der dem Prozess von außen vorgegeben wird. Ein Prozess kann zu einem bestimmten Zeitpunkt ausgelöst werden, d. h. Zeit-Startereignisse machen Sinn. Der Prozess kann jedoch auf keinen Fall die Uhr schneller oder langsamer laufen lassen.",
-  "answer": null
- },
- {
-  "id": 10,
-  "thema": "Welche logiken gibt es bei den BPMN Gateways?",
-  "solution": "alternative, parallele, gemischte und komplexe Logiken",
-  "answer": null
- },
- {
-  "id": 11,
-  "thema": "Kann ein Prozess mehrere alternative oder auch in Summe auftretende Startereignisse haben?",
-  "solution": "Ja",
-  "answer": null
- },
- {
-  "id": 12,
-  "thema": "Welche sind die 2 grundlegenden Logikmuster?",
-  "solution": "das alternative und das parallele Muster.",
-  "answer": null
- },
- {
-  "id": 13,
-  "thema": "Was ist gemeint, wenn der Pool als prozesswirksamer Informationsraum charakterisiert wird?",
-  "solution": "Dass alle Prozessbeteiligten über den Sequenzfluss mit allen bis dahin aufgelaufenen Daten und Informationen im Prozess versorgt werden.",
-  "answer": null
- },
- {
-  "id": 14,
-  "thema": "Was bedeutet wenn eien Aktivität den Status \"deaktiviert\" besitzt?",
-  "solution": "Eine Aktivität ist im Status \"deaktiviert\", wenn sie vom Sequenzfluss noch nicht erreicht wurde oder der Sequenzfluss sie bereits verlassen hat.",
-  "answer": null
- },
- {
-  "id": 15,
-  "thema": "Wie können alternative Prozesspfade im Modell wieder zusammengeführt werden?",
-  "solution": "Entweder über ein XOR-Einmündungsgateway oder auch implizit, wenn auf die Zusammenführung eine Aktivität folgt.",
-  "answer": null
- },
- {
-  "id": 16,
-  "thema": "Sind Aktiviäten die sich auf unterschiedlichen paralleln Prozasspfaden befinden, sowohl zeitlich als auch fachlich voneinenader unabhängig?",
-  "solution": "Ja",
-  "answer": null
- },
- {
-  "id": 17,
-  "thema": "Ein Verwaltungsprozess wird durch den Eingang von Antragsunterlagen ausgelöst. Im ersten Schritt geht es um die Überprüfung dieser Antragsunterlagen. Wie ist diese erste Aktivität zu bezeichnen?",
-  "solution": "Antragsunterlagen prüfen",
-  "answer": null
- },
- {
-  "id": 18,
-  "thema": "Ein Prozess wird durch den Eingang einer Bestellung ausgelöst. Wie ist das Startereignis richtig zu bezeichnen?",
-  "solution": "Bestellung eingegangen",
-  "answer": null
- },
- {
-  "id": 19,
-  "thema": "Was ist ein Token?",
-  "solution": "Als Token wird ein Informations-Artefakt bezechnet, was über den Sequenzfluss den Prozess vorantreibt und dabei weitere Informationen aufsammelt, die den Prozess erreichen oder im Prozess erzeugt werden",
-  "answer": null
- },
- {
-  "id": 20,
-  "thema": "Starteregnisse",
-  "solution": "- Startereignis kommt immer von außerhalb des Prozesses (eingehende Nachricht, festgelegter Termin etc.)\n- Ein Prozess kann mehrere alternative oder auch in Summe auftretende Startereignisse haben",
-  "answer": null
- },
- {
-  "id": 21,
-  "thema": "Endereignisse",
-  "solution": "- Endereignisse kommunizieren die Ergebnisse eines Prozesses nach außen, z.B. als Nachricht oder Signal\n- Der Prozess kann mehrere (unterschiedliche) Enderereignisse haben\n\n- Typen:\n- Signal Sirene\/Alarm\/Push-Mitteilung -> Luft\/Schall\/App-Abonnement -> breit gestreute Übermittlung\n- Terminierung -> der Gesamtprozess wird terminiert, verschiede Prozesspfade werden terminiert",
-  "answer": null
- },
- {
-  "id": 22,
-  "thema": "Kann ein Prozess mehrere Endereignisse haben?",
-  "solution": "Ja",
-  "answer": null
- },
- {
-  "id": 23,
-  "thema": "Was ist bei einem AND Gateway notwendig?",
-  "solution": "Eine Sychronisation bei der Zusammenführung",
-  "answer": null
- },
- {
-  "id": 24,
-  "thema": "Sollte das einmündenden Gateway eines XOR Gateways verzichtet werden?",
-  "solution": "Ja, weil dieses keine logische und ablauftechnische Funktion erfüllt, es leitet das Token einfach weiter -> deshalb wird empfohlen, auf solche Gateways im Modell zu verzichten",
-  "answer": null
- },
- {
-  "id": 25,
-  "thema": "AND Gateway",
-  "solution": "- Prozesschritte können unabhängig voneinander durchgeführt werden\n- der Schritt kann erst erledigt werden, wenn alle Aufgaben auf den parallelen Pfaden abgeschlossen sind",
-  "answer": null
- },
- {
-  "id": 26,
-  "thema": "Ereignistypen",
-  "solution": "Ereignisse könnem mit einem Marker versehen werden\n\n- Signal -> Sirene\/Alarm\/Push-Mitteilung -> Luft\/Schall\/App-Abonnement -> breit gestreute Übermittlung\n- Bedingung (nur eignetreten) -> Temperatur\/Füllstand\/Gefahrensituation -> Funkübertragung von Sensordaten\/Dashboard\n- Zeit (nur eintgetreten) -> Termin\/Frist\/Zeitraum -> ubiquitär im System verfügrbar\n- Nachricht -> Nachricht senden, empfangen\/Brief senden, Empfangen -> direkte Übermittlung",
-  "answer": null
- },
- {
-  "id": 27,
-  "thema": "dualer Charakter",
-  "solution": "- Grafisches Modell\n-> kommunikation zwischen Menschen (png, svg, pdf)\n\n- technisches Modell\n-> Kommunikation zwischen und mit Matschinen (XML bpmn)",
-  "answer": null
- },
- {
-  "id": 28,
-  "thema": "Hirachien in grafischen Modellen zur gezielten Kommunikation",
-  "solution": "- BPMN ist stark vom wechselseitigen Zusammenhang zwischen grafischen und technischen Modell gekennzeichnet. Dennoch gibt es es Askpekte, die nur einem der Bereiche zuzuordnen sind\n-> das technische Modell enthält Spezifikationen (z.B: Aufruf technischen Schnittstelle oder Skript), was im grafischen Modell nicht abgebildet wird\n-> Ebenso gibt es grafische Elemente, die für das technische Modell irrelevant sind, die jedoch für eine gezielte Kommunikation zwsicehn Mdenschen von bedeutung sind",
-  "answer": null
- },
- {
-  "id": 29,
-  "thema": "kompakte\/detaillierte Modellierung (Modellierungshirachien)",
-  "solution": "- Interne Prozessteilnehmer -> ungegliederter Pool \/ gegliederter Pool\n- Externe Prozessteilnehmer -> zugeklappter Pool \/ aufgeklappter Pool\n- Komplexe Aktivitäten -> zugeklappter Teilprozess \/ aufgeklappter Teilprozess",
-  "answer": null
- },
- {
-  "id": 30,
-  "thema": "Was verbirgt sich hinter der Aussage: \"BPMN-Prozessmodelle haben einen dualen Charakter\".",
-  "solution": "BPMN-Modelle existieren sowohl als grafisches als auch als technisches Prozessmodell. Das grafische Modell dient der Kommunikation zwischen Menschen, das technische der Kommunikation zwischen und mit Maschinen.",
-  "answer": null
- },
- {
-  "id": 31,
-  "thema": "Welche grundlegenden Modellierungsoptionen gibt es für komplexe Aktivitäten in BPMN?",
-  "solution": "Zugeklappter oder aufgeklappter Teilprozess, je nach gewünschter Modellierungstiefe wird eine solche Aktivität kompakt oder im Detail dargestellt.",
-  "answer": null
- },
- {
-  "id": 32,
-  "thema": "Ein Auftragsprüfungsprozess startet unmittelbar nach Eingang eines Kundenauftrags im Online-Shop. Wie sollte der Prozessstart in BPMN modelliert werden?",
-  "solution": "durch ein Nachrichten-Startereignis, der Kundenauftrag ist als eingehende Nachricht im Shop-System zu verstehen. Sie richtet sich an einen eindeutigen Empfängerkreis im Unternehmen, das den Shop betreibt.",
-  "answer": null
- },
- {
-  "id": 33,
-  "thema": "Für die Differenzierung interner Prozessbeteiligter gibt es in BPMN ein spezielles Modellierungselement. Wie heißt es?",
-  "solution": "Swimlane, manchmal auch einfach Lane genannt",
-  "answer": null
- },
- {
-  "id": 34,
-  "thema": "Entscheiden Sie, welche Kombination aus Start- und Endereignis für die Ereignisse (Start: IT-Sicherheitsvorfall eingetreten) (End: IT Sicherheitsvorfall publiziert)",
-  "solution": "Bedingungs-Startereignis und Signal-Endereignis",
-  "answer": null
- },
- {
-  "id": 35,
-  "thema": "Ein Notfallprozess wird durch einen akustischen Alarm ausgelöst. Wie sollte der Prozessstart modelliert werden?",
-  "solution": "durch ein Signal-Startereignis, der Prozess wird durch ein akustisches Signal ausgelöst.",
-  "answer": null
- },
- {
-  "id": 36,
-  "thema": "Eine Prozesskette besteht aus zwei aufeinander folgenden Prozessen. Der zweite Prozess startet unmittelbar nach Ende des ersten. Wie sollte das Ende des ersten Prozesses modelliert werden? ",
-  "solution": "durch ein Signal-Endereignis, dieses Signal kann dann den zweiten Prozess auslösen. Das erfordert natürlich, dass dieser zweite Prozess mit einem passenden Signal-Startereignis modelliert wird.",
-  "answer": null
- },
- {
-  "id": 37,
-  "thema": "Zwischenereignisse",
-  "solution": "Eingetretene (prozessexterne) Ereignisse können einen Prozess nicht nur starten und ausgelööste (prozessinterne) Ereignisse nicht nur sein Ende kommunizieren. Als Zwischenereignisse können sie auch den internen Fluss eines Prozesses steuern bzw. kommunizieren\n- Zwischenereignisse haben eine doppelte dünne Randlinie",
-  "answer": null
- },
- {
-  "id": 38,
-  "thema": "Ereignisbasierte Gateways",
-  "solution": "XOR --- Unterlagen eingegangen Ereignis \/\/ --- Zeitereignis\n\n-> das was als erstes ausgelöst wird, da geht der Pfad lang",
-  "answer": null
- },
- {
-  "id": 39,
-  "thema": "Reaktion des Prozesses auf externe Bedingungeb",
-  "solution": "Wird das Eintreten der Bedingung aus dem Prozess selbst überwacht\/abgewartet, dann kommen Bedingungsereignisse zum Einsatz. Wie Zeitereignisse sidn diese immer eingetretene Ereignisse.",
-  "answer": null
- },
- {
-  "id": 40,
-  "thema": "Kommunikation zwischen Prozesspfaden mit Signal Zwischenereignissen",
-  "solution": "Die Kommunikation innerhalb eines Prozesses erfolgt in und mit dem Sequenzfluss. Sofern eine nicht-terminierende Kommunikation notwendig ist, kommen Signalereignisse zum Einsatz. (ein Pfad Signal senden - andere Pfad Signal fangen -> ohne Pfeile)",
-  "answer": null
- },
- {
-  "id": 41,
-  "thema": "Parallelisierung",
-  "solution": "Kann auch ohne AND Gateway modelliert werden, sofern der Verzweigung eine Aktivität vorangeht. Die parallelen Prozesspfade entspringen dann einfach dieser Aktivität. Das synchronisierende AND Gateway MUSS immer gesetzt sein!",
-  "answer": null
- },
- {
-  "id": 42,
-  "thema": "Bedingt-parallele Sequenzflüsse mit Datenbasiereten OR Gateways",
-  "solution": "Das logische OR Gateway nimmt eine Zwischenstelltellung zwischen den logischen Basismustern AND und XOR. Es kann je nach Datenlage sowohl parallele als auch alternative Sequenzflüsse verarveiten. Das mündende OR Gateway sorgt im Fall paralleler Pfade für Synchronisation.",
-  "answer": null
- },
- {
-  "id": 43,
-  "thema": "bedingte Flüsse",
-  "solution": "alternativ zur Modellierung mit einem ab- bzw. verzweigenden OR-Gateway können auch bedingte Sequenzflüsse eingestezt werden. Sie implementiere eine Prüflogik, für die Daten un dwerden nur aktiviert, wenn die explizierten Bedingungen erfüllt werden. Aus einer Aktivität können auch mehrere bedingte Sequenzflüsse ausgehen. Ein Sychronisierendes OR Gateway ist aber ein MUSS!",
-  "answer": null
- },
- {
-  "id": 44,
-  "thema": "bedingter Standardfluss",
-  "solution": "Der Standardfluss wird nur dann aktiviert, wenn keine der Bedingungen an weiteren aus derselben Aktivität ausgehenden bedingten Sequenzflüsse erfüllt wird. Er ist auch bei XOR und OR Gateways anwendbar. (Sequenzfluss mit schräg Strich am Anfang)",
-  "answer": null
- },
- {
-  "id": 45,
-  "thema": "Annotationen",
-  "solution": "Text Annotation als rein grafisches Modellierungselement.\n- liefern zusätzliche Informationen, die vom Menschen aufngenommen werden\n- für Maschinen sind sie irrelevant",
-  "answer": null
- },
- {
-  "id": 46,
-  "thema": "Nenne alle möglichen eingetretene Zwischenereignisse",
-  "solution": "Nachrichten Empfang, Singal Empfang, engetretene Zeit, eingetretene Bedingung",
-  "answer": null
- },
- {
-  "id": 47,
-  "thema": "Nenne alle möglichen ausgelösten Zwischenereignisse",
-  "solution": "Nachrichten Versand, Signal Aussendung",
-  "answer": null
- },
- {
-  "id": 48,
-  "thema": "Nenne alle möglichen Gateways",
-  "solution": "- datenbasiertes XOR Gateway (abzweigend, mündend)\n- AND (verzweigend, verschmelzend)\n- Ereignis basiertes XOR (nur abzweigend)\n- Datenbasiertes OR (ab-\/verzweigend, mündend\/verschmelzend)",
-  "answer": null
- },
- {
-  "id": 49,
-  "thema": "Welche Modellierungsoptionen gibt es für externe Bedingungen?",
-  "solution": "Externe Bedingungen können sowohl als Nachricht- oder Signalereignisse, als auch als Bedingungsereignisse modelliert werden.",
-  "answer": null
- },
- {
-  "id": 50,
-  "thema": "Welche Alternative gibt es zur Modellierung mit ab- bzw. verzweigenden OR-Gateway?",
-  "solution": "bedingter Sequenzfluss",
-  "answer": null
- },
- {
-  "id": 51,
-  "thema": "Ein Prozess wartet an einer bestimmten Stelle auf das Erreichen einer festgesetzten Temperatur. Wie wird das Zwischenereignis genannt, dass den Prozess automatisch wieder aktiviert?",
-  "solution": "eingetretenes Signalereignis",
-  "answer": null
- },
- {
-  "id": 52,
-  "thema": "Welche der folgenden Regeln entspricht der BPMN-Spezifikation?",
-  "solution": "Die Marker eines ausgelösten Zwischenereignisses sind gefüllt, die eines eingetretenen Zwischenereignisses ungefüllt.",
-  "answer": null
- },
- {
-  "id": 53,
-  "thema": "Was passiert im Prozess bei eingetretene Zwischenereignisse?",
-  "solution": "Eingetretene Zwischenereignisse versetzen einen Prozess in den Wartezustand.",
-  "answer": null
- },
- {
-  "id": 54,
-  "thema": "Sind Prozessmodelle ohne Aktivitäten denkbar?",
-  "solution": "Nein",
-  "answer": null
- },
- {
-  "id": 55,
-  "thema": "Benutzer Aufgaben (kleines Menschsymbol in Aktivität)",
-  "solution": "Interaktion von Mensch und Maschine (z.B. DMS basierter Prozess)\n- modellieren die Ausführung einer Prozessaufgabe durch einen Menschen unter Nutzung eines IT-Systemes, idealerweise im Rahmen eines verundenen Workflows",
-  "answer": null
- },
- {
-  "id": 56,
-  "thema": "Manuelle Aufgabe (keine Hand in Aktivität)",
-  "solution": "manuelle Aufgaben wo nur der Mensch involviert ist (z.B. papier gebundener Prozess)\n- modellieren die autonome Ausführung einer Prozessaufgabe durch einen Menschen\n- manuelle Aufgaben sind in der Regel mit körperlichen Aktivitäten oder materiellen Artefakten verbunden",
-  "answer": null
- },
- {
-  "id": 57,
-  "thema": "Geschäftsregel- \/ Entscheidungsaufgabe (kleine Tabelle in Aktivität)",
-  "solution": "Werden bei einer Prozessaktivität klar definierte Regeln angewandt, um in Abhängigkeit von den Eingangsdaten passende Ausgabewerte zu ermitteln, wird die Aktivität als Geschäftsregelaufgabe modelliert.",
-  "answer": null
- },
- {
-  "id": 58,
-  "thema": "Skriptaufgaben (kleines gewelltes Papier in Aktivität)",
-  "solution": "werden automatische Aktivitäten bezeichnet, die direkt im Workflow System (z.B. DMS) abgearbeitet werden. Das dafür eingebundene Skript wird automatisch ausgeführt. Skirpt Aufgaben starten sofort nach Aktivierung und erfordern in der Regel keine Bearbeitungszeit, es kann jedoch zu technischen Fehlern kommen.",
-  "answer": null
- },
- {
-  "id": 59,
-  "thema": "Service Aufgaben (kleines Zahnrad in Aktivität)",
-  "solution": "werden automatische Aktivitäten bezeichnet, die einen Service außerhalb des DMS aufrufen. Im Erfolgsfall werden die Ergebnisse als Serviceaufrufs aufgefangen und witergegeben.",
-  "answer": null
- },
- {
-  "id": 60,
-  "thema": "Sende- und Empfangsaufgaben (kleiner Brief in Aktivität)",
-  "solution": "Unterscheidung zwischen Sende und Empfangsereignisse:\n- Aufgaben erfordern Ressourcen, Ereignisse sind zustände",
-  "answer": null
- },
- {
-  "id": 61,
-  "thema": "Gruppierung als grafisches Modellierungselement (gestrichelte Linie um einen Bereich drum rum)",
-  "solution": "Um fachlogische Zusammenhänge in einem grafischen Modell zu verdeutlichen, kann das Element Gruppierung verwendet werden. Der Rahmen hat keine technische Relevanz.",
-  "answer": null
- },
- {
-  "id": 62,
-  "thema": "Mehrfachinstanziierung - Schleifen Aktivität (Rundpfeil-Symbol in Aktivität)",
-  "solution": "2 Möglichkeiten\n- Explizitie Modellierung (XOR Gateway)\n- Kompakte Modellierung (Schleifen-Aktivität)\n-> Aktivität wird solange wiederholt, bis die zugehörige Abbruchbedingung erfüllt ist\n-> Abbruchbedingung wird als Textannotation an die Aktivität geschrieben",
-  "answer": null
- },
- {
-  "id": 63,
-  "thema": "Sequenzielle Mehrfachinstanziierung (drei kleine horizontale Striche in Aktivität)",
-  "solution": "Muss eine Aktivität eine bestimmte Anzahl an Wiederholungen nacheinander ausgeführt werden, verwendet man eine sequenzielle Mehrfachausführung",
-  "answer": null
- },
- {
-  "id": 64,
-  "thema": "Parallele Mehrfachinstanziierung",
-  "solution": "Muss eine Aktivität auf eine betsimmte Anzhal von Objekten angewandt werden, die jedoch unabhängig voneinander bearbeitet werden können, verwendet man eine parallele Mehrfachinstanziierung",
-  "answer": null
- },
- {
-  "id": 65,
-  "thema": "Ad Hoc Aktivitäten (Rahmen um Aktivitäten welche nicht durch Sequenzflüsse verbunden sind + kleine Welle im Rahmen)",
-  "solution": "(Teil-)Prozesse bei denen Ablauflogik weniger stringent ist. Das betrifft insbesondere wissensintensive Prozesse",
-  "answer": null
- },
- {
-  "id": 66,
-  "thema": "Welcher Kategorie von BPMN-Elementen ist eine Gruppierung zuzuordnen?",
-  "solution": "sonstige Artefakte, dieses rein grafische Modellierungselement gehört zusammen mit der Text-Annotation und ggf. weiteren selbst-definierten grafischen Modellierungselementen zur Kategorie der sonstigen Artefakte.",
-  "answer": null
- },
- {
-  "id": 67,
-  "thema": "BPMN erlaubt die Spezifikation von Aktivitäten\n 1. nach dem Charakter der Aufgabe und \n 2. nach dem Ausführungsverhalten.\nWelche der folgenden Aktivitäten gehören die Aktivitäten \"Service Aufgabe, Geschäftsregel Aufgabe, Benutzer Aufgabe und Schleifen AKtivität\"?",
-  "solution": "1. Service Aufgabe, Geschäftsregel Aufgabe, Benutzer Aufgabe\n2. Schleifen Aktivität",
-  "answer": null
- },
- {
-  "id": 68,
-  "thema": "Wie lassen sich manuelle Aufgaben und Benutzeraufgaben in BPMN differenzieren?",
-  "solution": "Benutzeraufgaben modellieren die Ausführung einer Prozessaufgabe durch einen Menschen unter Nutzung eines IT-Systems, manuelle Aufgaben die autonome Ausführung durch einen Menschen.",
-  "answer": null
- },
- {
-  "id": 69,
-  "thema": "Was machen Ad Hoc (Teil-) Prozesse so besonders?",
-  "solution": "Der\/die Prozessteilnehmer*in kann selbst entscheiden, welche der Aktivitäten im (Teil-)Prozess er\/sie ausführt bzw. in welcher Reihenfolge. Die Aktivitäten sind damit optional und unabhängig.",
-  "answer": null
- },
- {
-  "id": 70,
-  "thema": "Wie unterscheiden sich sequenzielle und parallele Mehrfachinstanziierung von Aktivitäten?",
-  "solution": "Bei diesen Formen der Mehrfachinstanziierung wird eine Aktivität genau so oft wie vorgegeben aktiviert (oder instanziiert). Bei einer sequenziellen Mehrfachinstanziierung erfolgt die Abarbeitung nacheinander, bei der parallelen unahbhängig voneinander.",
-  "answer": null
- },
- {
-  "id": 71,
-  "thema": "Nutzen + Bedeutung zusätzliche grafische Modellierungselemente",
-  "solution": "- mehr Details im grafischen Modell\n- eigentlich entbehrlich, aber bleibt bei grafischen Modelliererb",
-  "answer": null
- },
- {
-  "id": 72,
-  "thema": "Nutzen + Bedeutung komplexe Ausnahmebehandlung",
-  "solution": "- Portfolio flexibel kombinierbarer Elemente für diverse Ausnahmen\n- erfordert technisches Verständnis, von grafischen Modellierern selten genutzt",
-  "answer": null
- },
- {
-  "id": 73,
-  "thema": "Nutzen + Bedeutung Aufruf Aktivitäten",
-  "solution": "- Wiederverwendung generischer Teilprozesse\n- technisch hoch relevant; fördert Verständnis für Rationalisierung",
-  "answer": null
- },
- {
-  "id": 74,
-  "thema": "Datenobjekte",
-  "solution": "Daten bewegen sich mit dem Sequenzfluss druch den Prozess. Zunächst ohne Datenobjekte modellieren. Im Nachgang Datenobjekte nur dort ergänzen, wo ein zusätzlicher Erkenntnisgewinn explizit gewünscht ist.",
-  "answer": null
- },
- {
-  "id": 75,
-  "thema": "Dateninput und -output (Kriterienliste + Datenbankobjekt)",
-  "solution": "Datenobjekte werden über gestrichelte Assoziationen an Aktivitäten und Ereignissen angedockt. Die Richtung des Pfeils gibt an, ob es sich um ein Dateninput oder - output handelt.",
-  "answer": null
- },
- {
-  "id": 76,
-  "thema": "Listen Datenobjekt als Datenoutput",
-  "solution": "Eine Aktivität im Prozess kann auch ein Bündel an gleichartigen Datenobjekten verarbeiten oder ausgeben. (Art von Mehrfachinstanziierung) Die gleichartigen Datenobjekte existieren parallel und werden deshalb mit demselben Marker gekennzeichnet, wie parallel mehrfachinstanziierte Aktivitäten (3 vertikale Striche)",
-  "answer": null
- },
- {
-  "id": 77,
-  "thema": "angeheftete Zwischenereignisse",
-  "solution": "Werden für das auftreten von Fehlern während der Ausführung einer Aktivität benutzt.\n-> bei gravierenden Problemen wird die Aktivität abgebrochen und ein alternativer Pfad eingeschlagen. Die Modellierung erfolgt mit einem angehefteten unterbrechenden Zwischenereignis\n-> bei leichteren Problemen kommt es nicht zum Abbruch, aber es werden ergänzende Bearbeitungspfade initialisiert. Hier werden angeheftete nicht-unterbrechende Zwischenereignisse verwendet",
-  "answer": null
- },
- {
-  "id": 78,
-  "thema": "Ereignis Teilprozess",
-  "solution": "sind kompakte Alternative zur Modellierung der Ausnahmebehandlung",
-  "answer": null
- },
- {
-  "id": 79,
-  "thema": "Angeheftetes fehler Zwischenereignis",
-  "solution": "Nebenden der Reaktion auf externe Probleme, können angeheftete Zwischenereignisse auch zur Modellierung der Ausnahmebehandlung auf untergeordneten Prozessebenen eingesetzt werden",
-  "answer": null
- },
- {
-  "id": 80,
-  "thema": "Throw Catch Fehlerkommunikation",
-  "solution": "Wird der fehlererzeugende Teilprozess aufgeklappt, so wird auch der auslösende Fehler im Modell sichtbar\n-> Der ausgelöste Fehler und das angeheftete Fehlerereignis kommunizieren in einem Throw-Catch-Muster",
-  "answer": null
- },
- {
-  "id": 81,
-  "thema": "Throw Catch Muster mit Eskalationseregnissen",
-  "solution": "Sind Probleme auf einer untergeordneten Prozessebene innerhalb des Prozesses behebbar, wird statt mit Fehlerereignissen mit Eskalationsereignissen gearbeitet. Eskalation bedeutet, dass weitere zur Problembehebung eingesetzt werden. Die angehefteten Zwischenereignisse sind dann NICHT unterbrechend und eröffnen parallele Prozesspfade",
-  "answer": null
- },
- {
-  "id": 82,
-  "thema": "Teilprozesse",
-  "solution": "Während die Mehrzahl der Aktivitäten in einem Prozess spezifischer Natur ist, kann es Teilprozesse geben, die so generisch sind, dass sie in den verschiedenen Prozessen nahezu strukturgleich vorkommen",
-  "answer": null
- },
- {
-  "id": 83,
-  "thema": "Was ist eine Aufruf-Aktivität?",
-  "solution": "ein extern modellierter Teilprozess, der von verschiedenen Prozessen aufgerufen werden kann",
-  "answer": null
- },
- {
-  "id": 84,
-  "thema": "Was versteht man unter einem Throw-Catch-Muster?",
-  "solution": "Throw-Catch-Muster sind Ereignis-basierte Kommunikationsmuster zwischen mehreren Prozessen oder zwischen verschiedenen Prozessebenen.",
-  "answer": null
- },
- {
-  "id": 85,
-  "thema": "Sind angeheftete Zwischenereignisse immer eingetretene Zwischenereignisse?",
-  "solution": "Ja",
-  "answer": null
- },
- {
-  "id": 86,
-  "thema": "Wie können Ereignis-Teilprozesse weiter spezifiziert werden?",
-  "solution": "Zum einen nach der Wirkung auf den umgebenden Teilprozess und zum anderen nach der Art des lauschenden Ereignisses.",
-  "answer": null
- },
- {
-  "id": 87,
-  "thema": "BPM Lebenszyklus \/ Lifecycle",
-  "solution": "Prozess identifizieren -> Prozess bestimmen -> Prozess analysieren -> Prozess umgestalten -> Prozess implementieren -> Prozess beobachten und kontrollieren -> Prozess bestimmen -> …",
-  "answer": null
- },
- {
-  "id": 88,
-  "thema": "Prozessidentifikation",
-  "solution": "Was? -> Prozesse einer Organisation identifizieren -> Ihr Management anhand bestimmter Kriterien priorisieren\nWarum? -> Organisation verstehen -> Wert von GPM Projekten optimieren",
-  "answer": null
- },
- {
-  "id": 89,
-  "thema": "Vorgehen Prozessidentifikation",
-  "solution": "1. Kennzeichnung -> Aufzählen der Hauptprozesse -> Bestimmen den Prozessumfang ==> Prozessarchitektur\n2. Priorisierung -> Priorisieren der Prozesse auf der Grundlage von (Bedeutung, Gesundheit, Machbarkeit) ==> Priorisiertes Prozessportfolio",
-  "answer": null
- },
- {
-  "id": 90,
-  "thema": "Prozesstypen",
-  "solution": "Kerngeschäftsprozesse, Managementprozesse, Unterstützungsprozesse",
-  "answer": null
- },
- {
-  "id": 91,
-  "thema": "Kerngeschäftsprozesse",
-  "solution": "Prozesse, die direkt an der Umsatzerzeugung beteiligt sind\n- Generieren einen Mehrwert, weil sie direkt mit externen Kunden verbunden sind",
-  "answer": null
- },
- {
-  "id": 92,
-  "thema": "Managementprozesse",
-  "solution": "Prozesse, die Effizienz, Governance und Erfüllung der Unternehmensziele gewährleisten\n– Bieten allgemeine Orientierung und Regeln sowie Praktiken",
-  "answer": null
- },
- {
-  "id": 93,
-  "thema": "Unterstützungsprozesse",
-  "solution": "Prozesse, die nicht direkt an der Wertschöpfung beteiligt, aber unbedingt notwendig für die Erfüllung der Geschäftsziele sind\n- Bieten Ressourcen an, die von anderen Prozessen gebraucht werden",
-  "answer": null
- },
- {
-  "id": 94,
-  "thema": "Strukturierung der Prozesse nach Varianten- Process Cases",
-  "solution": "Fallart - klassifiziert die Art von Fällen, die von der Organisation bearbeitet werden\n- ein Fall ist etwas, das eine Organisation oder ein Teil einer Organisation, bearbeitet\n- typischerweise ist ein Fall ein Produkt oder eine Dienstleistung, die von einer Organisation an ihre Kunden liefert, z.B. eine Versicherung, Logistikdienstleistung",
-  "answer": null
- },
- {
-  "id": 95,
-  "thema": "Strukturierung der Prozesse nach Funktionen",
-  "solution": "Eine Funktion ist etwas, das eine Organisation tut\n- eine Funktion besteht aus Unterfunktionen, die wiederum aus anderen Unter-Unterfunktionen bestehen usw.\n- Bsp. Ein Produktionsunternehmen die Funktion Einkauf, Produktion, Verkauf - Die EInkaufsfunktion kann in die Funktionen Lieferantenauswahl und operative Beschaffung unterteilt werden",
-  "answer": null
- },
- {
-  "id": 96,
-  "thema": "Prozessarchitektur entwickeln",
-  "solution": "1. Falltyp identifizieren\n2. Funktion für Fallarten identifizieren\n3. Eine oder mehrere Fall-\/Funktionsmatritzen konstruieren\n4. Prozesse identifizieren",
-  "answer": null
- },
- {
-  "id": 97,
-  "thema": "Wonach werden Falltypen unterschieden?",
-  "solution": "- Produkttyp\n- Dienstart\n- (Vertriebes-)Kanal \n- Kundentyp",
-  "answer": null
- },
- {
-  "id": 98,
-  "thema": "Wie können Funktionen identifiziert werden?",
-  "solution": "- Funktionen aus den Referenzmodellen ableiten\n- Interviews\n- Beobachtung\n- Sichtung der Dokumentation\n- Funktionen für jede Rolle ermitteln",
-  "answer": null
- },
- {
-  "id": 99,
-  "thema": "Wann ist ein Prozess abzugrenzen?",
-  "solution": "1. Wenn ein Prozess verschiedene Informationsobjekte hat,\n2. Wenn das Informationsobjekt eines Prozesses die Multiplizität ändert,\n3. Wenn ein Prozess den Transaktionszustand ändert,\n4. Wenn ein Prozess eine logische Trennung in der Zeit enthält,\n5. Wenn ein Prozess eine logische Trennung im Raum enthält,\n6. Wenn ein Prozess eine logische Trennung in einer anderen relevanten Dimension enthält,\n7. Wenn ein Prozess in einem Referenzmodell aufgeteilt ist,\n8. Wenn ein Prozess in einer Fallart (viel) mehr Funktionen umfasst als in einer anderen",
-  "answer": null
- },
- {
-  "id": 100,
-  "thema": "Prozesse beobachten und kontrollieren",
-  "solution": "Prozesse modellieren -> KPIs definieren -> Automatisieren bzw. Dasten generieren -> Visualisieren-Dashboard erstellen -> Entscheidungen treffen -> ggf Prozesse anpassen -> Prozesse modellieren -> …",
-  "answer": null
- },
- {
-  "id": 101,
-  "thema": "Datenanalyse im betrieblichen Kontext",
-  "solution": "Process Monitoring, Business activity monitoring, Business Intelligence, Process Mining",
-  "answer": null
- },
- {
-  "id": 102,
-  "thema": "Balanced scoreboard BSC",
-  "solution": "Finanzen, Kunden, Interne Prozesse, Innovation und Lernen",
-  "answer": null
- },
- {
-  "id": 103,
-  "thema": "Prozessleistung- Dimensionen aka “Das magische Dreieck der Prozessleistung”",
-  "solution": "Zeit - Qualität - Kosten",
-  "answer": null
- },
- {
-  "id": 104,
-  "thema": "Zeit Indikator",
-  "solution": "- Durchlaufzeit (in Minuten) \n- Wartezeit\n- Liegezeit\n- Bearbeitungszeit",
-  "answer": null
- },
- {
-  "id": 105,
-  "thema": "Kosten Indikator",
-  "solution": "- ROI\n- Anteil der Mahnungskosten",
-  "answer": null
- },
- {
-  "id": 106,
-  "thema": "Qualität Indikator",
-  "solution": "- Anteil der Fehler am Output (in %)\n- Kundenzufriedenheit\n- Anteil der Überarbeitungsarbeiten",
-  "answer": null
- },
- {
-  "id": 107,
-  "thema": "betriebswirtschaftliche Anwendungsfälle für Process Analytics",
-  "solution": "- Echtzeit-Überwachung von offenen Aufträgen\n- Rückstand an offenen Auslieferungen\n- Sichtbarkeit der Sales Pipeline\n- Prozess-Benchmarking zwischen Unternehmen\n- Nachverfolgung von Stammdatenänderungen\n- Alarmierung bei Feldänderungen, z.B. Rechnungssperre oder Wunschlieferdatum\n- Analyse und Überwachung des Belegflusses\n- Berechnung von Zykluszeiten von End-to-End-Prozessen oder\nAbfolgen von Aktivitäten\n- Verfolgung von SLA-Verletzungen\n- Prozessvisibilität für Vertriebs-, HR-, Finanz- und Logistikprozesse",
-  "answer": null
- },
- {
-  "id": 108,
-  "thema": "Dashboard-Typen",
-  "solution": "* Strategisch - Konzentriert sich auf langfristige Strategien und Metriken auf hoher Ebene\n* Operativ - Zeigt kürzere Zeiträume und operative Prozesse\n*Analytisch - Enthält große Datenmengen, die von Analysten erstellt und ausgewertet werden\n*Taktisch - Wird vom mittleren Management verwendet, um die (Prozess-)Leistung zu verfolgen",
-  "answer": null
- },
- {
-  "id": 109,
-  "thema": " Betriebliche Fragestellungen aus den Betriebsdaten:",
-  "solution": "1. Welche Indikatoren werden hier verwendet?\n2. Wie häufig werden diese erhoben (Frequenz)?\n3. Welche Betrieblichen Fragestellungen lassen sich mit diesen Informationen beantworten? (soweit ersichtlich)\n4. Was ist die Zielgruppe der Informationen?\n5. Um was für ein Dashboard-Typ (strategisch, taktisch oder operativ, analytisch) handelt es sich hier?",
-  "answer": null
- },
- {
-  "id": 110,
-  "thema": "Definition Business Intelligence",
-  "solution": "The methods of business intelligence allow, using transformation, a simplified, targeted access to decision- relevant information.",
-  "answer": null
- },
- {
-  "id": 111,
-  "thema": " ARIS – Architektur betrieblicher Informationssysteme",
-  "solution": "- Organisationssicht – Organisationseinheiten und MA\n- Datensicht – Daten und Informationen, die im Prozess benötigt oder erzeugt werden\n- Prozesssicht - Darstellung der Abläufe, macht die Verbindung zwischen den anderen Sichten deutlich\n- Funktionssicht - Beschreibung auszuführender Funktionen und deren Zusammenhang\n- Leistungssicht - Beschreibung der Prozessergebnisse",
-  "answer": null
- },
- {
-  "id": 112,
-  "thema": " Regeln der Modellierung mit eEPK",
-  "solution": "1. Ein eEPK beginnt und endet mit einem Ereignis.\n2. Ereignisse und Funktionen wechseln sich im Ablauf immer ab.\n3. Sowohl Ereignis aus auch Funktion haben jeweils nur einen Kontrollfluss- Input einen Kontrollfluss- Output\n4. Ein Konnektor kann mehrere Kontrollfluss- Inputs und mehrere - Outputs haben.\n5. Mehrere Teilabläufe werden durch die gleiche Art Konnektor zusammengeführt, mit der sie aufgeteilt wurden.\n6. Nach einem XOR-Konnektor können nur Ereignisse folgen!",
-  "answer": null
- },
- {
-  "id": 113,
-  "thema": " Wissenspyramide ",
-  "solution": "Wissen -> Information - Daten - Zeichen",
-  "answer": null
- },
- {
-  "id": 114,
-  "thema": " DFD",
-  "solution": "- Bildet Aufgaben und Arbeitsschritte ab\n- Bildet Datenflüsse zwischen Elementen ab\n- Bildet Datenspeicher ab\n- Ordnet Datenflüsse Organisationseinheiten zu\n- Bildet Informationssenken und –Quellen ab\n- Keine Abbildung von Steuerungsflüssen\n- Keine Fallunterscheidungen",
-  "answer": null
- },
- {
-  "id": 115,
-  "thema": " Entwicklung eines DFD",
-  "solution": "1. Darstellung der Systemgrenze mit externen Größen.  Analyse und Darstellung der ein- und ausgehenden Informationsflüsse\n2. Start mit der bedeutendsten externen Größe (Input). Zeichnen der auftretenden Datenflüsse. Zeichnen der logisch-notwendigen Prozesse. Zeichnen der notwendigen Datenspeicher.\n3. Reinzeichnung des zweiten Entwurfs. Minimierung der Überschneidungen von Datenflüssen. Duplikation der externen Quellen\/Senken und Datenspeichern. Überprüfung durch die Benutzenden.\n4.-6. Disaggregation durch Verfeinerung der Prozesse. Integration der Fehlbedienungen und Ausnahmen. Ggf. Überarbeitung des vorhergehenden Entwurfs.",
-  "answer": null
- },
- {
-  "id": 116,
-  "thema": " DFD: Grundregel",
-  "solution": "Jeder Daten-Fluss muss mit einem Verarbeitungsschritt (Prozess) beginnen und an diesem enden. Daten können sich nicht selbständig umwandeln, wenn sie verarbeitet werden.",
-  "answer": null
- },
- {
-  "id": 117,
-  "thema": "DFD Modellierungsregeln",
-  "solution": "- Eine Entität kann einer anderen Entität keine Daten zur Verfügung stellen, ohne dass eine Verarbeitung stattgefunden hat.\n- Daten können nicht direkt von einer Entität zu einer Datengeschichte übertragen werden, ohne verarbeitet zu werden.\n- Daten können nicht direkt aus einer Datenablage verschoben werden, ohne verarbeitet zu werden.\n- Daten können nicht direkt von einem Datenspeicher in einen anderen verschoben werden, ohne verarbeitet zu werden.",
-  "answer": null
- },
- {
-  "id": 118,
-  "thema": " Sachverhalte mit DFD Modellieren",
-  "solution": "- Informationsquellen erkennen\n- Datenspeicher erkennen\n- Prozessgruppen erkennen\n- Informationsflüsse kennzeichnen",
-  "answer": null
- },
- {
-  "id": 119,
-  "thema": "Was ist Threat Modeling?",
-  "solution": "Prozess zur Identifizierung und Einstufung von Risiken und Bedrohungen für Architektur- und (Software-) Artefakte auf Entwurfsebene.\nEs folgt dem Prozess der Hypothesenbildung (aus der Sicht des Angreifenden) über potenzielle Sicherheitsbedrohungen, der Bewertung der Bedrohungen, Einstufung der Bedrohungen und Vorschlag von Abhilfestrategien.",
-  "answer": null
- },
- {
-  "id": 120,
-  "thema": "Wann soll ein Threat Model erstellt werden und was soll dokumentiert werden?",
-  "solution": "- DFD\n- Use Case \n- STRIDE \n- DREAD",
-  "answer": null
- },
- {
-  "id": 121,
-  "thema": " Schutzziele der Informationssicherheit",
-  "solution": "* Vertraulichkeit - Ein System gewährleistet die Informationsvertraulichkeit (engl. confidentiality), wenn es keine unautorisierte Informationsgewinnung ermöglicht. \n* Integrität - Ein System gewährleistet die Daten\/Informationsintegrität (engl. integrity), wenn es Subjekten nicht möglich ist, die zu schützenden Daten\/Informationen unautorisiert und unbemerkt zu manipulieren.\n* Verfügbarkeit - Das System gewährleistet die Verfügbarkeit (engl. availability), wenn authentifizierte und autorisierte Subjekte in der Wahrnehmung ihrer Berechtigungen nicht unautorisiert beeinträchtigt werden können.",
-  "answer": null
- },
- {
-  "id": 122,
-  "thema": "Schwachstelle: (engl. weakness)",
-  "solution": "ein Punkt, an dem das System verwundbar werden kann",
-  "answer": null
- },
- {
-  "id": 123,
-  "thema": "Verwundbarkeit: (engl. vulnerability)",
-  "solution": "ist eine Schwachstelle, über die die Sicherheitsdienste des Systems umgangen, getäuscht oder unautorisiert modifiziert werden können.",
-  "answer": null
- },
- {
-  "id": 124,
-  "thema": "Bedrohung (engl. threat) des Systems",
-  "solution": "zielt darauf ab, eine oder mehrere Bedrohungen, Schwachstellen oder Verwundbarkeiten auszunutzen, um einen Verlust der Datenintegrität, der Informationsvertraulichkeit oder der Verfügbarkeit zu erreichen, oder um die Authentizität von Subjekten zu gefährden.",
-  "answer": null
- },
- {
-  "id": 125,
-  "thema": "Risiko (engl. risk) einer Bedrohung",
-  "solution": "Wahrscheinlichkeit (oder relative Häufigkeit) des Eintritts eines Schadensereignisses und die Höhe des potentiellen Schadens, der dadurch hervorgerufen werden kann.",
-  "answer": null
- },
- {
-  "id": 126,
-  "thema": "Angriff (engl. attack)",
-  "solution": "- nicht autorisierter Zugriff bzw. einen nicht autorisierter Zugriffsversuch auf das System.\n- Passive Angriffe betreffen die unautorisierte Informationsgewinnung und zielen auf den Verlust der Vertraulichkeit ab.\n- Z.B. eavesdropping, sniffer\n- Aktive Angriffe betreffen die unautorisierte Modifikation von Datenobjekten und richten sich gegen die Datenintegrität oder Verfügbarkeit eines IT-Systems.\n- Z.B. Verändern oder Entfernen von Daten- Paketen aus einem Strom von übertragenen Nachrichten, das Wiedereinspielen von Nachrichten\n oder das unautorisierte Schreiben in Dateien.",
-  "answer": null
- },
- {
-  "id": 127,
-  "thema": "Asset",
-  "solution": "Elemente im Unternehmen (physisch, oder daten-basiert), die, wenn angegriffen, die Sicherheit der MA oder das Bestehen des Unternehmens gefährden können",
-  "answer": null
- },
- {
-  "id": 128,
-  "thema": "Spoofing:",
-  "solution": "Maskierungsangriff; Falsche Identität vorspiegeln",
-  "answer": null
- },
- {
-  "id": 129,
-  "thema": "DoS (Denial of Service, Resource Clogging):",
-  "solution": "Angriffe, die darauf abzielen, die Verfügbarkeit von Systemkomponenten oder -diensten infrage zu stellen",
-  "answer": null
- },
- {
-  "id": 130,
-  "thema": "Repudiation (Un-Verbindlichkeit):",
-  "solution": "Nicht-Zuorderbarkeit der Aktivitäten",
-  "answer": null
- },
- {
-  "id": 131,
-  "thema": "Ziele des Threat Modelings",
-  "solution": "- Ein besseres Risikomanagement\n- Identifikation von geschäftsrelevanten Elementen\n- Erstellung eines Sicherheitsprofils der Anwendung bzw. des Prozesses\n- Aufwandsabschätzung, um ein System sicher zu halten",
-  "answer": null
- },
- {
-  "id": 132,
-  "thema": " Methoden des Threat Modeling (Bedrohungsmodellierung)",
-  "solution": "* Stride - Kategorisierung der Bedrohungen\n* DFD - Modellierung der Bedrohungen\n* UML Use Case - Modellierung der Bedrohungen\n* DREAD - Bewertung der Bedrohungen bzgl. ihrer Auswirkung auf die Software",
-  "answer": null
- },
- {
-  "id": 133,
-  "thema": " Wie können Bedrohungen (threats) identifiziert werden? – Methoden",
-  "solution": "* Fachlich: Use Cases - nützlich für die Identifizierung von Fehlern bei bestimmten Anwendungsmerkmalen\n* Architektonisch: Datenflüsse - Welche Bedrohungen können wir erkennen, wenn wir uns den Datenfluss der Anwendung ansehen?\n- Die Datenspeicher, Dienste, Prozesse usw. des gesamten Systems. - Die Interaktion zwischen diesen Komponenten\n* Funktional: Sicherheit - Identifizieren von Sicherheitsmerkmale und Analysieren aus der Sicht des Angreifers\n*  Threat Trees: Standpunkt des Angreifers - Ziel- Mittel- Analyse (wie dieses Ziel zu erreichen ist)\n* Kombinieren von diesen Techniken zum Brainstorming\n ",
-  "answer": null
- },
- {
-  "id": 134,
-  "thema": " Schritte zur Bedrohungsmodellierung",
-  "solution": "1. Das zu analysierende System (Anwendung oder Software) beschreiben und verstehen\n2. Assets identifizieren\n3. Daten- und Informationsflüsse identifizieren (DFD)\n4. Bedrohungsquellen und Agenten für die Assets sowie Daten- und Informations-Flüsse identifizieren (DFD, Anwendungsfall)\n5. Bedrohungen priorisieren und Auswirkungen bewerten (DFD, Use Case, BPMN, DREAD)\n6. Gegenmaßnahmen ableiten und dokumentieren\n7. Ergebnisse an die Entwicklungsteams weitergeben",
-  "answer": null
- },
- {
-  "id": 135,
-  "thema": "STRIDE",
-  "solution": "- Spoofing identitiy: Identitäsverschleierung\n- Tampering with Data: Manipulation\n- Repudiation: Verleumdung\n- Information Disclosure: Verletzung der Privatsphäre oder Datenpanne\n- Denial of Service (Verweigerung des Dienstes)\n- Elevation of Privilege (Rechteausweitung)",
-  "answer": null
- },
- {
-  "id": 136,
-  "thema": "Was kann durch Denial-of-Service-Angriffe bedroht werden?",
-  "solution": "- Z.B. Datenspeicher\n- Anwendungsprozesse\/Betriebseinheiten\n- Externe Akteure, z. B. Authentifizierungsanbieter",
-  "answer": null
- },
- {
-  "id": 137,
-  "thema": "Welche Stellen verwalten die Privilegien? (Wer definiert Rollen und deren Zugriffspotenzial?)",
-  "solution": "- Anwendung:\n- Verwaltung des Zugriffs auf Funktionen\/Daten\n- Berechtigungsnachweise verwalten\n- Netzwerk vertraut der Anwendung:\n- Batch-Prozesse greifen auf das Dateisystem zu und verwalten die Berechtigungsnachweise\n Sind diese Privilegien angemessen?\n- zu großzügig?\n- Anfällig für Offenlegung?\n- Schlechtes Betriebsmanagement?",
-  "answer": null
- },
- {
-  "id": 138,
-  "thema": "DREAD",
-  "solution": "* Damag potential - the damage caused when the threat exploits\n* Repruducibility - how easily the threat can be exploited\n* Exploitability - the frequency or size of the vector related to the threat\n* Affected users - how wide the impact of the threat would be felt if realized\n* Discoverability - how easy it is to discover the threat",
-  "answer": null
- }
-]
+    {
+     "id": 1,
+     "thema": "Was ist ein Objekt?",
+     "solution": "- Ein Objekt ist eine Instanz einer Klasse\n- Repräsentiert Dinge in der realen Welt oder aus einem Problembereich\n- Besitzt konkreten Zustand\/Eigenschaft",
+     "answer": null
+    },
+    {
+     "id": 2,
+     "thema": "Was ist eine Klasse?",
+     "solution": "- Beschreibt alle Objekte einer Art\n- von einer Klassen können mehrere gleichartige Instanzen erzeugt werden\n- die Klasse definiert über welche Datenfelder ein Objekt verfügt",
+     "answer": null
+    },
+    {
+     "id": 3,
+     "thema": "Was ist eine Instanz?",
+     "solution": "- Objekte werden aus Klassen instanziiert\n- Bei Erstellung wird ein default Zustand angelegt\n- Objektname erferenziert erzeugte Instanz",
+     "answer": null
+    },
+    {
+     "id": 4,
+     "thema": "Was ist eine Methode?",
+     "solution": "- Objekte verfügen über Operationen die aufgerufen werden können\n- auch Instanzmethoden genant, da sie auf einer Instanz operieren\n- Wir können mit Objekten kommunizieren indem wir Methoden aufrufen\n- Objekt tut etwas wenn Methoden aufgerufen werden",
+     "answer": null
+    },
+    {
+     "id": 5,
+     "thema": "Was sind Paramenter?",
+     "solution": "- Methoden können Parameter besitzten\n- Zusätzlich füpr die Ausführung notwendige Infos\n- werden beim Methodenaufruf als Argumente übergeben",
+     "answer": null
+    },
+    {
+     "id": 6,
+     "thema": "Was sind Rückgabewerte?",
+     "solution": "- Rückgabewerte sind Informationen die von einer Methode zurückgegeben werden\n- mit return\n- diese Informationen können sofort für weitere Operationen genutzt werden",
+     "answer": null
+    },
+    {
+     "id": 7,
+     "thema": "Was ist eine Signatur?",
+     "solution": "- ist der Kopf einer Methode\n- bennent notwendige Info\/Name für den Aufruf",
+     "answer": null
+    },
+    {
+     "id": 8,
+     "thema": "Was ist der (Objekt-)Zustand?",
+     "solution": "- Objekte haben Zustände - diese werden durch Werte repräsentiert\n- Werden in Datenfelder gespeichert\n- Klasse definiert über welche Datenfelder ein Objekt verfügt\n- Datenfelder auch Instanzvariablen genannt",
+     "answer": null
+    },
+    {
+     "id": 9,
+     "thema": "Unterschied native (primive) und ObjektDatentypen?",
+     "solution": " primitive Datentypen besitzen im gegensatz zu Objekten keine Attribute oder Methoden",
+     "answer": null
+    },
+    {
+     "id": 10,
+     "thema": "Was sind Datenfelder?",
+     "solution": "- Datenfelder werden auch Instanzvariablen genannt\n- der Zustand eines Objektes wird durch diese definiert",
+     "answer": null
+    },
+    {
+     "id": 11,
+     "thema": "Was sind Konstruktoren",
+     "solution": "- Konstruktoren bringen Objekte in einem definierten Anfangszustand\n- sie werden benötigt um Objekte zu erstellen\n- so werden benötigte Ressourcen reserviert, sofern diese zum Zeitpunkt der erstellung bereits bekannt sind",
+     "answer": null
+    },
+    {
+     "id": 12,
+     "thema": "Können Konstruktoren Parameter haben?",
+     "solution": "Ja",
+     "answer": null
+    },
+    {
+     "id": 13,
+     "thema": "Können Konstruktoren Rückgabewerte haben?",
+     "solution": "Ja, der Rückgabewert ist immer vom Typ der Klasse\n- es kann kein anderer Rückgabewert spezifiziert werden",
+     "answer": null
+    },
+    {
+     "id": 14,
+     "thema": "Was ist Variablenzuweisung? \nWie weißt man Variablen zu? \nWas hat das für ein Effekt?",
+     "solution": "- Variablen können Informationen zugeweisen werden\n- als erstes muss festgelegt werden welche Art von Information in dieser Variable gespeichert wernden soll (int, double, String)\n",
+     "answer": null
+    },
+    {
+     "id": 15,
+     "thema": "Was sind lokale Variablen?",
+     "solution": "- lokale Variablen existioeren nur innerhalb des Codeblockes in welchem sie deklariert wurden\n- müssen einen Wert zugewiesen bekommen",
+     "answer": null
+    },
+    {
+     "id": 16,
+     "thema": "Wann sind lokale Variable gültig und wie lange?",
+     "solution": "Blockgültigkeit",
+     "answer": null
+    },
+    {
+     "id": 17,
+     "thema": "static",
+     "solution": "- bedeutet diese Variable ist keine Instanzvariable - sie gehört nicht zum Objekt\n- gehört zur Klasse und der Name kann nur 1 mal verwendet werden\n- kann verwendet werden ohne die Klasse zu instantiieren\n- wenn Wert geändert wird, wird überall wo diese Varaibel verwendet wird geändert\n\n- auch für Methoden\n- diese sind dann auch Klassenbezoge - kann also verwendet werden ohne die Klasse zu instatiieren\n- es kann in dieser Methode dann aber nicht auf Instanzvariablen der Klasse zugegriffen werden, da es ja keine Instanz gibt\n\nstatic Methoden \/ Variablen sind kein individueller Bestandteil der Objekte der Klasse",
+     "answer": null
+    },
+    {
+     "id": 18,
+     "thema": "Können static Variable \/ Methoden auch über eine Instanz der jeweiligen Klasse aufgerufen werden?",
+     "solution": "Ja, static Methoden \/ Variablen können über eine Instanz aufgerufen werden - sollten sie aber nicht!!!",
+     "answer": null
+    },
+    {
+     "id": 19,
+     "thema": "final",
+     "solution": "- zum erzeugen von Konstanten\n- Variable darf sich nicht mehr ändern\n- für Objekte bedeutet das - die Referenz darf sich nicht verändern - der Inhalt darf sich ändern!\n– ArrayList, HashMap usw. können also trotzdem Elemente hinzugefügt werden",
+     "answer": null
+    },
+    {
+     "id": 20,
+     "thema": "Was repräsentiert das Schlüsselwort \"null\"?",
+     "solution": "- bedeutet kein Objekt\n- Eine Referenzvaribale wird auf Null gesetzt falls sie auf kein Objekt verweist",
+     "answer": null
+    },
+    {
+     "id": 21,
+     "thema": "Was repräsentiert das Schlüsselwort \"this\"?",
+     "solution": "Die Referenz auf das eigene aktuelle Objekt\n- this Wert wird von Java festgelegt, es ist immer das aktuelle Objekt\n- this kann kein Wert zugewiesen werden",
+     "answer": null
+    },
+    {
+     "id": 22,
+     "thema": "Was ist das Prinzip der Abstraktion?",
+     "solution": "- Fähigkeit Details zu ignorieren\n- Fokus der Btrachtung auf eine höhere Ebene lenken\n- Gemeinsamkeiten erkennen\n\nBsp\n- Auto und Motorrad\n- beide motorisiert, beide fahren\n-- Klasse Fahrzeug\n\n- Uhranzeige = Nummernanzeige",
+     "answer": null
+    },
+    {
+     "id": 23,
+     "thema": "Was ist das Prinzip der Modularisierung?",
+     "solution": "- Prozess der Zerlegung eines Ganzen in wohl definierte Teile\n- Teile interagieren in wohl definierter Weise\n- Teile können getrennt erstellt und untersucht werden\n\nBsp\n- Auto zerlegen\n- Klasse Motor, Klasse Lenker\n\n- Uhranzeige = Stundenanzeige, Minutenanzeige",
+     "answer": null
+    },
+    {
+     "id": 24,
+     "thema": "Zusammenwirkung Prinzip Abstraktion, Prinzip Modulariersung",
+     "solution": "Uhranzeige\n- Modularisierung - Uhranzeige = Studenanzeige + Minutenanzeige\n- Abstraktion - Stundenanzeige \/ Minutenanzeige = Nummernanzeige\n\nUhranzeige = 2 x Nummernanzeige",
+     "answer": null
+    },
+    {
+     "id": 25,
+     "thema": "Interne\/Externe Methodenaufrufe",
+     "solution": "Intern - im Objekt oder innerhalb der Klasse die Methoden der Klasse selber aufrufen\nExterne - Methoden welche von anderen Objekten außerhalb der Klasse aufgerufen werden",
+     "answer": null
+    },
+    {
+     "id": 26,
+     "thema": "Was ist das Geheimnisprinzip",
+     "solution": "- Daten die zu einem Objekt gehören, bleiben anderen Objekten verboren\n- interessant ist, was ein Objekt machen kann, nicht wie es dies macht\n- erhöht Unabhängigkeit\n- Unabhängigkeit der Module ist wichtig für große Systeme und die Wartung\n\nBsp.\nArrayList.sort()\n- wichtig ist nur das sort die Liste sortiert\n- nicht wie die Methode sort funktioniert",
+     "answer": null
+    },
+    {
+     "id": 27,
+     "thema": "public, protected, \"default\", private\n- Wann werden sie warum eingesetzt? (siehe auch Geheimnisprinzip)",
+     "solution": "public \n- darf jeder verwenden\n\nprivate\n- nur die Klasse selber\n- darf auch von der Unterklasse nicht benutzt werden\n\nprotected \n- im gleichen Package und Unterklassen\n\ndefault (nichts davor schreiben)\n- nur im Package\n\nWelche wann?\n- So weit wie möglich Sichtbarkeit einschränken",
+     "answer": null
+    },
+    {
+     "id": 28,
+     "thema": "Mengen und Maps als Beispiele aus der Java-Klassenbibliothek (Sammlungsframework)",
+     "solution": "Maps\n- Sammlungen, die Wertpaar enthalten\n- Wertpaare bestehen aus einem Schlüssel und einem Wert (key-value pairs)\n",
+     "answer": null
+    },
+    {
+     "id": 29,
+     "thema": "Was ist die Klassenbilbliothek?",
+     "solution": "Funktionalitäten die Java als Programmiersprache mitbringt\n- tausende von Klassen\n- zehntausende von Methoden\n- viele nützliche Klassen, die die Programmierung stark vereinfachen\n- Klassen sind in Pakete organisiert\n- es können einzelne Klassen oder Pakete importiert werden",
+     "answer": null
+    },
+    {
+     "id": 30,
+     "thema": "Schnittstellen vs. Implementation",
+     "solution": "Schnittstelle\n- Name der Klasse\n- allgemeine Beschreibung der Klasse\n- Liste von konstruktoren und Methoden\n- Ergebnistypen und Parameter für die Konstruktoren und Methoden\n- Beschreibung des Zwekcs jedes Konstruktors und jeder Methode\n\nImplementation\n- private Datenfelder\n- private Methoden\n- die Rümpfe (Quellcode) der einzelnen Methoden",
+     "answer": null
+    },
+    {
+     "id": 31,
+     "thema": "Klassendokumentation",
+     "solution": "Schnittstellenbeschreibungen für alle Bibliotheksklassen\nsollte umfassen:\n- Klassenname\n- Kommentar der den allgemeinen Zweck und die Eigenschaften der Klasse beschreibt\n- Versionsnummer\n- Autorenname\n- eine Dokumentation für jeden Konstruktor und jede Methode",
+     "answer": null
+    },
+    {
+     "id": 32,
+     "thema": "Kostruktor Methoden Dokumentation (siehe auch Klassendokumentation)",
+     "solution": "Dokumentation für jeden Konstruktor und Methode sollte umfassen\n- Name der Methode\n- Ergebnistyp\n- Name und Typen der Parameter\n- Beschreibung des Zwecks und der Arbeitsweise der Methode\n- eine Beschreibung jedes Parameters\n- eine Beschreibung des Ergebnisses",
+     "answer": null
+    },
+    {
+     "id": 33,
+     "thema": "Javadoc\nWie erstellt man Javadoc-Kommentare",
+     "solution": "- Programm welches aus Javadoc Kommentaren eine HTML Seite erstellt\n\/**\n* @author \n* @version\n* @return\n* @throws\n* @param\n*\/",
+     "answer": null
+    },
+    {
+     "id": 34,
+     "thema": "Vererbung",
+     "solution": "erlaubt es Eigenschaften und Methoden weiter zu geben\n- sinnvoll gemeinsame Eigenschaften auszulagern und nicht zweimal umzusetzen (Wiederverwendung)\n- Vererbungskette kann beliebig tief gehen",
+     "answer": null
+    },
+    {
+     "id": 35,
+     "thema": "Was wird vererbt?",
+     "solution": "- alles außer Konstruktoren\n- es kann auf vererbte Attribute und Methoden zugegriffen werden, jedoch nur, wenn sie \"Public\" oder \"Protected\" sind",
+     "answer": null
+    },
+    {
+     "id": 36,
+     "thema": "Wie werden Klassen vererbt?",
+     "solution": "Durch das Schlüsselwort \"extends\"\npublic class Student extends Person {…}\n- das erste was machen im Kostrukter der Unterklasse tun musst, ist den Konstruktor der Oberklasse aufzurufen \nsuper(parameter) &lt;- immer in der 1. Zeile des Konstruktors!\n\n- jede Klasse ohne Vererbung erbt von der Klasse java.lang.Object",
+     "answer": null
+    },
+    {
+     "id": 37,
+     "thema": "Wie können Methoden der Oberklasse aus der Unterklasse aufgerufen werden?",
+     "solution": "super.METHODE",
+     "answer": null
+    },
+    {
+     "id": 38,
+     "thema": "Methoden überlagern",
+     "solution": "Methoden der Oberklasse können in der Unterklasse neu definiert werden",
+     "answer": null
+    },
+    {
+     "id": 39,
+     "thema": "Wann ist Vererbnung sinnvoll?",
+     "solution": "- Vererbung ist sinnvoll wenn man eine \"Ist ein\" Beziehung zwischen Klassen herstellen kann\n- Bsp. Privatperson ist eine Person",
+     "answer": null
+    },
+    {
+     "id": 40,
+     "thema": "Was ist mit Konstruktoren? Was macht \"super\"?",
+     "solution": "Konstruktoren werden nie vererbt\n- super ruft den Konstruktor der Oberklasse auf",
+     "answer": null
+    },
+    {
+     "id": 41,
+     "thema": "Worfür braucht man das Schlüsselwort \"super\" (in Bezug auf Methoden und Konstruktoren)",
+     "solution": "Mit super können die Methoden der Oberklasse aufgerufen werden\nsuper.METHODE\n\nMit super kann der Konstruktor der Oberklasse aufgrufen werden, dies muss in der 1. Zeile des Unterklassenkonstruktors erfolgen\nsuper(PARAMETER)",
+     "answer": null
+    },
+    {
+     "id": 42,
+     "thema": "Mehrfachvererbung\nWie könnte ein Konflikt auftreten?",
+     "solution": "- jede Klasse in Java darf nur 1 Superklasse haben\n\nKONFLIKT Diamond of Death Bsp\nOberklasse Fahrzeug\n- Unterklasse Auto (erbt von Fahrzeug)\n- Unterklasse Motorboot (erbt von Fahrzeug)\n-- Unterklasse Amphibienfahrzeug (erbt von Auto + Motorboot)\n\nstarteMotor() als Methode welche in Auto und Motorboot vorhanden ist\n-- Welche Methode soll das Amphibienfahrzeug nun aufrufen??\n--- DIAMOND OF DEATH\n\n",
+     "answer": null
+    },
+    {
+     "id": 43,
+     "thema": "Polymorphie",
+     "solution": " = Vielgestaltigkeit\n\nPerson p = new Student();\n\n- Polymorphie bedeutet in Java, dass zum Zeitpunkt des Compilierens nicht eindeutig ist, welcher Programmcode bei einem Methodenaufruf ausgeführt wird\n-  Der Grund dafür liegt darin, Bsp. dass in einer Variablen, die als \"person\" definiert wurden, Objekte der Klasse \"person\", \"Student\" und \"Dozent\" abgelegt werden können\n- dies ist möglich, da jeder Student und jeder Dozent auch all das \"kann\", was eine Person \"kann\"\n\n- es wird immer die Methode des Objekts aufruft welches wirklcih vorliegt\n\n- Methoden welche nur der Student besitzt können so NICHT aufgerufen werden",
+     "answer": null
+    },
+    {
+     "id": 44,
+     "thema": "Interfaces",
+     "solution": "als Alternative zur Mehrfachvererbung\n\n- es werden nur die Methodensignaturen angegeben\n- implementierende Klassen müssen diese Methoden mitleifern ansonsten gibt es ein Fehler beim kompilieren",
+     "answer": null
+    },
+    {
+     "id": 45,
+     "thema": "Warum kann durch das Interface das Diamond of Death nicht auftreten?",
+     "solution": "Wenn eine Klasse 2 Interfaces implementiert und diese die eine gleiche Methode haben, wird in der Klasse nur eine Methode definiert\n- Es wird immer der Code der implementierenden Klasse ausgeführt",
+     "answer": null
+    },
+    {
+     "id": 46,
+     "thema": "Wie implementiert man Interfaces?",
+     "solution": "public interface Klassenname {\n public void starteMotor(); &lt;-- Methode\n}\n\nKlassen können das Interface mit \"implements\" implementieren\n\npublic class Boot extends Fahrzeug implements Motorfahrzeug, Wasserfahrzeug",
+     "answer": null
+    },
+    {
+     "id": 47,
+     "thema": "Ist Mehrfachimplementation (von Interfaces) zulässig?",
+     "solution": "Ja",
+     "answer": null
+    },
+    {
+     "id": 48,
+     "thema": "Ist Mehrfachvererbung (von Klassen) zulässig?",
+     "solution": "Nein",
+     "answer": null
+    },
+    {
+     "id": 49,
+     "thema": "Was ist Überlagerung und Polymorphie?",
+     "solution": "Überschreibung\n- Man kann in der Unterkalsse die gleiche Methode nochmal implementeiren mit gleicher Signatur\n- Wenn auf dem Objekt etwas aufgerufen wird, wird nur die Methode der Unterklasse verwendet (Überschreibung)\n\nPolymorphie\n– eine Unterklasse kann wie eine Oberklasse verwendet werden\n- Eine Methode kann den gleichen Name mit verschiedenen Parametern haben\n- gleiche Methoden kann mit verschiedenen Parametern jeweils aufgrufen werden",
+     "answer": null
+    },
+    {
+     "id": 50,
+     "thema": "Modellbildung (Typische Fehler: Vermischung, Redundanz?",
+     "solution": "Modellbildung\n- Bevor ein umfangreiches Softwareprojekt angegangen werden kann, muss ein Modell der zu erstellenden Klassen angelegt werden\n- hilft bei der Klärung wichtiger Fragen wie:\n- Welche Klassen benötigen welche Eigenschaften?\n- Wie hängen verschiedene Klassen miteinander zusammen?\n- Welche Klasse ergbt gff von welcher anderen Klasse?\n- es wird von vornherein Struktur in ein Programm gebracht\n- hilft dabei typische Fehler bei der Erstellung von Klassen für ein Programm zu verhindern\n\nVermischung\n- bedeutet, dass eine Klasse geschreiben wurde, die eigentlich mehrere unabhängige Objekte der realen Welt in sich verein\n\nRedundanz\n- Daten werden mehrfach vorgehalten\n- Speicherverschwendung, synchron halten von Daten wird schwer",
+     "answer": null
+    },
+    {
+     "id": 51,
+     "thema": "Interfaces",
+     "solution": "Mehrfachimplementation erlaubt\n- enthalten nur Methodensignatur",
+     "answer": null
+    },
+    {
+     "id": 52,
+     "thema": "Variablen mit Interface-Typen?",
+     "solution": "vom Interface können Variablen erstellt werden\n– es können generifizierte Listen erstellt werden welche deisen InterfacteTyp entahlten",
+     "answer": null
+    },
+    {
+     "id": 53,
+     "thema": "Welcher Code wird aufgrufen (Interface)",
+     "solution": "es wird immer der Code der Klasse aufgrufen",
+     "answer": null
+    },
+    {
+     "id": 54,
+     "thema": "Abstrakte Klassen (NICHT IDENTISCH MIT PRINZIP DER ABSTRAKTION!)",
+     "solution": "- zählen als richtige Klassen\n- in diesen werden ein oder mehrere Methoden deklariert, aber nicht implementiert sind\n- es können eine Instanzen mit new erzeugt werden, es muss IMMER erst eine Subklasse definiert werden (extends)\n- Mischung aus Interface und Klasse\n– Es können Methoden entahlten werden die abstrakt sind (nur Methodensignatur) (abstract)\n- man darf abstrakte Klassen aber als Variablentyp verwenden (Figur fig = new Quadrat())\n(public abstract class Figur {})\n(public abstract String getFigur()}",
+     "answer": null
+    },
+    {
+     "id": 55,
+     "thema": "Innere Klassen",
+     "solution": "Klassen die man innerhalb Klassen implementiert (es geht nicht unterhalb der Klasse! NUR INNERHALB)\n- innere Klassen sind eng mit den Instanzen der äußeren Klasse verwoben\n- innere Klassen können nur im Zusammenhang mit Instanzen der äußeren Klasse existieren\n\n- können beliebig geschachtelt werden",
+     "answer": null
+    },
+    {
+     "id": 56,
+     "thema": "Wie kann eine innere Klasse von einer anderen Kalsse erstellt werden?",
+     "solution": "Äußere Klasse: Computer\ninnere Klasse: Keyboard\n\nComputer c = new Computer();\nComputer.Keyboard k = c.new Computer.Keyboard();",
+     "answer": null
+    },
+    {
+     "id": 57,
+     "thema": "Können Objekte innerer Klassen auf die Datenfelder einer Objektes der äußeren Klasse zugreifen?",
+     "solution": "Ja, sogar private\neine normale innere Klassen kann nur im Zusammenhang mit der Äußeren Klasse instantiert werden\n- innere Klasse in der äußeren Klasse instantiieren (new)\nOder \n- äußere Klasse vorher mitgeben",
+     "answer": null
+    },
+    {
+     "id": 58,
+     "thema": "Was sind anonyme innere Klassen? Java Stream API",
+     "solution": "Innere Klassen die kein Namen haben\n- es wird einfach ein Objekt erzeugt\n\nz.B.\nRunnable cmd = new Runnable {\npublic void run() {\n…\n}}\ndoWork(cmd)\n\npublic static void doWork(Runnable command) {\ncommand.run();\n}",
+     "answer": null
+    },
+    {
+     "id": 59,
+     "thema": "Lambda Ausdrücke Java Stream API",
+     "solution": "Consumer&lt;String printName = name - { … };\n\n- Es gibt verschiedne Lambda Ausdrücke in Java\n- (Function, Predicate, …)",
+     "answer": null
+    },
+    {
+     "id": 60,
+     "thema": "Java Stream API Streams",
+     "solution": "Streams haben eine Datenquelle (z.B: Collection)\n- Streams stellen Elemente aus der Datenquelle zur Bearbeitung zur Verfügung\n- die Elemente können mit Hilfe von Methoden bearbeitet werden\n- Streams können nur 1 mal verwendet werden, danach sind sie verbraucht",
+     "answer": null
+    },
+    {
+     "id": 61,
+     "thema": "Java Stream API Filter &amp; Count",
+     "solution": "- Filter\nStream&lt;String stream = names.stream();\n(names ist dabei eine ArrayListe mit Namen)\nstream.filter(n - n.startsWith(\"Hans\");)\n\n- Count\nlong count = stream.filter(n - n.startsWith(\"Hans\")).count();\n",
+     "answer": null
+    },
+    {
+     "id": 62,
+     "thema": "Java Stream API Map &amp; ",
+     "solution": "- Map = Umwandeln\nstream.map(n - n.length()).forEach(l - System.out.println(\"Länge: \" + l)",
+     "answer": null
+    },
+    {
+     "id": 63,
+     "thema": "Was sind statische innere Klassen?",
+     "solution": "static\n- können nicht auf Objekte der äußeren Klasse zugreifen\n- verhalten sich so wie normale Klassen nur das sie innerhalb einer anderen sind\n- können einfach so instatiiert werden",
+     "answer": null
+    },
+    {
+     "id": 64,
+     "thema": "Fehlerverarbeitung (Ursachen von Fehlern)",
+     "solution": "Ursachen Bsp.\n- wenn auf ein nicht gültigen Array Index zugegriffen wird\n- wenn versucht wird eine Methode auf einem Objekt aufzurufen, das noch garnicht erzeugt wurde\n- wenn versucht wird durch 0 zu teilen\n- wenn versucht wurd die Wurzel aus einer negativen Zahl zu zeuhen\n- wenn versucht wird Text in eine Ganzzahl umzuwandeln, der keine Zahl darstellt\n\nWenn solch ein Zustandt auftritt, wird ein entsprechendes \"Signal\" gestezt und die Programmausführung wird abgebrochen",
+     "answer": null
+    },
+    {
+     "id": 65,
+     "thema": "Wie wird in Java mit Fehlern umgegangen?",
+     "solution": "Ein Programm kann Fehler abfangen\n– bereits bei der Entwicklung eines Programmes Maßnahmen programmieren, die durchgeführt werden sollen, wenn ein Fehlerzustand auftritt (dadurch bricht das Programm nicht ab)\n- wird ein Fehler NICHT aufgefangen bricht das Programm vollständig ab",
+     "answer": null
+    },
+    {
+     "id": 66,
+     "thema": "Was bedeutet \"eine Exception werfen\"?",
+     "solution": "Ein Fehler signailisieren",
+     "answer": null
+    },
+    {
+     "id": 67,
+     "thema": "Was bedeutet \"eine Exception fangen\"?",
+     "solution": "Ein Fehler abfangen",
+     "answer": null
+    },
+    {
+     "id": 68,
+     "thema": "Wie können Exception geworfen und gefangen werden?",
+     "solution": "Exception werfen\n- throw new ExceptionTyp(\"fehlerText\")\n\nException fangen\n- try {hier kann der Fehler auftreten} catch (Exception Typ \"name\") {Programmcode für den Fehlerfall}",
+     "answer": null
+    },
+    {
+     "id": 69,
+     "thema": "Exception Typen (IllegalArgumentException, IllegalStateException, UnsupportedOperationException)",
+     "solution": "- IllegalArgumentException\n- wenn ein übergebener Parameter bei einem Methodenaufruf ungültig ist\n\n- IllegalStateException\n- wenn sich ein Objekt in einem Zustand befindet, in dem es eine bestimmte Aktion nicht ausführen kann\n\n-UnsupportedOperationException\n- wenn eine Objekt eine Methode anbietet, die vom Programmierer noch nicht entwickelt wurde (Methode schon mal hingeschrieben, aber nich nicht mit Inhalt gefüllt)",
+     "answer": null
+    },
+    {
+     "id": 70,
+     "thema": "Was genau passiert, wenn eine Exception geworfen wird?",
+     "solution": "Es wird von unten nach oben durch den Callstack gegangen und geschaut ob irgendwo ein try ist\n- wenn ja wird die Exception durch unseren Programmcode in catch abgefangen\n- wenn nicht landen wir irgendwann bei der Main methode und wenn dort ebenfalls ein try Block drin ist stürzt das Programm ab",
+     "answer": null
+    },
+    {
+     "id": 71,
+     "thema": "Bei throw - läuft die Methode weiter oder sind wir raus?",
+     "solution": "Bei throw wird die Methode direkt abgebrochen",
+     "answer": null
+    },
+    {
+     "id": 72,
+     "thema": "Bricht die Programmausführung im try Block bei einer Exception ab?",
+     "solution": "Ja, nach der Exception ist der nächste Teil der Anwendung immer der catch Teil! Das heißt Code im try Block nach dem Teil wo die Exception auftritt wird nicht ausgeführt!\n- ein try Block wirkt auch nur wenn der richtige Exceptiontyp abgenfangen wird",
+     "answer": null
+    },
+    {
+     "id": 73,
+     "thema": "Welche Exceptions MÜSSEN abgefangen werden, welche nicht?",
+     "solution": "Checked Exception\n- müssen abgefangen werden\n\nRuntime Exceptions\n- müssen nicht angefangen werden\n- bei nichtabgfangen und Fehler stürzt das Programm ab",
+     "answer": null
+    },
+    {
+     "id": 74,
+     "thema": "Wann sollen Exceptions verwendet werden?",
+     "solution": "Exceptions sollen nur in Ausnahmefälle verwendet werden\n- ist sehr teuer (Prozessorleistung)\n- wenn wir nur Rückgabewert brauchen dann einfachen Rückgabewert implementieren",
+     "answer": null
+    },
+    {
+     "id": 75,
+     "thema": "Wie könnte man universell jede Exception abfangen?",
+     "solution": "Als ExceptionTyp = Exception\n- alle ExceptionTypen erben von Exception",
+     "answer": null
+    },
+    {
+     "id": 76,
+     "thema": "Wie kann man sehen welche Exception bei einem Methodenaufruf gefangen werden können?",
+     "solution": "STRG Gedrückt halten + auf Methode klicken\n- Eclipse öffnet darauf hin die Methode und in deren Kommentar steht das drin",
+     "answer": null
+    },
+    {
+     "id": 77,
+     "thema": "Mit welcher Methode kann die Exception Fehlernachricht abfragen kann?",
+     "solution": "ExceptionName.getMessage();",
+     "answer": null
+    },
+    {
+     "id": 78,
+     "thema": "Was sollte man beim Exceptions fangen nicht tun?",
+     "solution": "Bestimmte Exceptions deuten auf schlechte Programmierung hin\n- ArryIndexOutOfBoundsException (Zugriff auf nicht gültige Array-Indizes\n- NullPointerException (Aufruf von Methoden auf nich nicht erstellten Objekten)\n- Division drurch Null (Arithmetic Exception)\n\n- es sollte auch keine Exception geworfen werden ohne das ein fehlerfall vorliegt (um Excelption als zusätzlichen Rückgabetyp zu verwenden \/ um schnell eine umfangreiche Bearbeitung zu beenden)",
+     "answer": null
+    },
+    {
+     "id": 79,
+     "thema": "Wie ist die Prozessorleistung bei Exceptions?",
+     "solution": "- Exceptions zu werfen ist sehr teuer\n- der Try Block Kostet an sich nichts",
+     "answer": null
+    },
+    {
+     "id": 80,
+     "thema": "Wie funktioniert in Java die Einagbe\/Ausgabe?",
+     "solution": "package Java I\/O\n- funktioniert über Datenströme \"Streams\"",
+     "answer": null
+    },
+    {
+     "id": 81,
+     "thema": "Was ist InputStream und OutputStream?",
+     "solution": "InputStream\n- dient der Eingabe in das Programm\n\nOutpurStream\n- dient der Ausgabe aus dem Programm\n\nStreams sind Basisklassen\n- sie funktionieren für jede denkbare Datenquelle bzw. jedes denkbare Datenziel\n- es werden Binärdaten gelesen\/geschrieben\n- Konvertierung müsste somit selbst erfolgen",
+     "answer": null
+    },
+    {
+     "id": 82,
+     "thema": "Wovon abstrahieren diese? (InputStream und OutputStream)",
+     "solution": "Abstrahieren alle lese und schreib Operationen\n- z.B. Lese Schreiboperationen auf Netzwerke, Console usw.\n- die Klassen lesen\/schreiben Binärdaten",
+     "answer": null
+    },
+    {
+     "id": 83,
+     "thema": "Was sind Reader und Writer?",
+     "solution": "- machen die Bedienung der Streams einfacher\n- lesen\/schreiben immer Zeichenweise\n- man muss wissen welche Art von Daten eingelesen\/geschreiben werden sollen (z.B. Text)",
+     "answer": null
+    },
+    {
+     "id": 84,
+     "thema": "Wie erleichtern Reader und Writer die EA Operationen",
+     "solution": "- Reader und Writer lesen keine Binärdaten ein\n- sie lesen Zeichenweise ein\n- der Reader\/Writer ließt Binärdaten ein (InputStream\/OutputStream) und wandelt sie in Zeichen um",
+     "answer": null
+    },
+    {
+     "id": 85,
+     "thema": "BufferedReader \/ PrintStream",
+     "solution": "- ist einer weitere Vereinfachung zum Lesen\/Schreiben\n- Reader kann z.B. zeilenweise ganze Strings von einem Reader einlesen\n- PrintStream kann z.B. jeden beliebigen Datentyp ein OutputStream schreiben\n- komfortabelsten Möglichkeiten aus externen Datenquellen zu lesen \/ zu schreiben\n- Voraussetzung: Die Datenquellen sind auch zeilenweise aufgebaut!",
+     "answer": null
+    },
+    {
+     "id": 86,
+     "thema": "Wie werden Dateien in Java repräsentiert?",
+     "solution": "- Mit Objekten der Klasse File\n- man kann ein File fragen, ob es nur ein Behälter für weitere Files ist\n- man kann ein File nach weiteren Informationen fragen, die in den meisten Dateisystemen verwaltet werden (z.B. Größe \/ Schreibschutz)\n- erzeugt man ein Objekt muss bei der Erzeugung angegeben werden weilche Datei im Dateisystem es repräsentiert\n- existiert die Datei nicht führt das zu keinem Fehler!\n- mit der Methode exists() kann abgefragt werden ob die Datei schon existiert\n- Mit der Methode createNewFile() kann die Datei ggf. angelegt werden",
+     "answer": null
+    },
+    {
+     "id": 87,
+     "thema": "was sollte geprüft werden bevor manin eine Datei schreibt oder aus ihr ließt?",
+     "solution": "-Existiert die Datei?\n- Ist die Datei eine \"normale\" Datei?\n- Kann ich in die Datei schreiben?",
+     "answer": null
+    },
+    {
+     "id": 88,
+     "thema": "Collections",
+     "solution": "Sind Interfaces (Sammlung)\n- stellt grundlegende Funktionalität für Einzelelement-Datenstrukturen zur Verfügung\n- jede Art von Datenstruktur (AarrayList, HashSet etc.) kann als Collection behandelt werden\n- !!! Das Vorhandensein einer Methoden sagt nichts über die Effizienz aus: contains(Object o) bei eine ArrayList hat Komplexität O(n), bei einem HashSet O(1), bei einem TreeSet O(log n)",
+     "answer": null
+    },
+    {
+     "id": 89,
+     "thema": "Iterable",
+     "solution": "Superinterface für alle Datenstrukturen (alles außer Map)",
+     "answer": null
+    },
+    {
+     "id": 90,
+     "thema": "Methoden der Iteratoren",
+     "solution": "Iteratoren sind Objekte mit Zustand\n- sie merken sich die aktuelle Position in der Datenstruktur\n- jeder Iterator kann dabei an einer anderen Position stehen\n- er merkt sich NUR die Position\n- die Daten werden immer aus der Datenstruktur entnommen",
+     "answer": null
+    },
+    {
+     "id": 91,
+     "thema": "Iterieren mit Iteratoren",
+     "solution": "for (Iterator&lt;String it = liste.iterator(); it.hasNext();) {\n String element = it.next();\n}\n\n- Iterator fängt bei Position -1 an",
+     "answer": null
+    },
+    {
+     "id": 92,
+     "thema": "Wie vergleicht man Strings miteinander",
+     "solution": "String 1 == String 2\n- so werden nur die Objekte vergleichen - die sind NIEMALS gleich\n\nString1.equals(String2)\n- so werden die Inhalte von 2 Strings verglichen\n- ! \"Anna\".equals(o);\n-- Warum? \n--- Wenn das Objekt null ist gibt es bei o.equals(\"Anna\") eine NullpointerException!",
+     "answer": null
+    },
+    {
+     "id": 93,
+     "thema": "Interface List",
+     "solution": "Abstraktion für Listen in Java\n- erlaubt neben Funktionalitäten von Iterable und Collection auch s.g. indizierte Zugriffe\n- verkettete Listen get() O(n)\n- ArrayList get() O(1)",
+     "answer": null
+    },
+    {
+     "id": 94,
+     "thema": "Interface Set",
+     "solution": "Repräsentiert Sets (Mengen)\n- Datenobjekte bei denen identische Objekte nur einmal vorkommen\n- (HashSet, TreeSet, LinkedHashSet)",
+     "answer": null
+    },
+    {
+     "id": 95,
+     "thema": "Interface Map",
+     "solution": "Repräsentieren Abbildungen (Maps)\n- Datenobjekte bei denen Schlüssel auf Wertpaare abgebildet werden\n- !!! DIESE GEHÖREN NICHT ZU COLLECTIONS !!!\n- (HashMap, TreeMap, LinkedHashMap)",
+     "answer": null
+    },
+    {
+     "id": 96,
+     "thema": "Interfaces Queue und Deque",
+     "solution": "Repräsentieren Warteschlangen\n- anders als Queus erlaben Deques das Einfügen und Entfernen am Anfang und am Ende der Warteschlange\n- LinkedList unterstützt das Deque Interface und repräsentiert somit eine verkettete Liste als auch eine Deque",
+     "answer": null
+    },
+    {
+     "id": 97,
+     "thema": "Vector",
+     "solution": "Repräsentiert eine Liste an Elementen mit Hilfe eines intern verwalteten Arrays ähnlich der ArrayList\n- Vector ist noch Uralt - erste \"wachsende\" Datenstruktur in Java 1.0\n- gilt inzwischen als veraltet und ist vollständig druch ArrayList ersetzbar",
+     "answer": null
+    },
+    {
+     "id": 98,
+     "thema": "Klasse oder Interface?",
+     "solution": "Welches?\n1. private ArrayList&lt;String names = new ArrayList&lt;();:\n2. private List&lt;String names = new ArravList&lt;();\n3. private Collection&lt;String names = new ArravList&lt;();\n4. private Iterable&lt;String names = new Arraylist&lt;();\n\n- Dauemregl - immer das umfangreichste \/ passende Interface? also Option 2\n\nWarum?\n- Interface bietet in den meisten Fällen fast alle nützlichen Methoden der Klasse, man ist bei der Wahl der Implementation aber felxibel: Um auf eine verkettete Liste umzusteigen, muss man nur das new ArrayList gegen New LinkedList austauschen ohne Code zu verändern\n",
+     "answer": null
+    },
+    {
+     "id": 99,
+     "thema": "Java Steam API",
+     "solution": "Macht es möglich Funktionen einer Variable zuzuordnen\n",
+     "answer": null
+    },
+    {
+     "id": 100,
+     "thema": "Wie werden Klassen in UML-Klassendiagrammen dargestellt?",
+     "solution": "Rechtecke in 3 Abschnitten\n– 1. Name der Klasse\n- 2. Datenfelder der Klasse\n- 3. Methoden der Klasse\n\nSichtbarkeiten\n+ public\n- private\n# protected\n~ package\n\nZugehörigkeiten (Scope)\n- Instanzvariablen\/-methoden gehören zu den Instanzen der Klasse und können sich z.B. in Wert und Verhalten zwischen Instanzen unterscheiden (normale Instanzvariablen und - methoden)\n- Klassifikatorvariablen\/-methoden gehören zu der Klasse und nicht zu der Instanz und sind somit für alle Instanzen gleich (static Datenfelder und Methoden)\n\nWeitere Eigenschaften\n- ordered - Rückgabewerte sind geordner (gibt es nicht in Java)\n- redifines - Die Methoden überschreibt eine Operation einer Oberklasse\n- read-only - Die Variable kann nur gelesen werden\n- in - der Methodenparameter wird nur gelesen\n- out - der Methodenparameter wird nur beschrieben\n",
+     "answer": null
+    },
+    {
+     "id": 101,
+     "thema": "Klassenbeziehungen (Assoziation) UML",
+     "solution": "Assoziation\n- beschreibt eine allgemene Beziehung uwischen 2 oder mehr Klassen\n- Beziehung kann einseitig gerichtet (Pfeil) oder beidseitig ungerichtet (Linie) sein\n- Zusätzlich kann Multiplizität vermerkt werden\n- beschreibt wie viele Instanzen einer Klasse mit wievielen Instanzen einer anderen Klasse assoziiert sind (1:1 \/ 1:n \/ n:m)",
+     "answer": null
+    },
+    {
+     "id": 102,
+     "thema": "Klassenbeziehungen (Generalisierung\/Vererbung) UML",
+     "solution": "Generalisierung\n- legt fest, dass eine Klasse eine Spezialisisierung (oder Generalisierung in die andere Richtung) einer andere Klasse dargestellt\n- Die Beziehung ist eine \"ist ein\" - (is a) Beziehung\n- Bsp. Privatkunde IST EINE Person",
+     "answer": null
+    },
+    {
+     "id": 103,
+     "thema": "Klassenbeziehung (Komposition \/ Aggregation) UML",
+     "solution": "Komposition\n- legt fest, dass Instanzen einer Klassen einen Teil von Instanzen einer anderen Klasse darstellt\n- es kann eine Kardinalität festgelegt werden, welche definiert, wie viele Instanzen auf beiden Seiten in eine solchen Beziehungen stehen können\n- Bsp. ein Gebäude besteht aus einem oder mehreren Räumen\n- bei der Komposition ergeben die Teile ohne das Ganze keinen Sinn\n- bei der AGGREGATION ergeben die Teile auch ohne das ganze einen Sinn",
+     "answer": null
+    },
+    {
+     "id": 104,
+     "thema": "Klassenbeziehungen (Realisierung oder Implementierung \/ Abhängigkeiten) UML",
+     "solution": "Realsiierung \/ Implementierung\n- drückt aus, dass eine Klasse z.B. eine Schnittstelle implementiert (Java: implements \/ Interfaces)\n- gestrichelter Pfeil mit leerer Pfeilspitze\n\nAbhängigkeiten\n- drücken aus, dass eine Änderung in einer Klasse Änderungen in einer anderen Klasse zu Folge haben kann\n- gestrichelter Pfeil mit linien Pfeilspitze (- - - )",
+     "answer": null
+    },
+    {
+     "id": 105,
+     "thema": "Komposition in der Programmiersprache",
+     "solution": "Anstatt Klassen wie z.B. Hund, Putzroboter, Killerroboterhund mit Methoden zu versehen\n---\n\"Funktionalität Klassen\" wie z.B. Fresser, Putzer, Fahrer\n- nun können den Anwendungsklassen die \"Funktionalität\" Klassen zugeordnet werden (als Instanzvariablen)\n\nMit Vererbung vorsichtig umgehen! - Im Zweifel Komposition verwenden",
+     "answer": null
+    },
+    {
+     "id": 106,
+     "thema": "Welche Beziehungen zwischen Klassen gibt es?",
+     "solution": "Assoziation\n- Dabei kennen sich die Objekte aber existieren unabhängig\n- Raum hat ein Stuhl\n\nAggregation\n- Sonderform der Assoziation\n- feste Beziehung zwischen Objekte\n- Bsp. Tisch besteht aus Twischplatte und Tischbein\n\nKomposition\n- Teile ergeben nur zusammen einen Sinn\n- bei der Löschung des ganzen wird alles andere auch gelöscht\n- Bsp. Dokument mit Inhaltsverzeichnis und Kapitel",
+     "answer": null
+    },
+    {
+     "id": 107,
+     "thema": "Vererbung vs Komposition",
+     "solution": "Komposition anstelle von vererbung\n-  durch dieses Prinzip werden Klassen entkollet, was zu flexibleren und stabilieren Entwürfen fürht\n- So ist es möglich, zur Luafzeit das Verhalten einer Klasse zu verändern\n",
+     "answer": null
+    },
+    {
+     "id": 108,
+     "thema": "Threads\/Parallelität",
+     "solution": "Threads\n- Die Kontrollflüsse eines Prozesses werden als Threads bezeichnet\n- Führen Nebenläufigkeit innerhalb von Prozessen ein\n- besitzen geringe Isolation\n- Kontextwechsel ist weniger aufwendig\n- Threads teile sich Codesegment, Datensegment, (außer Thread local Variable), die verwendete Dateidiskreption\n- Threads besitzten eigene: Programm Counter und Registerzustände, Callstacks, Zustände\n\n- Entkoppeln von der Hauptanwendung z.B. Rechtschreibprüfung, Autospeicherung\n- Sicherung der Reaktionsfähigkeit des Systems (GUI, Progress Bar)\n- bei Severanwendungen: - Dantenbankzugriffe mehrerer Benutzer, Web Anfragen bearbeiten",
+     "answer": null
+    },
+    {
+     "id": 109,
+     "thema": "Nebenläufigkeit \/ Parallelität",
+     "solution": "Nebenläufigkeit\n- A und B heißen nebenläufig, wenn sie voneinander unabhängig bearbeitet werden können\n\nParallelität\n- A und B heißen parallel, wenn sie gleichzeitig und unabhängig voneinander durchgeführt werden",
+     "answer": null
+    },
+    {
+     "id": 110,
+     "thema": "Wie können mehrere Ausführunsstränge gleichzeitig ablaufen?",
+     "solution": "Klasse Thread\n- Runnable in die Instanz des Threads und dann start\nODER\n- von Thread Unterklasse machen und run Methode überschreiben",
+     "answer": null
+    },
+    {
+     "id": 111,
+     "thema": "Wie werden Threads in Java gestartet und ausgeführt?",
+     "solution": "Eine Instanz der Klasse Thread repräsentiert die Betriebssystemressource selbst\n- public void testThreads() {\nThread t = new Thread(new Runnable() {\npublic void run() {…})\nt.start();\n}",
+     "answer": null
+    },
+    {
+     "id": 112,
+     "thema": "Wie beendet sich ein Thread?",
+     "solution": "Eigenständiges beenden\n- aus der run() Methode rauslaufen\n\nNICHT SO MACHEN - stop() (wird aus Java entfernt)\nNICHT SO MACHEN - Nachricht über Interrupt()",
+     "answer": null
+    },
+    {
+     "id": 113,
+     "thema": "Wie kann man auf Threads warten?",
+     "solution": "try {\nt1.join()\nt2.join()\n} catch (InterruptedException e) {...}",
+     "answer": null
+    },
+    {
+     "id": 114,
+     "thema": "Nichtdeterminismus (Threads)",
+     "solution": "Threads führen dazu, dass sehr viele unterschiedlcieh Ausführungsreihenfolgen (Interleavings) auftreten können",
+     "answer": null
+    },
+    {
+     "id": 115,
+     "thema": "Was sagt es aus wenn alle Tests bei Nebenläufigkeit funktionieren?",
+     "solution": "Das genau diese Ausführungsreihenfolge funktioniert hat - Über andere sagt es nichts aus",
+     "answer": null
+    },
+    {
+     "id": 116,
+     "thema": "Konsistenzprobleme von Threads",
+     "solution": "Wenn der Zugriff auf geteilte Ressourcen nicht klar geregelt ist, entstehen Probleme\n- Race Condition - Das Ergebnis der Programmausführung hängt entscheidend von der Abarbeitungsreihenfolge der Threads ab (Bsp: T1: x=1; T2: x=2 -- welcher ist zuletzt fertig?)\n- Data Race - Ist eine Konstellation in der mind. 2 Threads zu selben Zeit auf eine gemeinsame Variable zugreifen. Zumindest 1 Thread versucht, diese zu verändern und der Zugriff ist nicht synchronisiert (Bsp. T1: a=t; t=a+1; T2: b=t; t=b+1)\n- Inkonsistente Daten - Threads greifen auf gecachte Variablenwerte zu (Prozessorcache). Beim Schreibenwird nur der Cache geändert und andere Threads sehen den neuen Wert eventuell nicht",
+     "answer": null
+    },
+    {
+     "id": 117,
+     "thema": "Koordination bei Nebenläufigkeit",
+     "solution": "Möglichkeiten\n- Verzögerung eines Threads sleep() (nicht gut)\n- Warten auf das Beenden einen Threads join()\n- Warten und Notifizieren mit wait() \/ notify()\n- Realisieren des wechselseitigen Ausschlusses mit Hilfe von Monitoren wait() und notify() sowie mit Semaphoren acquire() und release()\n- Warten auf Barrieren",
+     "answer": null
+    },
+    {
+     "id": 118,
+     "thema": "Kritische Abschnitte (Threads)",
+     "solution": "Atomar\n- Eine Routine heißt atomar, wenn sie nicht in separate kleinere Einheiten unterteilt werden kann und bei deren Ausführung unterbrochen werden kann\n\nKritischer Abschnitt\n- Kritische Abschnitte bestehen aus mehreren Anweisungen, deren Zwischenergebnisse inkonsistente Zustände darstellen, auf die andere Threads keinen Zugriff erhalten dürfen. Das Ergebnis eines kritischen Abschnittes darf nur als eine unteilbare Einheit nach außen sichtbar werden",
+     "answer": null
+    },
+    {
+     "id": 119,
+     "thema": "Wechselseitiger Ausschluss",
+     "solution": "Wechselseitiger Ausschluss (mutual exclusion)\n- stellt sicher, dass sich zu jedem Zeitpunkt höchstens ein Programminhalt in einem kritischen Abschnitt befindet",
+     "answer": null
+    },
+    {
+     "id": 120,
+     "thema": "Monitor (Threads) (synchronized)",
+     "solution": "Ein Monitor ist die Kapselung eines kritischen Abschnittes mit Hilfe einer automatisch verwalteten Sperre\n- synchronized \n\nBsp\n- public synchronized void ueberweise(int amount){}\n\n- Kann vor der Methode \/ vor einem Codeabschnitt\n\nBsp\n- synchronized(this) { count++ }\n\nNUR OBJEKTE HABEN MONITORE",
+     "answer": null
+    },
+    {
+     "id": 121,
+     "thema": "Semaphor",
+     "solution": "private static Semaphore sem = new Semaphore(1);\n\ntry{\nsem.acquire();\ncount++\nsem.release()\n} catch (InterruptedException e) {..}",
+     "answer": null
+    },
+    {
+     "id": 122,
+     "thema": "Barrieren",
+     "solution": "Eine Barriere kann zum Warten auf mehrere Threads genutzt werden.\nEin Thread der auf die Barriere trifft wird solange angehlaten bis alle erwarteten Threads eingetroffen sind. Die Anzahl der Threads is in der Barriere konfiguriert.\n\n- CyclingBarrier barrier = new CyclingBarrier(5); ((warten auf 5 Threads))\ntry {\nbarrier.await();\n} catch (InterrupterException e) {...}",
+     "answer": null
+    },
+    {
+     "id": 123,
+     "thema": "Was ist ein kritischer Abschnitt? Wie kann man in Java kritische Abschnitte schützen (es gibt hier mind. 2 Varianten, wobei sie zumindest den Ansatz \"Monitor\" \/ synchronized kennen sollten)?",
+     "solution": "Kritische Abschnitte\n- man greift aus mehreren Threads gemeinsam auf Daten zu\n- gegenseitig könnten die Daten überschreiben werden\n- Kritische Abschnitte müssen geschützt werden\n\nsynchronized\/Monitor\n- schützt den Abschnitt",
+     "answer": null
+    },
+    {
+     "id": 124,
+     "thema": "Speicherbasierte Sychronization",
+     "solution": "Schwäche Art der Sychronization durch \"volatile\" Variablen\n- Sorgen dafür, dass Variablenwerte von alle Threads sofot gesehen werden können (keine Caches)\n\n- ! Stellt keine atomarität sicher ! (wird nicht so häufig verwendet)",
+     "answer": null
+    },
+    {
+     "id": 125,
+     "thema": "Was ist ein Deadlock? Wieviele Threads\/Resourcen benötigt man mindestens für eine Deadlock?",
+     "solution": "Deadlock - eine Mengen von Prozessen befinden sich in einem Deadlock, falls jeder Prozess der Menge auf ein Ereignis wartet, das nur ein anderer Prozess der Menge auslösen kann\n- mind 2 Threads und 2 Resourcen",
+     "answer": null
+    },
+    {
+     "id": 126,
+     "thema": "Welche Deadlock-Bedingungen gibt es? (4 Stück)",
+     "solution": "- Wechselseitiger Ausschluss - d.h. Betriebsmittel darf nur von einem Prozess verwendet werden\n- Belegungs- und Wartebedingungen - ein Prozess der bereits Betriebsmittel belegt, kann weitere anfordern\n- Ununterbrechbarkeitsbedingung - Betriebsmittel können nicht entzogen werden\n- Zyklische Wartebedingungen - Es gibt eine zyklische Wartebeziehung zwischen Prozessen, die jeweils auf Betriebsmittel warten, die andere bereits halten",
+     "answer": null
+    },
+    {
+     "id": 127,
+     "thema": "Wie kann man Deadlocks vermeiden?",
+     "solution": "- Ignorieren - wegen geringer Deadlock Wahrscheinlichkeit teilweis akzeptieren\n- Vorbeugung - Vehinderung des Eintretens mindestens einer Deadlockbedingung\n- Beseitigung - Situationsbedingte Detektion von Deadlock Situationen und deren Aufhebung\n- Vermeidung - Umsichtige Vergabe von Betriebsmitteln, d.h. nur wenn ein sicherer Zustand erreicht wird",
+     "answer": null
+    },
+    {
+     "id": 128,
+     "thema": "Was sind Entwurfsmuster (Patterns)? Wie unterscheiden sie sich z.B. bezüglich Bibliotheken",
+     "solution": "Entwurfmuster\n- abstrakte Modellierungsentwürfe die verwenden werden können\n- treten häufig in gut programmeirten System auf\n- sind bewährt und bringen immer gute resultate",
+     "answer": null
+    },
+    {
+     "id": 129,
+     "thema": "Beispiele Entwurfsmuster? (mind 2 nennen + erklären)",
+     "solution": "Singelton Pattern\n- es soll erreicht werden, dass von einer Klasse nur genau 1 Objekt existiert mit einem globalen Zugriffspunkt\n-- private static KLASSENNAME instance;\n-- private KLASSENNAME () {} (leerer Konstruktor)\n-- public static getInstance() {... return instance}\n\nBuilder Pattern (sehr nützlich)\n- Klasse mit required und optinal Variablen\n- Dient dazu die Objekterzeugung zu vereinfachen und den Erzeugungsprozess auszulagern\n--- Trennung des Erzeugens in 2 Anteile (Erstellungsprozess - Director \/ Erstellen der Bauteile - Builder) (Director ist nicht immer notwendig)\n--- Konstruktor des Builders nur mit den required Variablen\n--- für optinal Variablen extra Methoden mit return this;\n--- User.UserBuilder(\"Name\").age(30).phone(011).build();\n\nProxy Pattern\n- Der Zugriff auf ein objekt findet durch ein vorgelagertes Stellvertreterobjekt statt\n- Virtual Proxy - verzögert Erstellung\n- Security Proxy - Der  Zugang zum Objekt wird kontrolliert\n- Smart Reference - Funktionalitätserweiterung\n- Remote Proxy - Transparente entfernte Kommunikation\n",
+     "answer": null
+    },
+    {
+     "id": 130,
+     "thema": "Was sind Gegenmuster (Antipatterns)?",
+     "solution": "Gegenmuster\n- Konstrukte \/ Entwürfe \/ Teilentwürfe für Systeme die öfters auftreten aber schlecht sind",
+     "answer": null
+    },
+    {
+     "id": 131,
+     "thema": "Beispiele Antipatterns?",
+     "solution": "- The Blob (God Class) - Zentrale Objekte\n- eine Klasse erhält ein Großteil der gesamten Programmlogik\n- Klasse mit vielen Attributen und Methoden\n- Wartbarkeit ist herabgesetzt, Wiederverwendung wird erschwert\n\n- Lava Flow - Dead Code\n- Beschreibt ein System mit vielen COdestellen von denen unklar ist was sie machen und wofür\/ob sie verwendet werden\n- langsam entwickelnde Architektur\n\n- Poltergeists - Kurz auftretende Objekt eohne echte Funktion\n\n- Spaghetti Code - keine klare Struktur\n- alles redet mit allem, Wichtige Daten werden global gespeichert\n- Geringe Wartbarkeit, Kaum erweiterbar, Kaum Wiederverwendbar",
+     "answer": null
+    },
+    {
+     "id": 132,
+     "thema": "forEach Schleife",
+     "solution": "for (int element : numbers) {...}\n- verkürzte Form der for-Schleife, wenn über alle Elemente iteriert werden soll",
+     "answer": null
+    },
+    {
+     "id": 133,
+     "thema": "Schleifenabbruch break",
+     "solution": "break;\n- erreicht das Programm das Schlüsselwort \"break\" dann wird die aktuelle (innerste) Schleife sofort beendet und dan Programm nach der Schleife weiter ausgeführt\n- für for, while, do-while verwendbar\n- es ist unelegant mit break aus einer Schleife rauszuegehn, aber besser als die Schleife unnötig weiter laufen zu lassen ",
+     "answer": null
+    },
+    {
+     "id": 134,
+     "thema": "Schleifenabbruch break mit Label",
+     "solution": "break mit Label\nouter:\nfor (int element : numbers) {\n for (int element : numbers) {\n break outer;\n }\n}\n\n- bricht die äußere Schleife ab und somot das ganze Schleifenkonstrukt\n- mit einem Label wird festgelegt welche Schleife beendet werden soll",
+     "answer": null
+    },
+    {
+     "id": 135,
+     "thema": "switch Anweisung",
+     "solution": "switch(variable) {\ncase 1:\n…\nbreak;\ncase 2:\ncase 3.\n…\nbreak;\ndefault:\n…\n}\n\n– break verlässt den switch Block\n- default fängt alles ab was bei case . Nicht abgefangen werden konnte\n- switch ist NUR mit int und String möglich",
+     "answer": null
+    },
+    {
+     "id": 136,
+     "thema": "Delegationsprinzip",
+     "solution": "- man will die Arbeit nicht selber machen\n- man lässt diese andere Klassen machen\n\nBsp\n- zwei Nummernanzeigen ergeben eine Uhrenanzeige\n- Klasse Uhrenanzeige musst selbst fast nichts machen\n- nur die beiden Nummernanzeigen koordinieren",
+     "answer": null
+    },
+    {
+     "id": 137,
+     "thema": "Modulo Operator",
+     "solution": "liefert den Rest einer ganzzahligen Division",
+     "answer": null
+    },
+    {
+     "id": 138,
+     "thema": "Objektdiagramm",
+     "solution": "Schnappschuss zur Laufzeit\n- gibt es nur während das Programm läuft",
+     "answer": null
+    },
+    {
+     "id": 139,
+     "thema": "Klassendiagramm",
+     "solution": "Blaupause des Programms",
+     "answer": null
+    },
+    {
+     "id": 140,
+     "thema": "Datenfelder public oder private",
+     "solution": "Datenfelder sollten nicht public sein\n- nur Methoden die für andere Klassen betsimmt sind, sollten öffentlich sein",
+     "answer": null
+    },
+    {
+     "id": 141,
+     "thema": "Nenne die 3 Tugenden eines guten Programmierers.",
+     "solution": "Faulheit, Ungeduld, Stolz",
+     "answer": null
+    },
+    {
+     "id": 142,
+     "thema": "Kann eine Klasse mehrere Konstruktoren besitzen?",
+     "solution": "Ja",
+     "answer": null
+    }
+   ]

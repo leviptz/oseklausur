@@ -16,7 +16,7 @@ export const Home = () => {
     <div className="hero min-h-screen bg-base-200">
         <div className="hero-content text-center">
         <div className="max-w-md">
-            <h1 className="text-5xl font-bold">ProzessMod. Klausurvorbereitung</h1>
+            <h1 className="text-5xl font-bold">OSE Klausurvorbereitung</h1>
             <p className="py-6">Es gibt mehr als 100 Fragen/Themen zu denen du etwas schreiben kannst.
             Versuche so viel Wissen wie möglich in den Antwort Kasten zu schreiben. 
             Wenn du nicht weiter weißt oder die Lösung sehen möchtest klicke auf den Button "Lösung".
