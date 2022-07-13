@@ -1,6 +1,6 @@
 # oseKlausur
 
-This project was created to support learning for two exams.
+This project was created to support learning for an exams.
 
 The content on the page is in german.
 
@@ -18,8 +18,4 @@ There you see all topics/questions, solutions and your answer from the "Learning
 
 - React
 - Tailwind
-<<<<<<< HEAD
 - Daisy UI (Tailwind)
-=======
-- Daisy UI (Tailwind)
->>>>>>> 498e50021134fa8aa8f5988789f028fe76eb9da6
