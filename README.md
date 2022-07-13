@@ -1,6 +1,6 @@
 # oseKlausur
 
-This project was created to support learning for an exams.
+This project was created to support learning for an exam.
 
 The content on the page is in german.
 
